@@ -1,0 +1,37 @@
+@import "../../../../../assets/style/var";
+@import "../../../../../assets/style/mixins.scss";
+
+section {
+  height: 100vh;
+  background-color: $--secondary-background-color;
+  color: $--light-color-text;
+  padding: 2rem;
+  @include flex-column-justify-align-center;
+
+  header {
+    width: 30rem;
+    margin-top: 6rem;
+    font-size: $--font-size-h2;
+    text-align: center;
+  }
+
+  hr {
+    margin-top: 2rem;
+
+    width: 20rem;
+    border-bottom: 3px solid $--secondary-color-text;
+  }
+
+  p {
+    margin-top: 6rem;
+    font-size: $--font-size-p;
+    color: $--light-shadow-color-text;
+  }
+
+  img {
+    position: relative;
+    top: 10rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
