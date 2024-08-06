@@ -5,6 +5,7 @@ import { PresentationComponent } from '../../components/ui/presentation/presenta
 import { TrainingComponent } from '../../components/ui/training/training.component';
 import { ContactComponent } from '../../components/ui/contact/contact.component';
 import { CurriculumVitaeComponent } from '../../components/ui/curriculum-vitae/curriculum-vitae.component';
+import { PortfolioComponent } from '../../components/ui/portfolio/portfolio.component';
 
 @Component({
   selector: 'app-home-page',
@@ -16,6 +17,7 @@ import { CurriculumVitaeComponent } from '../../components/ui/curriculum-vitae/c
     TrainingComponent,
     ContactComponent,
     CurriculumVitaeComponent,
+    PortfolioComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
