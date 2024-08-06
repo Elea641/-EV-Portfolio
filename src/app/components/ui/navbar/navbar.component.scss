@@ -1,4 +1,3 @@
-/* navbar.component.scss */
 @import "../../../../assets/style/var";
 @import "../../../../assets/style/mixins.scss";
 
@@ -6,7 +5,7 @@ nav {
   z-index: 2;
   position: fixed;
   top: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100vw;
   height: 3.5rem;
   border-bottom: 0.1rem solid #d4d4d4;
@@ -27,25 +26,24 @@ nav {
     cursor: pointer;
   }
 
-  .nav-links {
+  ul {
     position: fixed;
     top: 3.5rem;
     right: 0;
+    padding-top: 2rem;
     height: 100vh;
-    width: 200px;
-    background-color: $--secondary-background-color;
+    width: 20rem;
+    background-color: $--secondary-color;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     @include flex-column-justify-align-center;
-  }
+    li {
+      margin: 1rem 0;
 
-  .nav-links li {
-    margin: 1rem 0;
-  }
-
-  .nav-links a {
-    color: $--light-shadow-color-text;
-    font-size: 1.5rem;
+      a {
+        color: $--primary-color-text;
+      }
+    }
   }
 
   .nav-active {

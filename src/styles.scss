@@ -13,3 +13,18 @@ p,
 a {
   font-family: $--font-family-roboto;
 }
+
+h2 {
+  font-size: $--font-size-h2;
+}
+
+p,
+a {
+  font-size: $--font-size-p;
+}
+
+hr {
+  margin-top: 1.8rem;
+  width: 4rem;
+  border-bottom: 3px solid $--secondary-color-text;
+}

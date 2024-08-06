@@ -1,0 +1,9 @@
+@import "../../../../assets/style/var";
+@import "../../../../assets/style/mixins.scss";
+
+footer {
+  height: 10rem;
+  background-color: $--secondary-background-color;
+  @include flex-justify-align-center;
+  color: $--light-shadow-color-text;
+}

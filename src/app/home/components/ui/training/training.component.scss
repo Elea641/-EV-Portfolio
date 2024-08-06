@@ -3,7 +3,7 @@
 
 section {
   height: 100vh;
-  background-color: $--secondary-background-color;
+  background-color: $--secondary-color;
   color: $--light-color-text;
   padding: 2rem;
   @include flex-column-justify-align-center;
@@ -12,17 +12,6 @@ section {
     width: 30rem;
     margin-top: 6rem;
     text-align: center;
-  }
-
-  p {
-    margin-top: 6rem;
-    color: $--light-shadow-color-text;
-  }
-
-  img {
-    position: relative;
-    top: 10rem;
-    width: 5rem;
-    height: 5rem;
+    color: $--primary-color-text;
   }
 }

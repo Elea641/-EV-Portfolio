@@ -5,9 +5,9 @@
   align-items: center;
 }
 
-@mixin flex-column-justify-align-center {
+@mixin flex-justify-align-center {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
