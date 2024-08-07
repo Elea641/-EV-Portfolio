@@ -3,7 +3,7 @@
     <h2>Portfolio</h2>
   </header>
   <hr />
-  <ng-container *ngIf="projects$ | async as projects">
+  <ng-container>
     <ul>
       <li>
         <app-project-card *ngFor="let project of projects" [data]="project" />

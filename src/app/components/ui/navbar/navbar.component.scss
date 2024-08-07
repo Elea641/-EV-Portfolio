@@ -34,6 +34,7 @@ nav {
     padding-top: 2rem;
     height: 100vh;
     width: 20rem;
+    border-left: 0.1rem solid #d4d4d4;
     background-color: $--secondary-color;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
