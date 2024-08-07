@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,12 +9,27 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements AfterViewInit {
+  isNavActive = false;
+
   ngAfterViewInit() {
     const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('nav-links');
-
     burger?.addEventListener('click', () => {
-      navLinks?.classList.toggle('nav-active');
+      this.isNavActive = !this.isNavActive;
     });
+  }
+
+  closeMenu() {
+    this.isNavActive = false;
+  }
+
+  @HostListener('document:click', ['$event'])
+  clickOut(event: Event) {
+    const target = event.target as HTMLElement;
+    const navLinks = document.getElementById('nav-links');
+    const burger = document.getElementById('burger');
+
+    if (navLinks && !navLinks.contains(target) && !burger?.contains(target)) {
+      this.isNavActive = false;
+    }
   }
 }

@@ -8,9 +8,14 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2,
 p,
-a {
+a,
+label {
   font-family: $--font-family-roboto;
 }
 
@@ -19,7 +24,8 @@ h2 {
 }
 
 p,
-a {
+a,
+label {
   font-size: $--font-size-p;
 }
 

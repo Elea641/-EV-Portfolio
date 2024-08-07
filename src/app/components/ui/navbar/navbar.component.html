@@ -1,15 +1,18 @@
 <nav>
-  <h2>Elea Voliotis</h2>
+  <a href="#home" (click)="closeMenu()"><h2>Elea Voliotis</h2></a>
   <img
     id="burger"
     src="assets/pictures/burger-bar.png"
     alt="icon qui permet d'ouvrir le menu"
   />
-  <ul id="nav-links">
-    <li><a href="#home">ACCUEIL</a></li>
-    <li><a href="#about">A PROPOS</a></li>
-    <li><a href="#training">FORMATIONS</a></li>
-    <li><a href="#portfolio">PORTFOLIO</a></li>
-    <li><a href="#contact">CONTACT</a></li>
+  <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
+    <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>
+    <li><a href="#about" (click)="closeMenu()">A PROPOS</a></li>
+    <li><a href="#portfolio" (click)="closeMenu()">PORTFOLIO</a></li>
+    <li><a href="#training" (click)="closeMenu()">FORMATIONS</a></li>
+    <li>
+      <a href="#curriculumVitae" (click)="closeMenu()">CURRICULUM VITAE</a>
+    </li>
+    <li><a href="#contact" (click)="closeMenu()">CONTACT</a></li>
   </ul>
 </nav>

@@ -2,7 +2,7 @@
 @import "../../../../../assets/style/mixins.scss";
 
 section {
-  height: calc(100vh - 3.5rem);
+  height: 100vh;
   background-color: $--primary-background-color;
   color: $--primary-color-text;
   padding: 2rem;
@@ -10,7 +10,7 @@ section {
 
   header {
     width: 30rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     text-align: center;
   }
 
