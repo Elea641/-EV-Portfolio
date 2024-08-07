@@ -13,6 +13,7 @@ html {
 }
 
 h2,
+h3,
 p,
 a,
 label {
@@ -21,6 +22,10 @@ label {
 
 h2 {
   font-size: $--font-size-h2;
+}
+
+h3 {
+  font-size: $--font-size-h3;
 }
 
 p,

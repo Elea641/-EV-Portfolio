@@ -2,7 +2,7 @@
 @import "../../../../../assets/style/mixins.scss";
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $--secondary-color;
   color: $--light-color-text;
   padding: 2rem;
@@ -13,5 +13,10 @@ section {
     margin-top: 6rem;
     text-align: center;
     color: $--primary-color-text;
+  }
+
+  ul > li {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

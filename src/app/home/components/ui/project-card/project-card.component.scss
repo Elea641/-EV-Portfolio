@@ -1,0 +1,22 @@
+@import "../../../../../assets/style/var";
+@import "../../../../../assets/style/mixins.scss";
+
+article {
+  margin: 2rem;
+  width: 14rem;
+  color: $--primary-color-text;
+
+  figure {
+    text-align: center;
+    a {
+      img {
+        width: 14rem;
+        height: 10rem;
+      }
+    }
+  }
+
+  section {
+    text-align: center;
+  }
+}
