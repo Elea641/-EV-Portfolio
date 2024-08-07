@@ -6,4 +6,10 @@ footer {
   background-color: $--secondary-background-color;
   @include flex-justify-align-center;
   color: $--light-shadow-color-text;
+
+  a {
+    p {
+      color: $--light-shadow-color-text;
+    }
+  }
 }

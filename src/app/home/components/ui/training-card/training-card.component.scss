@@ -1,0 +1,29 @@
+@import "../../../../../assets/style/var";
+@import "../../../../../assets/style/mixins.scss";
+
+article {
+  margin: 2rem;
+  width: 14rem;
+  color: $--primary-color-text;
+
+  figure {
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  section {
+    text-align: center;
+
+    h3 {
+      color: $--secondary-color-text;
+    }
+  }
+}

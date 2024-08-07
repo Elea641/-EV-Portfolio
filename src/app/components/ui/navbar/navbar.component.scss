@@ -12,43 +12,59 @@ nav {
   background-color: $--secondary-color;
   @include flex-justify-align-space-between;
 
-  h2 {
-    margin: 0;
-    font-family: $--font-family-poppins;
-    color: $--secondary-color-text;
-    text-shadow: 1px 1px 2px rgba(48, 48, 48, 0.2);
-    cursor: pointer;
-  }
-
-  img {
-    margin-right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-  }
-
-  ul {
-    position: fixed;
-    top: 3.5rem;
-    right: 0;
-    padding-top: 2rem;
-    height: 100vh;
-    width: 20rem;
-    border-left: 0.1rem solid #d4d4d4;
-    background-color: $--secondary-color;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    @include flex-column-justify-align-center;
-    li {
-      margin: 1rem 0;
-
-      a {
-        color: $--primary-color-text;
-      }
+  a {
+    h2 {
+      margin: 0;
+      font-family: $--font-family-poppins;
+      color: $--secondary-color-text;
+      text-shadow: 1px 1px 2px rgba(48, 48, 48, 0.2);
+      cursor: pointer;
     }
   }
 
-  .nav-active {
-    transform: translateX(0);
+  ul {
+    @include flex-justify-align-center;
+
+    li {
+      img {
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        transition: filter 0.3s ease;
+      }
+
+      img:hover {
+        filter: grayscale(100%) brightness(0%) contrast(30%);
+      }
+
+      ul {
+        position: fixed;
+        top: 3.5rem;
+        right: 0;
+        padding-top: 2rem;
+        height: 100vh;
+        width: 20rem;
+        border-left: 0.1rem solid #d4d4d4;
+        background-color: $--secondary-color;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        @include flex-column-justify-align-center;
+        li {
+          margin: 1rem 0;
+
+          a {
+            color: $--primary-color-text;
+          }
+          a:hover {
+            color: $--secondary-color-text;
+          }
+        }
+      }
+
+      .nav-active {
+        transform: translateX(0);
+      }
+    }
   }
 }

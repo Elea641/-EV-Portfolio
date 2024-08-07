@@ -13,7 +13,9 @@ import { PortfolioComponent } from '../../ui/portfolio/portfolio.component';
   styleUrls: ['./project-data.component.scss'],
 })
 export class ProjectDataComponent {
-  projects$: Observable<Project[]> = this.homeService.getAll();
+  projects$: Observable<Project[]> = this.homeService.getAll(
+    'assets/datas/list-projects.json'
+  );
 
-  constructor(private homeService: HomeService) {}
+  constructor(private homeService: HomeService<Project>) {}
 }

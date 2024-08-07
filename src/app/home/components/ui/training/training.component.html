@@ -3,5 +3,14 @@
     <h2>Formation</h2>
   </header>
   <hr />
-  <app-training-card></app-training-card>
+  <ng-container>
+    <ul>
+      <li>
+        <app-training-card
+          *ngFor="let training of trainings"
+          [data]="training"
+        />
+      </li>
+    </ul>
+  </ng-container>
 </section>

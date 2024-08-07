@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TrainingCardComponent } from '../training-card/training-card.component';
+import { Training } from 'src/app/home/models/training.type';
 
 @Component({
   selector: 'app-training',
@@ -9,4 +10,6 @@ import { TrainingCardComponent } from '../training-card/training-card.component'
   templateUrl: './training.component.html',
   styleUrls: ['./training.component.scss'],
 })
-export class TrainingComponent {}
+export class TrainingComponent {
+  @Input() trainings!: Training[];
+}

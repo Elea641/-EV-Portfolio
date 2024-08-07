@@ -1,18 +1,48 @@
 <nav>
   <a href="#home" (click)="closeMenu()"><h2>Elea Voliotis</h2></a>
-  <img
-    id="burger"
-    src="assets/pictures/burger-bar.png"
-    alt="icon qui permet d'ouvrir le menu"
-  />
-  <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
-    <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>
-    <li><a href="#about" (click)="closeMenu()">A PROPOS</a></li>
-    <li><a href="#portfolio" (click)="closeMenu()">PORTFOLIO</a></li>
-    <li><a href="#training" (click)="closeMenu()">FORMATIONS</a></li>
+  <ul>
     <li>
-      <a href="#curriculumVitae" (click)="closeMenu()">CURRICULUM VITAE</a>
+      <a
+        href="https://github.com/Elea641"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="closeMenu()"
+      >
+        <img
+          src="assets/pictures/logo-github.png"
+          alt="Accéder à mon profil GitHub"
+        />
+      </a>
     </li>
-    <li><a href="#contact" (click)="closeMenu()">CONTACT</a></li>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/eleavoliotis/"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="closeMenu()"
+      >
+        <img
+          src="assets/pictures/logo-linkedin.png"
+          alt="Accéder à mon profil gmail"
+        />
+      </a>
+    </li>
+    <li>
+      <img
+        id="burger"
+        src="assets/pictures/burger-bar.png"
+        alt="icon qui permet d'ouvrir le menu"
+      />
+      <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
+        <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>
+        <li><a href="#about" (click)="closeMenu()">A PROPOS</a></li>
+        <li><a href="#portfolio" (click)="closeMenu()">PORTFOLIO</a></li>
+        <li><a href="#training" (click)="closeMenu()">FORMATIONS</a></li>
+        <li>
+          <a href="#curriculumVitae" (click)="closeMenu()">CURRICULUM VITAE</a>
+        </li>
+        <li><a href="#contact" (click)="closeMenu()">CONTACT</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>

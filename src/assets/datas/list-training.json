@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Développeur web Angular/Spring Boot",
+        "url": "assets/pictures/photo-profile.jpeg",
+        "date": "2023",
+        "technos": "HTML/CSS, Angular, Spring Boot, SQL",
+        "content": "Formation à sein de la Wild code school"
+    },
+    {
+      "id": 2,
+      "name": "Développeur web et web mobile",
+      "url": "assets/pictures/photo-profile.jpeg",
+      "date": "2023",
+      "technos": "HTML/CSS, React, Express, SQL",
+      "content": "Formation à sein de la Wild code school"
+    },
+    {
+        "id": 3,
+        "name": "Concepteur développeur d'applications",
+        "url": "assets/pictures/photo-profile.jpeg",
+        "date": "2023",
+        "technos": "HTML/CSS, Angular, Spring Boot, SQL",
+        "content": "Formation en alternance à sein de la Wild code school"
+    }
+  ]
+  

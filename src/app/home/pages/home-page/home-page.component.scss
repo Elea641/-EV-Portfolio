@@ -1,0 +1,25 @@
+@import "../../../../assets/style/var";
+
+main {
+  position: relative;
+
+  button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    img {
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
