@@ -5,18 +5,32 @@ section {
   min-height: 100vh;
   background-color: $--secondary-color;
   color: $--light-color-text;
-  padding: 2rem;
+  padding: 0 2rem;
   @include flex-column-align-center;
+  justify-content: space-between;
 
   header {
     width: 30rem;
     margin-top: 6rem;
     text-align: center;
     color: $--primary-color-text;
+    @include flex-column-align-center;
+
+    hr {
+      margin-top: 1.8rem;
+      width: 4rem;
+      border-bottom: 3px solid $--secondary-color-text;
+    }
   }
 
   ul > li {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  hr:last-child {
+    margin: 0;
+    width: 70vw;
+    border-bottom: 3px solid $--secondary-color-text;
   }
 }

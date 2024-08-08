@@ -5,7 +5,7 @@ section {
   height: 100vh;
   background-color: $--primary-background-color;
   color: $--primary-color-text;
-  padding: 2rem;
+  padding: 0 2rem;
   @include flex-column-align-center;
 
   header {
