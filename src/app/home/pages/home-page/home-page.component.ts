@@ -29,8 +29,27 @@ import { TrainingDataComponent } from '../../components/feature/training-data/tr
 export class HomePageComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const scrollToTopButton = document.getElementById('scroll-to-top');
+    const scrollButtonImage = document.getElementById(
+      'scroll-button-image'
+    ) as HTMLImageElement;
 
-    if (scrollToTopButton) {
+    if (scrollToTopButton && scrollButtonImage) {
+      const changeImageAtPixels = 3.5 * 16;
+      const viewportHeight = window.innerHeight;
+      const changeImageAt150vh = (107 * viewportHeight) / 100;
+
+      window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > changeImageAt150vh) {
+          scrollButtonImage.src = 'assets/pictures/logo-arrow-up.png';
+        } else if (scrollPosition > changeImageAtPixels) {
+          scrollButtonImage.src = 'assets/pictures/logo-arrow-up-gray.png';
+        } else {
+          scrollButtonImage.src = 'assets/pictures/logo-arrow-up.png';
+        }
+      });
+
       scrollToTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
