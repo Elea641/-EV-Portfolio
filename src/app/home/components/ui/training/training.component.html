@@ -5,11 +5,8 @@
   <hr />
   <ng-container>
     <ul>
-      <li>
-        <app-training-card
-          *ngFor="let training of trainings"
-          [data]="training"
-        />
+      <li *ngFor="let training of trainings; let i = index">
+        <app-training-card [data]="training"></app-training-card>
       </li>
     </ul>
   </ng-container>

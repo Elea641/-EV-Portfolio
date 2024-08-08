@@ -15,8 +15,29 @@ section {
     color: $--primary-color-text;
   }
 
-  ul > li {
-    display: flex;
-    flex-wrap: wrap;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    li {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+      margin-bottom: 1rem;
+      position: relative;
+      width: 100%;
+
+      &.in-view {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      &.out-of-view {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
   }
 }
