@@ -8,6 +8,7 @@ import { CurriculumVitaeComponent } from '../../components/ui/curriculum-vitae/c
 import { PortfolioComponent } from '../../components/ui/portfolio/portfolio.component';
 import { ProjectDataComponent } from '../../components/feature/project-data/project-data.component';
 import { TrainingDataComponent } from '../../components/feature/training-data/training-data.component';
+import { SkillDataComponent } from '../../components/skill-data/skill-data.component';
 
 @Component({
   selector: 'app-home-page',
@@ -22,6 +23,7 @@ import { TrainingDataComponent } from '../../components/feature/training-data/tr
     PortfolioComponent,
     ProjectDataComponent,
     TrainingDataComponent,
+    SkillDataComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
