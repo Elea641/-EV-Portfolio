@@ -1,12 +1,16 @@
 <article>
   <figure>
     <a [href]="data.github_url" target="_blank" rel="noopener noreferrer">
-      <img src="assets/pictures/photo-profile.jpeg" alt="Miniature du projet"
-    /></a>
+      <img [src]="'assets/pictures/WCS.png'" [alt]="'Miniature du projet ' + data.name"/>
+    </a>
   </figure>
   <section>
+    <img src="assets/pictures/WCS.png" [alt]="data.trainingCenter"/>
     <h2>{{ data.name | uppercase }}</h2>
-    <h3>{{ data.type }}</h3>
+    <h3>{{data.trainingCenter}}</h3>
+    <p>{{ data.type }}</p>
+    <p>{{data.date}}</p>
+    <p [innerHTML]="data.content"></p>
     <p>{{ data.technos }}</p>
   </section>
 </article>

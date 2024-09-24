@@ -10,10 +10,6 @@
     <p>{{ data.name }}</p>
     <p>{{ data.date }}</p>
     <p [innerHTML]="data.content"></p>
-    <ul> Compétences :
-      <li *ngFor="let techno of data.technos.split(',')">
-        {{ techno }}
-      </li>
-    </ul>    
+    <p>{{ data.technos }}</p>    
   </section>
 </article>

@@ -28,21 +28,21 @@ article {
       color: $--primary-color-text;
     }
     
-    ul {
-      font-weight: bold;
-      margin-top: 1rem;
-    }
-
-    li {
-      font-weight: normal;
-    }
-    
     p {
       text-align: left;
     }
 
+    p:nth-child(3) {
+      margin-bottom: 1rem;
+    }
+
     p:last-of-type {
-      margin-top: 1rem;
+      margin-top: 2rem;
+    }
+
+    p:last-of-type::before {
+      content: "Compétences : ";
+      font-weight: bold;
     }
   }
 }

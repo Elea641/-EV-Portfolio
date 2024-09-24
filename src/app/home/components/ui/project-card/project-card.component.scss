@@ -2,22 +2,24 @@
 @import "../../../../../assets/style/mixins.scss";
 
 article {
-  margin: 2rem;
-  width: 14rem;
+  margin: 2rem 0;
+  width: 100%;
   color: $--primary-color-text;
 
   figure {
     position: relative;
-    text-align: center;
+    width: 20rem;
+    margin: auto;
 
     a {
       display: inline-block;
       position: relative;
 
       img {
-        width: 14rem;
-        height: 10rem;
+        width: 20rem;
+        height: 15rem;
         display: block;
+        object-fit: cover;
       }
 
       &::after {
@@ -46,10 +48,42 @@ article {
   }
 
   section {
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
 
     h3 {
       color: $--primary-color-text;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    p {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    p:nth-of-type(2) {
+      margin-bottom: 1rem;
+    }
+
+    p:last-of-type {
+      margin-top: 1rem;
+    }
+
+    p:last-of-type::before {
+      content: "Compétences : ";
+      font-weight: bold;
     }
   }
 }
