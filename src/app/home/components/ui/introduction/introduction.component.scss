@@ -2,7 +2,7 @@
 @import "../../../../../assets/style/mixins.scss";
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $--secondary-background-color;
   color: $--light-color-text;
   padding: 0 2rem;
@@ -39,7 +39,7 @@ section {
 
   a > img{
     position: relative;
-    margin-top: 5rem;
+    bottom: 1rem;
     width: 5rem;
     height: 5rem;
     filter: grayscale(0);

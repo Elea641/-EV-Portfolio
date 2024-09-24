@@ -2,7 +2,7 @@
 @import "../../../../../assets/style/mixins.scss";
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $--primary-background-color;
   color: $--primary-color-text;
   padding: 0 2rem;
@@ -15,7 +15,7 @@ section {
   }
 
   p {
-    margin-top: 4rem;
+    margin: 4rem 0 2rem 0;
   }
 
   img {

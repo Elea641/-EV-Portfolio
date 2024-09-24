@@ -2,7 +2,7 @@
 @import "../../../../../assets/style/mixins.scss";
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $--secondary-color;
   color: $--light-color-text;
   padding: 0 2rem;
@@ -55,7 +55,7 @@ section {
 
     button {
       margin: auto;
-      margin-top: 3rem;
+      margin: 3rem 0 2rem 0;
       height: 3.4rem;
       width: 10rem;
       border-radius: 35rem;
