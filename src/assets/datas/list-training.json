@@ -1,30 +1,29 @@
 [
   {
     "id": 3,
-    "name": "Concepteur développeur d'applications",
-    "trainingCenter": "Wild code school",
+    "name": "Concepteur Développeur d'Applications",
+    "trainingCenter": "Wild Code School",
     "url": "assets/pictures/WCS.png",
-    "date": "2023",
-    "technos": "HTML, CSS, Angular, Spring Boot, SQL",
-    "content": "Formation en alternance à sein de la Wild code school"
+    "date": "sept. 2023 - sept. 2024",
+    "technos": "Feuilles de style en cascade (CSS) · Angular Material · Mockito · GitHub · RxJS · HTML · Sass · TypeScript · Hibernate · Réalisation de tests · Docker · JavaScript · MySQL · Développement web · Visual Studio Code · Spring Data · Angular CLI · SQL · Méthodes agiles · Programmation orientée objet (POO) · Git · Framework Spring · Bases de données · Intégration · Java · JUnit · Spring Boot · Angular · Applications web",
+    "content": "L’objectif de la formation est l'apprentissage de langages de programmation comme Typescript et Java, la maîtrise de Git / Github, Angular, Spring Boot, la gestion de projet avec la méthode Agile, CI /CD , Docker. <br><br>- 70% de pratique (projets réalisés avec des vrais clients, exercices, challenges, ateliers en petits groupes avec le formateur) <br><br>- 30% de théorie (cours, quêtes réalisées sur la plateforme pédagogique en ligne Odyssey, tutoriels, interventions de professionnels du secteur)"
   },
   {
     "id": 2,
-    "name": "Développeur web et web mobile",
-    "trainingCenter": "Wild code school",
+    "name": "Développeur Web et Web Mobile",
+    "trainingCenter": "Wild Code School",
     "url": "assets/pictures/WCS.png",
-    "date": "2023",
-    "technos": "HTML, CSS, React, Express, SQL",
-    "content": "Formation à sein de la Wild code school"
+    "date": "févr. 2023 - juil. 2023",
+    "technos": "Feuilles de style en cascade (CSS) · GitHub · HTML · Sass · Réalisation de tests · Docker · JavaScript · MySQL · Node.js · Développement web · Visual Studio Code · SQL · Express.js · Méthodes agiles · Git · Bases de données · React.js · Applications web",
+    "content": "L’objectif de la formation est l'apprentissage de langages de programmation comme Javascript, la maîtrise de Git / Github, React, Express, la gestion de projet avec la méthode Agile. <br><br>- 70% de pratique (projets réalisés avec des vrais clients, exercices, challenges, ateliers en petits groupes avec le formateur) <br><br>- 30% de théorie (cours, quêtes réalisées sur la plateforme pédagogique en ligne Odyssey, tutoriels, interventions de professionnels du secteur)"
   },
   {
     "id": 1,
-    "name": "Développeur web et web mobile",
-    "trainingCenter": "Wild code school",
+    "name": "Développeur Web et Web Mobile",
+    "trainingCenter": "Wild Code School",
     "url": "assets/pictures/WCS.png",
-    "date": "2023",
-    "technos": "HTML, CSS, Angular, Spring Boot, SQL",
-    "content": "Formation à sein de la Wild code school"
+    "date": "sept. 2022 - déc. 2022",
+    "technos": "Feuilles de style en cascade (CSS) · GitHub · RxJS · HTML · TypeScript · Hibernate · JavaScript · MySQL · Développement web · Visual Studio Code · Spring Data · Angular CLI · SQL · Méthodes agiles · Programmation orientée objet (POO) · Git · Framework Spring · Bases de données · Java · Spring Boot · Angular · Applications web",
+    "content": "L’objectif de la formation est l'apprentissage de langages de programmation comme Typescript et Java, la maîtrise de Git / Github, Angular, Spring Boot, la gestion de projet avec la méthode Agile. <br><br>- 70% de pratique (projets réalisés avec des vrais clients, exercices, challenges, ateliers en petits groupes avec le formateur) <br><br>- 30% de théorie (cours, quêtes réalisées sur la plateforme pédagogique en ligne Odyssey, tutoriels, interventions de professionnels du secteur)"
   }
 ]
-  

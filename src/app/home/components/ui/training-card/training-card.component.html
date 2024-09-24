@@ -6,9 +6,14 @@
     />
   </figure>
   <section>
-    <h2>{{ data.name | uppercase }}</h2>
-    <h3>{{ data.content }}</h3>
-    <p>Centre de formation : {{ data.trainingCenter }}</p>
-    <p> Compétences : {{ data.technos }}</p>
+    <h3>{{ data.trainingCenter }}</h3>
+    <p>{{ data.name }}</p>
+    <p>{{ data.date }}</p>
+    <p [innerHTML]="data.content"></p>
+    <ul> Compétences :
+      <li *ngFor="let techno of data.technos.split(',')">
+        {{ techno }}
+      </li>
+    </ul>    
   </section>
 </article>

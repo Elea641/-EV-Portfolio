@@ -40,13 +40,13 @@ section {
 
     input,
     textarea {
-      border-radius: 0.3rem;
-      border: 1px solid $--secondary-color-text;
+      border-radius: 0.5rem;
+      border: 1px solid $--primary-color-input;
     }
 
-    ::placeholder {
-      color: $--secondary-color-text;
-    }
+    // ::placeholder {
+    //   color: $--secondary-color-text;
+    // }
 
     label:first-of-type {
       grid-column: 1 / 2;

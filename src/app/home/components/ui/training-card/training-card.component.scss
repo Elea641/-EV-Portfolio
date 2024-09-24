@@ -2,17 +2,21 @@
 @import "../../../../../assets/style/mixins.scss";
 
 article {
-  margin: 2rem;
-  width: 14rem;
+  margin: 2rem 0;
+  width: 20rem;
   color: $--primary-color-text;
+  display: flex;
 
   figure {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
     position: relative;
     text-align: center;
 
     img {
-      width: 6rem;
-      height: 6rem;
+      width: 3rem;
+      height: 3rem;
       border-radius: 50%;
       object-fit: cover;
       display: block;
@@ -20,10 +24,25 @@ article {
   }
 
   section {
-    text-align: center;
-
     h3 {
       color: $--primary-color-text;
+    }
+    
+    ul {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    li {
+      font-weight: normal;
+    }
+    
+    p {
+      text-align: left;
+    }
+
+    p:last-of-type {
+      margin-top: 1rem;
     }
   }
 }

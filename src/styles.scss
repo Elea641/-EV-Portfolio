@@ -16,8 +16,11 @@ h2,
 h3,
 p,
 a,
-label {
+label, 
+ul, 
+li {
   font-family: $--font-family-roboto;
+  line-height: 1.4;
 }
 
 h2 {
