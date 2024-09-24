@@ -9,7 +9,7 @@ section {
   @include flex-column-align-center;
 
   header {
-    width: 30rem;
+    width: 100vw;
     margin-top: 6rem;
     text-align: center;
     color: $--primary-color-text;

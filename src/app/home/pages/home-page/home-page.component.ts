@@ -27,6 +27,8 @@ import { TrainingDataComponent } from '../../components/feature/training-data/tr
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements AfterViewInit {
+  isVisible: boolean = false;
+
   ngAfterViewInit(): void {
     const scrollToTopButton = document.getElementById('scroll-to-top');
     const scrollButtonImage = document.getElementById(
@@ -43,10 +45,13 @@ export class HomePageComponent implements AfterViewInit {
 
         if (scrollPosition > changeImageAt150vh) {
           scrollButtonImage.src = 'assets/pictures/logo-arrow-up.png';
+          this.isVisible = true;
         } else if (scrollPosition > changeImageAtPixels) {
           scrollButtonImage.src = 'assets/pictures/logo-arrow-up-gray.png';
+          this.isVisible = true;
         } else {
           scrollButtonImage.src = 'assets/pictures/logo-arrow-up.png';
+          this.isVisible = false;
         }
       });
 

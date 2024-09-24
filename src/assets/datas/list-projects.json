@@ -8,12 +8,12 @@
       "github_url": "https://github.com/Elea641"
     },
     {
-        "id": 2,
-        "name": "Ligne bleue",
-        "url": "assets/pictures/photo-profile.jpeg",
-        "type": "Application WEB",
-        "technos": "HTML/CSS, React, Express, SQL",
-        "github_url": "https://github.com/Elea641"
-      }
+      "id": 2,
+      "name": "Ligne bleue",
+      "url": "assets/pictures/photo-profile.jpeg",
+      "type": "Application WEB",
+      "technos": "HTML/CSS, React, Express, SQL",
+      "github_url": "https://github.com/Elea641"
+    }
   ]
   

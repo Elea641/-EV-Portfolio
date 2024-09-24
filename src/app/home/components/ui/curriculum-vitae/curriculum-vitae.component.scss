@@ -2,14 +2,14 @@
 @import "../../../../../assets/style/mixins.scss";
 
 section {
-  height: 35vh;
+  height: calc(35vh + 6rem);
   background-color: $--secondary-background-color;
   padding: 0 2rem;
   @include flex-column-align-center;
   justify-content: space-evenly;
 
   header {
-    width: 30rem;
+    width: 100vw;
     text-align: center;
     color: $--light-color-text;
   }

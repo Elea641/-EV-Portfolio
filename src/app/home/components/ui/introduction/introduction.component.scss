@@ -15,25 +15,24 @@ section {
     h2 {
       display: inline-block;
       overflow: hidden;
-      border-right: 2px solid black;
       font-family: monospace;
       position: relative;
       width: 100%;
       max-width: 100%;
-      animation: typewriter 8s steps(50, end) 1s 1 normal both,
-        blink 0.75s step-end infinite;
-      white-space: pre-wrap;
+      // animation: typewriter 8s steps(50, end) 1s 1 normal both,
+      //   blink 0.75s step-end infinite;
+      // white-space: pre-wrap;
     }
   }
 
   p {
-    margin-top: 6rem;
+    margin-top: 3.5rem;
     color: $--light-shadow-color-text;
   }
 
   img {
     position: relative;
-    top: 10rem;
+    margin-top: 1rem;
     width: 5rem;
     height: 5rem;
     &:hover {
@@ -42,23 +41,23 @@ section {
   }
 }
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+// @keyframes typewriter {
+//   from {
+//     width: 0;
+//   }
+//   to {
+//     width: 100%;
+//   }
+// }
 
-@keyframes blink {
-  0% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-  100% {
-    border-color: transparent;
-  }
-}
+// @keyframes blink {
+//   0% {
+//     border-color: transparent;
+//   }
+//   50% {
+//     border-color: black;
+//   }
+//   100% {
+//     border-color: transparent;
+//   }
+// }

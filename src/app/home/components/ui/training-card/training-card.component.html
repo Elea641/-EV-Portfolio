@@ -1,13 +1,14 @@
 <article>
   <figure>
     <img
-      src="assets/pictures/photo-profile.jpeg"
+      [src]="data.url"
       alt="Miniature de la formation"
     />
   </figure>
   <section>
     <h2>{{ data.name | uppercase }}</h2>
-    <h3>{{ data }}</h3>
-    <p>{{ data.technos }}</p>
+    <h3>{{ data.content }}</h3>
+    <p>Centre de formation : {{ data.trainingCenter }}</p>
+    <p> Compétences : {{ data.technos }}</p>
   </section>
 </article>
