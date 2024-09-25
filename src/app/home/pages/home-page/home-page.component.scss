@@ -7,24 +7,4 @@ main {
   @include media-tablet-screen {
     width: calc(100vw - 1.2rem);
   }
-
-  button {
-    position: fixed;
-    bottom: 2rem;
-    right: 1rem;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1;
-    img {
-      border-radius: 50%;
-      width: 4rem;
-      height: 4rem;
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
 }

@@ -18,7 +18,11 @@ html {
   --background-color: #{$--primary-background-color};
   --text-color: #{$--primary-color-text};
   --navbar-background-color: #{$--primary-background-color};
-  --navbar-border-color: #{$--primary-color-text};
+  --navbar-border-color: #1a1a1a;
+  --button-border-color: #{$--primary-color-border};
+  --button-text-color: #{$--primary-color-button};
+  --button-background-color-second: #{$--secondary-background-color};
+  --button-text-color-second: #{$--secondary-color-text};
 }
 
 .light-theme {
@@ -26,6 +30,10 @@ html {
   --text-color: #{$--secondary-color-text};
   --navbar-background-color: #{$--secondary-background-color};
   --navbar-border-color: #{$--secondary-color-text};
+  --button-border-color: #{$--secondary-color-border};
+  --button-text-color: #{$--secondary-color-button};
+  --button-background-color-second: #{$--primary-background-color};
+  --button-text-color-second: #{$--primary-color-text};
 }
 
 body {
@@ -40,6 +48,7 @@ body {
   }
 }
 
+h1,
 h2,
 h3,
 p,
@@ -65,13 +74,8 @@ label {
   font-size: $--font-size-p;
 }
 
-hr {
-  margin-top: 1.8rem;
-  width: 4rem;
-  border-bottom: 3px solid red;
-}
-
 button {
   background-color: transparent;
   border: none;
+  font-size: $--font-size-button;
 }

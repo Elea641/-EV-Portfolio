@@ -4,47 +4,54 @@
 section {
   min-height: 100vh;
   padding: 0 2rem;
-  @include flex-column-align-center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
   @include media-tablet-screen {
     width: calc(100vw - 1.2rem);
   }
 
   header {
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
-
-    h2 {
-      display: inline-block;
-      overflow: hidden;
-      font-family: monospace;
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-    }
+    grid-column: span 2;
+    align-self: center;
   }
 
   img {
     position: relative;
-    margin-top: 4rem;
-    width: 12rem;
-    height: 12rem;
+    width: 15rem;
+    height: 15rem;
     filter: grayscale(100%);
     border-radius: 50%;
+    grid-column: span 2;
+    align-self: center;
+    justify-self: center;
   }
 
   p {
     font-size: 1.2rem;
-    margin-top: 3.5rem;
+    text-align: center;
+    grid-column: span 2;
   }
 
-  a > img {
-    position: relative;
-    bottom: 1rem;
-    width: 5rem;
-    height: 5rem;
-    filter: grayscale(0);
-    &:hover {
-      opacity: 0.8;
-    }
+  a {
+    display: flex;
+    justify-content: center;
   }
+
+  button {
+    width: 10rem;
+    height: 3.2rem;
+    color: var(--button-border-color);
+    border: 1px solid var(--button-text-color);
+    border-radius: 0.5rem;
+  }
+
+  a:last-of-type button {
+    background-color: var(--button-background-color-second);
+    color: var(--button-text-color-second);
+  }
+   
 }

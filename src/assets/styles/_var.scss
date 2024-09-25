@@ -14,15 +14,20 @@ $--font-family-poppins: 'Poppins', Verdana, sans-serif;
 $--font-family-roboto: 'Roboto', Verdana, sans-serif;
 
 /* TEXT SIZE */
-$--font-size-h2: 2rem;
+$--font-size-h2: 1.8rem;
 $--font-size-h3: 1.4rem;
 $--font-size-p: 1rem;
 $--font-size-ul: 1.2rem;
 $--font-size-li: 1rem;
+$--font-size-button: 1.2rem;
 
 /* BUTTONS COLORS */
-$--primary-color-button: #1f1f1f;
-$--secondary-color-button: #e5cccc;
+$--primary-color-button: #f5eaea;
+$--secondary-color-button: #303030;
+
+/* BORDER COLORS */
+$--primary-color-border: #f5eaea;
+$--secondary-color-border: #303030;
 
 /* INPUTS COLORS */
 $--primary-color-input: #303030;
