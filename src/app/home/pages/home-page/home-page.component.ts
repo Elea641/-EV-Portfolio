@@ -9,6 +9,8 @@ import { PortfolioComponent } from '../../components/ui/portfolio/portfolio.comp
 import { ProjectDataComponent } from '../../components/feature/project-data/project-data.component';
 import { TrainingDataComponent } from '../../components/feature/training-data/training-data.component';
 import { SkillDataComponent } from '../../components/skill-data/skill-data.component';
+import { StatusComponent } from '../../components/ui/status/status.component';
+import { CarouselComponent } from '../../components/ui/carousel/carousel.component';
 
 @Component({
   selector: 'app-home-page',
@@ -17,6 +19,7 @@ import { SkillDataComponent } from '../../components/skill-data/skill-data.compo
     CommonModule,
     IntroductionComponent,
     PresentationComponent,
+    StatusComponent,
     TrainingComponent,
     ContactComponent,
     CurriculumVitaeComponent,
@@ -24,6 +27,7 @@ import { SkillDataComponent } from '../../components/skill-data/skill-data.compo
     ProjectDataComponent,
     TrainingDataComponent,
     SkillDataComponent,
+    CarouselComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
