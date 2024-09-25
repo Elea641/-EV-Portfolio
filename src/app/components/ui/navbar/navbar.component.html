@@ -1,9 +1,11 @@
 <nav [class.scrolled]="isScrolled">
   <a href="#home" (click)="closeMenu()"><h2>Elea Voliotis</h2></a>
-  <button (click)="toggleTheme()">
-    <img [src]="currentImages.moon" alt="Changer de thème" />
-  </button>
   <ul>
+    <li>
+      <button (click)="toggleTheme()">
+        <img [src]="currentImages.moon" alt="Changer de thème" />
+      </button>
+    </li>
     <li>
       <a
         href="https://github.com/Elea641"

@@ -55,19 +55,17 @@ nav {
   }
 
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-justify-align-center;
+
+    button {
+      @include flex-justify-align-center;
+    }
 
     li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-justify-align-center;
 
       a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-justify-align-center;
       }
 
       img {

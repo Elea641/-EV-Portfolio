@@ -8,7 +8,7 @@ import { CurriculumVitaeComponent } from '../../components/ui/curriculum-vitae/c
 import { PortfolioComponent } from '../../components/ui/portfolio/portfolio.component';
 import { ProjectDataComponent } from '../../components/feature/project-data/project-data.component';
 import { TrainingDataComponent } from '../../components/feature/training-data/training-data.component';
-import { SkillDataComponent } from '../../components/skill-data/skill-data.component';
+import { SkillDataComponent } from '../../components/feature/skill-data/skill-data.component';
 import { StatusComponent } from '../../components/ui/status/status.component';
 import { CarouselComponent } from '../../components/ui/carousel/carousel.component';
 

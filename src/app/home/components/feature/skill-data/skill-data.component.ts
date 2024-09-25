@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
-import { Skill } from '../../models/skill.type';
-import { HomeService } from '../../shared/home.service';
-import { SkillComponent } from '../ui/skill/skill.component';
+import { Skill } from '../../../models/skill.type';
+import { HomeService } from '../../../shared/home.service';
+import { SkillComponent } from '../../ui/skill/skill.component';
 
 @Component({
   selector: 'app-skill-data',

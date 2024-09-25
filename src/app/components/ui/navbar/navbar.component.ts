@@ -1,5 +1,7 @@
 import { Component, AfterViewInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
+import { ThemeImages } from 'src/app/home/models/themeImages.interface';
 
 @Component({
   selector: 'app-navbar',
@@ -10,31 +12,31 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent implements AfterViewInit {
   isNavActive = false;
-  isLightTheme = false;
   isScrolled = false;
+  currentImages: ThemeImages;
 
-  themeImages = {
+  themeImages: { light: ThemeImages; dark: ThemeImages } = {
     light: {
-      moon: 'assets/pictures/logo-moon-light.png',
-      github: 'assets/pictures/logo-github-light.png',
-      linkedin: 'assets/pictures/logo-linkedin-light.png',
-      burger: 'assets/pictures/logo-burger-bar-light.png',
-    },
-    dark: {
       moon: 'assets/pictures/logo-sun-dark.png',
       github: 'assets/pictures/logo-github-dark.png',
       linkedin: 'assets/pictures/logo-linkedin-dark.png',
       burger: 'assets/pictures/logo-burger-bar-dark.png',
     },
+    dark: {
+      moon: 'assets/pictures/logo-moon-light.png',
+      github: 'assets/pictures/logo-github-light.png',
+      linkedin: 'assets/pictures/logo-linkedin-light.png',
+      burger: 'assets/pictures/logo-burger-bar-light.png',
+    },
   };
 
-  currentImages = this.themeImages.light;
+  constructor(public themeUtilService: ThemeUtilService) {
+    this.currentImages = this.themeUtilService.updateImages(this.themeImages);
+  }
 
-  constructor() {
-    const savedTheme = localStorage.getItem('theme');
-    this.isLightTheme = savedTheme === 'light-theme';
-    document.body.className = this.isLightTheme ? 'light-theme' : '';
-    this.updateImages();
+  ngOnInit() {
+    this.themeUtilService.toggleTheme();
+    this.currentImages = this.themeUtilService.updateImages(this.themeImages);
   }
 
   ngAfterViewInit() {
@@ -65,16 +67,7 @@ export class NavbarComponent implements AfterViewInit {
   }
 
   toggleTheme() {
-    this.isLightTheme = !this.isLightTheme;
-    const themeClass = this.isLightTheme ? 'light-theme' : '';
-    document.body.className = themeClass;
-    localStorage.setItem('theme', themeClass);
-    this.updateImages();
-  }
-
-  updateImages() {
-    this.currentImages = this.isLightTheme
-      ? this.themeImages.dark
-      : this.themeImages.light;
+    this.themeUtilService.toggleTheme();
+    this.currentImages = this.themeUtilService.updateImages(this.themeImages);
   }
 }
