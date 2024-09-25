@@ -30,7 +30,6 @@ export class NavbarComponent implements AfterViewInit {
 
   currentImages = this.themeImages.light;
 
-
   constructor() {
     const savedTheme = localStorage.getItem('theme');
     this.isLightTheme = savedTheme === 'light-theme';
@@ -70,10 +69,12 @@ export class NavbarComponent implements AfterViewInit {
     const themeClass = this.isLightTheme ? 'light-theme' : '';
     document.body.className = themeClass;
     localStorage.setItem('theme', themeClass);
-    this.updateImages(); 
-    }
+    this.updateImages();
+  }
 
-    updateImages() {
-      this.currentImages = this.isLightTheme ? this.themeImages.dark : this.themeImages.light;
-    }
+  updateImages() {
+    this.currentImages = this.isLightTheme
+      ? this.themeImages.dark
+      : this.themeImages.light;
+  }
 }

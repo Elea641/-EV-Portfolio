@@ -1,9 +1,7 @@
 <nav [class.scrolled]="isScrolled">
   <a href="#home" (click)="closeMenu()"><h2>Elea Voliotis</h2></a>
   <button (click)="toggleTheme()">
-    <img
-      [src]="currentImages.moon"
-      alt="Changer de thème" />
+    <img [src]="currentImages.moon" alt="Changer de thème" />
   </button>
   <ul>
     <li>
@@ -12,9 +10,7 @@
         target="_blank"
         rel="noopener noreferrer"
         (click)="closeMenu()">
-        <img
-          [src]="currentImages.github"
-          alt="Accéder à mon profil GitHub" />
+        <img [src]="currentImages.github" alt="Accéder à mon profil GitHub" />
       </a>
     </li>
     <li>
