@@ -6,28 +6,24 @@
   <form
     [formGroup]="contactForm"
     (ngSubmit)="onSubmit()"
-    class="container-register"
-  >
+    class="container-register">
     <label for="name">Nom et prénom *</label>
     <input
       id="name"
       type="text"
       formControlName="name"
-      placeholder="Nom et prénom *"
-    />
+      placeholder="Nom et prénom *" />
     <label for="email">Email *</label>
     <input
       id="email"
       type="email"
       formControlName="email"
-      placeholder="Email *"
-    />
+      placeholder="Email *" />
     <label for="message">Message *</label>
     <textarea
       id="message"
       formControlName="message"
-      placeholder="Saisissez votre message *"
-    ></textarea>
+      placeholder="Saisissez votre message *"></textarea>
     <p>* Indique un champ obligatoire</p>
     <button type="submit" [disabled]="!contactForm.valid">ENVOYER</button>
   </form>

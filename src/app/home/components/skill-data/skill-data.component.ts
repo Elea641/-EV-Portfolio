@@ -10,7 +10,7 @@ import { SkillComponent } from '../ui/skill/skill.component';
   standalone: true,
   imports: [CommonModule, SkillComponent],
   templateUrl: './skill-data.component.html',
-  styleUrls: ['./skill-data.component.scss']
+  styleUrls: ['./skill-data.component.scss'],
 })
 export class SkillDataComponent {
   skills$: Observable<Skill[]> = this.homeService.getAll(

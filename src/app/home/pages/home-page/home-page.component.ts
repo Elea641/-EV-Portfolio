@@ -23,7 +23,7 @@ import { SkillDataComponent } from '../../components/skill-data/skill-data.compo
     PortfolioComponent,
     ProjectDataComponent,
     TrainingDataComponent,
-    SkillDataComponent
+    SkillDataComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],

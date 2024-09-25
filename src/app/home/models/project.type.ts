@@ -1,7 +1,7 @@
 export type Project = {
   id: number;
   name: string;
-  trainingCenter: string,
+  trainingCenter: string;
   url: string;
   date: string;
   type: string;

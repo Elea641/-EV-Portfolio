@@ -6,12 +6,10 @@
         href="https://github.com/Elea641"
         target="_blank"
         rel="noopener noreferrer"
-        (click)="closeMenu()"
-      >
+        (click)="closeMenu()">
         <img
           src="assets/pictures/logo-github.png"
-          alt="Accéder à mon profil GitHub"
-        />
+          alt="Accéder à mon profil GitHub" />
       </a>
     </li>
     <li>
@@ -19,12 +17,10 @@
         href="https://www.linkedin.com/in/eleavoliotis/"
         target="_blank"
         rel="noopener noreferrer"
-        (click)="closeMenu()"
-      >
+        (click)="closeMenu()">
         <img
           src="assets/pictures/logo-linkedin.png"
-          alt="Accéder à mon profil gmail"
-        />
+          alt="Accéder à mon profil gmail" />
       </a>
     </li>
     <li>
@@ -32,8 +28,7 @@
         id="burger"
         class="burger"
         src="assets/pictures/burger-bar.png"
-        alt="icon qui permet d'ouvrir le menu"
-      />
+        alt="icon qui permet d'ouvrir le menu" />
       <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
         <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>
         <li><a href="#about" (click)="closeMenu()">A PROPOS</a></li>

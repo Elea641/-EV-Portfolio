@@ -1,5 +1,5 @@
-@import "../../../../../assets/style/var";
-@import "../../../../../assets/style/mixins.scss";
+@import '../../../../../assets/style/var';
+@import '../../../../../assets/style/mixins.scss';
 
 article {
   margin: 2rem 0;
@@ -23,7 +23,7 @@ article {
       }
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -33,7 +33,7 @@ article {
         align-items: center;
         justify-content: center;
         background-color: $--secondary-color-text;
-        background-image: url("../../../../../assets/pictures/logo-plus.png");
+        background-image: url('../../../../../assets/pictures/logo-plus.png');
         background-size: 3rem;
         background-repeat: no-repeat;
         background-position: center;
@@ -82,7 +82,7 @@ article {
     }
 
     p:last-of-type::before {
-      content: "Compétences : ";
+      content: 'Compétences : ';
       font-weight: bold;
     }
   }

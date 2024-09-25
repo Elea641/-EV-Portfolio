@@ -1,15 +1,12 @@
 <article>
   <figure>
-    <img
-      [src]="data.url"
-      alt="Miniature de la formation"
-    />
+    <img [src]="data.url" alt="Miniature de la formation" />
   </figure>
   <section>
     <h3>{{ data.trainingCenter }}</h3>
     <p>{{ data.name }}</p>
     <p>{{ data.date }}</p>
     <p [innerHTML]="data.content"></p>
-    <p>{{ data.technos }}</p>    
+    <p>{{ data.technos }}</p>
   </section>
 </article>

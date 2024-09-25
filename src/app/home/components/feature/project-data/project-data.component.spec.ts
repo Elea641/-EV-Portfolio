@@ -8,7 +8,7 @@ describe('ProjectDataComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ProjectDataComponent]
+      imports: [ProjectDataComponent],
     });
     fixture = TestBed.createComponent(ProjectDataComponent);
     component = fixture.componentInstance;

@@ -7,7 +7,7 @@ import { Skill } from 'src/app/home/models/skill.type';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.scss']
+  styleUrls: ['./skill.component.scss'],
 })
 export class SkillComponent {
   @Input() skills!: Skill[];

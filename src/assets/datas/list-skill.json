@@ -1,17 +1,17 @@
 [
-    {
-        "id": 1,
-        "name": "Front-end",
-        "content": "JavaScript, TypeScript, Angular, Angular CLI, React.js, HTML, Feuilles de style en cascade (CSS), Sass, Angular Material, RxJS" 
-    },
-    {
-        "id": 2,
-        "name": "Back-end",
-        "content": "Java, Node.js, Express.js, Bases de données, Spring Boot, Spring Data, Hibernate, SQL, MySQL, JUnit, Mockito," 
-    },
-    {
-        "id": 3,
-        "name": "Générales",
-        "content": "Méthodes agiles, Git, GitHub, Docker, Intégration, Visual Studio Code, Réalisation de tests" 
-    }
+  {
+    "id": 1,
+    "name": "Front-end",
+    "content": "JavaScript, TypeScript, Angular, Angular CLI, React.js, HTML, Feuilles de style en cascade (CSS), Sass, Angular Material, RxJS"
+  },
+  {
+    "id": 2,
+    "name": "Back-end",
+    "content": "Java, Node.js, Express.js, Bases de données, Spring Boot, Spring Data, Hibernate, SQL, MySQL, JUnit, Mockito,"
+  },
+  {
+    "id": 3,
+    "name": "Générales",
+    "content": "Méthodes agiles, Git, GitHub, Docker, Intégration, Visual Studio Code, Réalisation de tests"
+  }
 ]

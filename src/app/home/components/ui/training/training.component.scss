@@ -1,5 +1,5 @@
-@import "../../../../../assets/style/var";
-@import "../../../../../assets/style/mixins.scss";
+@import '../../../../../assets/style/var';
+@import '../../../../../assets/style/mixins.scss';
 
 section {
   min-height: 100vh;
@@ -24,7 +24,9 @@ section {
     li {
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity 1s ease, transform 1s ease;
+      transition:
+        opacity 1s ease,
+        transform 1s ease;
       margin-bottom: 1rem;
       position: relative;
       width: 100%;

@@ -8,7 +8,7 @@ describe('SkillComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [SkillComponent]
+      imports: [SkillComponent],
     });
     fixture = TestBed.createComponent(SkillComponent);
     component = fixture.componentInstance;

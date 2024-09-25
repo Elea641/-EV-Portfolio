@@ -1,5 +1,5 @@
-@import "../../../../../assets/style/var";
-@import "../../../../../assets/style/mixins.scss";
+@import '../../../../../assets/style/var';
+@import '../../../../../assets/style/mixins.scss';
 
 section {
   min-height: 100vh;
@@ -24,7 +24,9 @@ section {
     }
   }
 
-  ul, li, p {
+  ul,
+  li,
+  p {
     color: $--primary-color-text;
   }
 

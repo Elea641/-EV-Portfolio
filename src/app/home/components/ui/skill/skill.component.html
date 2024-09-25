@@ -1,17 +1,20 @@
 <section id="skill">
-    <header>
-      <h2>Compétences</h2>
-      <hr />
-    </header>
-    <p>Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliquée, curieuse et passionnée.
-    </p>
-    <ul *ngFor="let skill of skills">
-      <li>
-        <ul>
-          <h3>{{skill.name}}</h3>
-          <li>{{skill.content}}</li>
-        </ul>
-      </li>
-    </ul>
+  <header>
+    <h2>Compétences</h2>
     <hr />
+  </header>
+  <p>
+    Elles sont en constantes améliorations car pour moi la joie de ce métier
+    fait que l’on en apprend tous les jours, d’autant plus en étant impliquée,
+    curieuse et passionnée.
+  </p>
+  <ul *ngFor="let skill of skills">
+    <li>
+      <ul>
+        <h3>{{ skill.name }}</h3>
+        <li>{{ skill.content }}</li>
+      </ul>
+    </li>
+  </ul>
+  <hr />
 </section>

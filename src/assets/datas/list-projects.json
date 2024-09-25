@@ -1,36 +1,35 @@
 [
-    {
-      "id": 1,
-      "name": "Winit",
-      "trainingCenter": "Wild Code School",
-      "url": "assets/pictures/photo-profile.jpeg",
-      "date": "sept. 2023 - juil. 2024",
-      "type": "Application WEB",
-      "technos": "Angular · Java · JUnit · Mockito · Docker · Bases de données · SQL · MySQL · Git · GitHub · Hibernate · Intégration · Spring Boot · Framework Spring · Spring Data · TypeScript · Feuilles de style en cascade (CSS) · Sass · HTML · Méthodes agiles",
-      "github_url": "https://github.com/Elea641",
-      "content": "Réalisation du projet WinIt, une application de création et gestion de tournois sportifs. <br><br>Acquisition de compétences avancées en développement full-stack et intégration de pipelines d'automatisation (CI/CD)."
-    },
-    {
-      "id": 2,
-      "name": "Ligne bleue",
-      "trainingCenter": "Wild Code School",
-      "url": "assets/pictures/photo-profile.jpeg",
-      "date": "mai 2023 - juil. 2023",
-      "type": "Application WEB",
-      "technos": "React.js · Express.js · Méthodes agiles · MySQL · SQL · Bases de données · Git · GitHub · JavaScript · Node.js",
-      "github_url": "https://github.com/Elea641",
-      "content": "Développement de l’application Ligne bleue, visant à lutter contre l'exclusion numérique à travers des formations accessibles. <br><br>Approfondissement des compétences en développement web full-stack, gestion de projet, et résolution de problèmes sociaux via la technologie."
-    },
-    {
-      "id": 2,
-      "name": "SNKC",
-      "trainingCenter": "Wild Code School",
-      "url": "assets/pictures/photo-profile.jpeg",
-      "date": "sept. 2022 - déc. 2022",
-      "type": "Application WEB",
-      "technos": "Méthodes agiles · Angular · Java · TypeScript · Feuilles de style en cascade (CSS) · Framework Spring · SQL · MySQL · Bases de données · GitHub · Git",
-      "github_url": "https://github.com/Elea641",
-      "content": "Conception de SNKC, une plateforme d'enchères dédiée aux sneakers de collection. Une application e-commerce avec gestion des utilisateurs et intégration d'une logique d'enchères en temps réel."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Winit",
+    "trainingCenter": "Wild Code School",
+    "url": "assets/pictures/photo-profile.jpeg",
+    "date": "sept. 2023 - juil. 2024",
+    "type": "Application WEB",
+    "technos": "Angular · Java · JUnit · Mockito · Docker · Bases de données · SQL · MySQL · Git · GitHub · Hibernate · Intégration · Spring Boot · Framework Spring · Spring Data · TypeScript · Feuilles de style en cascade (CSS) · Sass · HTML · Méthodes agiles",
+    "github_url": "https://github.com/Elea641",
+    "content": "Réalisation du projet WinIt, une application de création et gestion de tournois sportifs. <br><br>Acquisition de compétences avancées en développement full-stack et intégration de pipelines d'automatisation (CI/CD)."
+  },
+  {
+    "id": 2,
+    "name": "Ligne bleue",
+    "trainingCenter": "Wild Code School",
+    "url": "assets/pictures/photo-profile.jpeg",
+    "date": "mai 2023 - juil. 2023",
+    "type": "Application WEB",
+    "technos": "React.js · Express.js · Méthodes agiles · MySQL · SQL · Bases de données · Git · GitHub · JavaScript · Node.js",
+    "github_url": "https://github.com/Elea641",
+    "content": "Développement de l’application Ligne bleue, visant à lutter contre l'exclusion numérique à travers des formations accessibles. <br><br>Approfondissement des compétences en développement web full-stack, gestion de projet, et résolution de problèmes sociaux via la technologie."
+  },
+  {
+    "id": 2,
+    "name": "SNKC",
+    "trainingCenter": "Wild Code School",
+    "url": "assets/pictures/photo-profile.jpeg",
+    "date": "sept. 2022 - déc. 2022",
+    "type": "Application WEB",
+    "technos": "Méthodes agiles · Angular · Java · TypeScript · Feuilles de style en cascade (CSS) · Framework Spring · SQL · MySQL · Bases de données · GitHub · Git",
+    "github_url": "https://github.com/Elea641",
+    "content": "Conception de SNKC, une plateforme d'enchères dédiée aux sneakers de collection. Une application e-commerce avec gestion des utilisateurs et intégration d'une logique d'enchères en temps réel."
+  }
+]

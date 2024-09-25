@@ -1,5 +1,5 @@
-@import "../../../../assets/style/var";
-@import "../../../../assets/style/mixins.scss";
+@import '../../../../assets/style/var';
+@import '../../../../assets/style/mixins.scss';
 
 nav {
   z-index: 2;
@@ -23,7 +23,7 @@ nav {
       font-family: $--font-family-poppins;
 
       &:hover::after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: -3px;
@@ -34,7 +34,7 @@ nav {
       }
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: -3px;

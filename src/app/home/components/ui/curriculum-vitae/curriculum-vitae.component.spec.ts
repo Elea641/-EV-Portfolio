@@ -8,7 +8,7 @@ describe('CurriculumVitaeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [CurriculumVitaeComponent]
+      imports: [CurriculumVitaeComponent],
     });
     fixture = TestBed.createComponent(CurriculumVitaeComponent);
     component = fixture.componentInstance;

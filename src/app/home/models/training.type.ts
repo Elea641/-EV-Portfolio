@@ -1,7 +1,7 @@
 export type Training = {
   id: number;
   name: string;
-  trainingCenter: string,
+  trainingCenter: string;
   url: string;
   date: string;
   technos: string;

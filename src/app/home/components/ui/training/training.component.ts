@@ -17,8 +17,8 @@ export class TrainingComponent implements OnInit {
 
   constructor() {
     this.sectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      entries => {
+        entries.forEach(entry => {
           if (entry.isIntersecting) {
             this.observeCards();
           }
@@ -39,20 +39,22 @@ export class TrainingComponent implements OnInit {
 
   observeCards(): void {
     this.cardObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      entries => {
+        entries.forEach(entry => {
           const element = entry.target as HTMLElement;
-          const index = Array.from(element.parentNode!.children).indexOf(
-            element
-          );
+          if (element.parentNode) {
+            const index = Array.from(element.parentNode.children).indexOf(
+              element
+            );
 
-          if (entry.isIntersecting) {
-            element.classList.add('in-view');
-            element.classList.remove('out-of-view');
-            element.style.transitionDelay = `${index * 0.2}s`;
-          } else {
-            element.classList.add('out-of-view');
-            element.classList.remove('in-view');
+            if (entry.isIntersecting) {
+              element.classList.add('in-view');
+              element.classList.remove('out-of-view');
+              element.style.transitionDelay = `${index * 0.2}s`;
+            } else {
+              element.classList.add('out-of-view');
+              element.classList.remove('in-view');
+            }
           }
         });
       },
@@ -62,6 +64,6 @@ export class TrainingComponent implements OnInit {
     );
 
     const trainingCards = document.querySelectorAll('ul > li');
-    trainingCards.forEach((card) => this.cardObserver!.observe(card));
+    trainingCards.forEach(card => this.cardObserver?.observe(card));
   }
 }

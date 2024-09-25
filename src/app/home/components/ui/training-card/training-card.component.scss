@@ -1,5 +1,5 @@
-@import "../../../../../assets/style/var";
-@import "../../../../../assets/style/mixins.scss";
+@import '../../../../../assets/style/var';
+@import '../../../../../assets/style/mixins.scss';
 
 article {
   margin: 2rem 0;
@@ -27,7 +27,7 @@ article {
     h3 {
       color: $--primary-color-text;
     }
-    
+
     p {
       text-align: left;
     }
@@ -41,7 +41,7 @@ article {
     }
 
     p:last-of-type::before {
-      content: "Compétences : ";
+      content: 'Compétences : ';
       font-weight: bold;
     }
   }

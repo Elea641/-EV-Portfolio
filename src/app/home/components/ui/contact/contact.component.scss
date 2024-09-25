@@ -1,5 +1,5 @@
-@import "../../../../../assets/style/var";
-@import "../../../../../assets/style/mixins.scss";
+@import '../../../../../assets/style/var';
+@import '../../../../../assets/style/mixins.scss';
 
 section {
   min-height: 100vh;
@@ -20,7 +20,10 @@ section {
     margin-top: 3rem;
     width: 100vw;
 
-    label, input, textarea, p {
+    label,
+    input,
+    textarea,
+    p {
       width: 85vw;
     }
 
