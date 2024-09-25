@@ -1,10 +1,9 @@
-@import '../../../../../assets/style/var';
-@import '../../../../../assets/style/mixins.scss';
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 article {
   margin: 2rem 0;
   width: 20rem;
-  color: $--primary-color-text;
   display: flex;
 
   figure {
@@ -24,10 +23,6 @@ article {
   }
 
   section {
-    h3 {
-      color: $--primary-color-text;
-    }
-
     p {
       text-align: left;
     }

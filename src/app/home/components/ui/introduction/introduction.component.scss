@@ -1,10 +1,8 @@
-@import '../../../../../assets/style/var';
-@import '../../../../../assets/style/mixins.scss';
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 section {
   min-height: 100vh;
-  background-color: $--secondary-background-color;
-  color: $--light-color-text;
   padding: 0 2rem;
   @include flex-column-align-center;
   @include media-tablet-screen {
@@ -37,7 +35,6 @@ section {
   p {
     font-size: 1.2rem;
     margin-top: 3.5rem;
-    color: $--light-shadow-color-text;
   }
 
   a > img {

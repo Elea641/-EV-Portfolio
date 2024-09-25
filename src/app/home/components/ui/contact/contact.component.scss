@@ -1,11 +1,9 @@
-@import '../../../../../assets/style/var';
-@import '../../../../../assets/style/mixins.scss';
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 section {
   min-height: 100vh;
   width: 100vw;
-  background-color: $--secondary-color;
-  color: $--light-color-text;
   padding: 0 2rem;
   @include flex-column-align-center;
   @include media-tablet-screen {
@@ -15,7 +13,6 @@ section {
   header {
     margin-top: 6rem;
     text-align: center;
-    color: $--primary-color-text;
   }
 
   form {
@@ -30,7 +27,6 @@ section {
     }
 
     label {
-      color: $--primary-color-text;
       text-align: left;
     }
 
@@ -50,11 +46,10 @@ section {
     input,
     textarea {
       border-radius: 0.5rem;
-      border: 1px solid $--primary-color-input;
+      border: 1px solid red;
     }
 
     p {
-      color: $--primary-color-text;
       font-size: 0.8rem;
     }
 
@@ -67,8 +62,6 @@ section {
       font-size: 1rem;
       font-weight: 600;
       border: none;
-      background-color: $--primary-color;
-      color: $--primary-color-text;
     }
   }
 }

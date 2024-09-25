@@ -1,4 +1,4 @@
-@import './assets/style/var';
+@import './assets/styles/var';
 
 *,
 ::after,
@@ -12,6 +12,32 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #{$--primary-background-color};
+  --text-color: #{$--primary-color-text};
+  --navbar-background-color: #{$--primary-background-color};
+  --navbar-border-color: #{$--primary-color-text};
+}
+
+.light-theme {
+  --background-color: #{$--secondary-background-color};
+  --text-color: #{$--secondary-color-text};
+  --navbar-background-color: #{$--secondary-background-color};
+  --navbar-border-color: #{$--secondary-color-text};
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  a {
+    color: var(--text-color);
+  }
 }
 
 h2,
@@ -42,5 +68,10 @@ label {
 hr {
   margin-top: 1.8rem;
   width: 4rem;
-  border-bottom: 3px solid $--secondary-color-text;
+  border-bottom: 3px solid red;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }

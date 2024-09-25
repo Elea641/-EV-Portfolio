@@ -1,10 +1,9 @@
-@import '../../../../../assets/style/var';
-@import '../../../../../assets/style/mixins.scss';
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 article {
   margin: 2rem 0;
   width: 100%;
-  color: $--primary-color-text;
 
   figure {
     position: relative;
@@ -32,7 +31,6 @@ article {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $--secondary-color-text;
         background-image: url('../../../../../assets/pictures/logo-plus.png');
         background-size: 3rem;
         background-repeat: no-repeat;
@@ -63,7 +61,6 @@ article {
     }
 
     h3 {
-      color: $--primary-color-text;
       grid-column-start: 2;
       grid-column-end: 3;
     }

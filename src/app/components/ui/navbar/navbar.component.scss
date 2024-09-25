@@ -1,5 +1,5 @@
-@import '../../../../assets/style/var';
-@import '../../../../assets/style/mixins.scss';
+@import '../../../../assets/styles/var';
+@import '../../../../assets/styles/mixins.scss';
 
 nav {
   z-index: 2;
@@ -8,11 +8,19 @@ nav {
   padding: 0.5rem;
   width: 100vw;
   height: 3.5rem;
-  border-bottom: 0.1rem solid #d4d4d4;
-  background-color: $--secondary-color;
+  background-color: var(--navbar-background-color);
   @include flex-justify-align-space-between;
   @include media-tablet-screen {
     width: calc(100vw - 1.2rem);
+  }
+
+  &.scrolled {
+    box-shadow: 0 1px 2px var(--navbar-border-color);
+  }
+
+  button > img {
+    width: 2rem;
+    height: 2rem;
   }
 
   a {
@@ -22,7 +30,6 @@ nav {
       width: 10rem;
       cursor: pointer;
       font-size: 24px;
-      color: $--primary-color-text;
       font-family: $--font-family-poppins;
 
       &:hover::after {
@@ -32,7 +39,6 @@ nav {
         bottom: -3px;
         width: 9rem;
         height: 2px;
-        background-color: $--primary-color;
         transition: width 0.3s ease;
       }
 
@@ -43,7 +49,6 @@ nav {
         bottom: -3px;
         width: 0;
         height: 2px;
-        background-color: $--primary-color;
         transition: width 0.3s ease;
       }
     }
@@ -91,21 +96,13 @@ nav {
         padding-top: 2rem;
         height: 100vh;
         width: 100vw;
-        border-left: 0.1rem solid #d4d4d4;
-        background-color: $--secondary-color;
+        border-left: 0.1rem solid red;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         @include flex-column-justify-start;
 
         li {
           margin: 1rem 0;
-
-          a {
-            color: $--primary-color-text;
-          }
-          a:hover {
-            color: $--secondary-color-text;
-          }
         }
       }
 

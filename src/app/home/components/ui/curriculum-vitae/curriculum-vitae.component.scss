@@ -1,10 +1,9 @@
-@import '../../../../../assets/style/var';
-@import '../../../../../assets/style/mixins.scss';
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 section {
   height: calc(35vh + 6rem);
   width: 100vw;
-  background-color: $--secondary-background-color;
   padding: 0 2rem;
   @include flex-column-align-center;
   justify-content: space-evenly;
@@ -14,7 +13,6 @@ section {
 
   header {
     text-align: center;
-    color: $--light-color-text;
 
     h2 {
       padding: 0 1rem;

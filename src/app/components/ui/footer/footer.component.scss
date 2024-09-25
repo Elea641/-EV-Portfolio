@@ -1,11 +1,9 @@
-@import '../../../../assets/style/var';
-@import '../../../../assets/style/mixins.scss';
+@import '../../../../assets/styles/var';
+@import '../../../../assets/styles/mixins.scss';
 
 footer {
   height: 10rem;
   width: 100vw;
-  background-color: $--secondary-background-color;
-  color: $--light-shadow-color-text;
   @include flex-justify-align-center;
   @include media-tablet-screen {
     width: calc(100vw - 1.2rem);
@@ -14,7 +12,6 @@ footer {
   a {
     p {
       text-align: center;
-      color: $--light-shadow-color-text;
     }
   }
 }

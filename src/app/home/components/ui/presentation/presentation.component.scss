@@ -1,11 +1,9 @@
-@import '../../../../../assets/style/var';
-@import '../../../../../assets/style/mixins.scss';
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 section {
   min-height: 100vh;
   width: 100vw;
-  background-color: $--primary-background-color;
-  color: $--primary-color-text;
   padding: 0 2rem;
   @include flex-column-align-center;
   @include media-tablet-screen {

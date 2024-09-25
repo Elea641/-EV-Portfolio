@@ -1,5 +1,10 @@
-<nav>
+<nav [class.scrolled]="isScrolled">
   <a href="#home" (click)="closeMenu()"><h2>Elea Voliotis</h2></a>
+  <button (click)="toggleTheme()">
+    <img
+      [src]="currentImages.moon"
+      alt="Changer de thème" />
+  </button>
   <ul>
     <li>
       <a
@@ -8,7 +13,7 @@
         rel="noopener noreferrer"
         (click)="closeMenu()">
         <img
-          src="assets/pictures/logo-github.png"
+          [src]="currentImages.github"
           alt="Accéder à mon profil GitHub" />
       </a>
     </li>
@@ -19,16 +24,16 @@
         rel="noopener noreferrer"
         (click)="closeMenu()">
         <img
-          src="assets/pictures/logo-linkedin.png"
-          alt="Accéder à mon profil gmail" />
+          [src]="currentImages.linkedin"
+          alt="Accéder à mon profil LinkedIn" />
       </a>
     </li>
     <li>
       <img
         id="burger"
         class="burger"
-        src="assets/pictures/burger-bar.png"
-        alt="icon qui permet d'ouvrir le menu" />
+        [src]="currentImages.burger"
+        alt="Icone pour ouvrir le menu" />
       <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
         <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>
         <li><a href="#about" (click)="closeMenu()">A PROPOS</a></li>
