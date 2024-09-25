@@ -3,13 +3,16 @@
 
 section {
   height: calc(35vh + 6rem);
+  width: 100vw;
   background-color: $--secondary-background-color;
   padding: 0 2rem;
   @include flex-column-align-center;
   justify-content: space-evenly;
+  @include media-tablet-screen {
+    width: calc(100vw - 1.2rem);
+  }
 
   header {
-    width: 100vw;
     text-align: center;
     color: $--light-color-text;
 

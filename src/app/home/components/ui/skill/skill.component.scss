@@ -9,9 +9,11 @@ section {
   padding: 0 2rem;
   @include flex-column-align-center;
   justify-content: space-between;
+  @include media-tablet-screen {
+    width: calc(100vw - 1.2rem);
+  }
 
   header {
-    width: 100vw;
     margin-top: 6rem;
     text-align: center;
     color: $--primary-color-text;
@@ -35,13 +37,17 @@ section {
       ul {
         h3 {
           text-align: center;
-          margin-bottom: 1rem;
+          margin: 1rem 0;
         }
         li {
           text-align: start;
         }
       }
     }
+  }
+
+  p {
+    margin-top: 1rem;
   }
 
   hr:last-child {

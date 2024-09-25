@@ -3,9 +3,13 @@
 
 footer {
   height: 10rem;
+  width: 100vw;
   background-color: $--secondary-background-color;
-  @include flex-justify-align-center;
   color: $--light-shadow-color-text;
+  @include flex-justify-align-center;
+  @include media-tablet-screen {
+    width: calc(100vw - 1.2rem);
+  }
 
   a {
     p {

@@ -11,6 +11,9 @@ nav {
   border-bottom: 0.1rem solid #d4d4d4;
   background-color: $--secondary-color;
   @include flex-justify-align-space-between;
+  @include media-tablet-screen {
+    width: calc(100vw - 1.2rem);
+  }
 
   a {
     h2 {
