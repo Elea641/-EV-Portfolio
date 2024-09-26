@@ -7,12 +7,15 @@
     </a>
   </figure>
   <section>
-    <img src="assets/pictures/WCS.png" [alt]="data.trainingCenter" />
     <h2>{{ data.name | uppercase }}</h2>
-    <h3>{{ data.trainingCenter }}</h3>
     <p>{{ data.type }}</p>
     <p>{{ data.date }}</p>
-    <p [innerHTML]="data.content"></p>
-    <p>{{ data.technos }}</p>
+    <button (click)="openModal()">Voir plus</button>
   </section>
 </article>
+
+<app-portfolio-modal
+  *ngIf="isModalOpen"
+  [project]="data"
+  (click)="closeModal()">
+</app-portfolio-modal>

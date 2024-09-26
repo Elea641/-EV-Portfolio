@@ -26,6 +26,10 @@ html {
   --card-quality-background-color: #{$--secondary-background-color};
   --card-quality-text-color: #{$--secondary-color-text};
   --card-skills-border-color: #{$--primary-color-border};
+  --card-portfolio-background-color: #{$--secondary-background-color};
+  --card-portfolio-text-color: #{$--secondary-color-text};
+  --card-portfolio-button-border-color: #{$--secondary-color-text};
+  --card-portfolio-button-text-color: #{$--secondary-color-button};
 }
 
 .light-theme {
@@ -40,6 +44,10 @@ html {
   --card-quality-background-color: #{$--primary-background-color};
   --card-quality-text-color: #{$--primary-color-text};
   --card-skills-border-color: #{$--secondary-color-border};
+  --card-portfolio-background-color: #{$--primary-background-color};
+  --card-portfolio-text-color: #{$--primary-color-text};
+  --card-portfolio-button-border-color: #{$--primary-color-text};
+  --card-portfolio-button-text-color: #{$--primary-color-button};
 }
 
 body {

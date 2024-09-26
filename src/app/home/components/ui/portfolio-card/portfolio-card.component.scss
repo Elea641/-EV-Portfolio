@@ -1,0 +1,69 @@
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
+
+article {
+  margin: 2rem 0;
+  width: 100%;
+  background-color: var(--card-portfolio-background-color);
+  color: var(--card-portfolio-text-color);
+  border-radius: 0.5rem;
+
+  figure {
+    position: relative;
+    width: 20rem;
+    margin: auto;
+
+    a {
+      display: inline-block;
+      position: relative;
+
+      img {
+        width: 20rem;
+        height: 15rem;
+        display: block;
+        object-fit: cover;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../../../../assets/pictures/logo-plus.png');
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover::after {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  section {
+    padding: 0 1rem;
+    @include flex-column-align-center;
+
+    h2,
+    p {
+      width: 100%;
+    }
+
+    button {
+      margin: 1rem 0;
+      width: 10rem;
+      height: 3.2rem;
+      color: var(--card-portfolio-button-text-color);
+      border: 1px solid var(--card-portfolio-button-border-color);
+      border-radius: 0.5rem;
+    }
+  }
+}

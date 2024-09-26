@@ -1,0 +1,14 @@
+<div class="modal">
+  <article class="modal-content">
+    <button class="close-button" (click)="closeModal()">&times;</button>
+    <section>
+      <img src="assets/pictures/WCS.png" [alt]="project.trainingCenter" />
+      <h2>{{ project.name | uppercase }}</h2>
+      <h3>{{ project.trainingCenter }}</h3>
+      <p>{{ project.type }}</p>
+      <p>{{ project.date }}</p>
+      <p [innerHTML]="project.content"></p>
+      <p>{{ project.technos }}</p>
+    </section>
+  </article>
+</div>
