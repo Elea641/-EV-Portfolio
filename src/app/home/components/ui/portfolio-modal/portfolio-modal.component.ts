@@ -10,9 +10,9 @@ import { Project } from 'src/app/home/models/project.type';
   styleUrls: ['./portfolio-modal.component.scss'],
 })
 export class PortfolioModalComponent {
-  @Input() project!: Project;
+  @Input() project: Project | null = null;
 
   closeModal() {
-    this.project = undefined!;
+    this.project = null;
   }
 }
