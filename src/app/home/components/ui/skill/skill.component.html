@@ -10,9 +10,12 @@
   </p>
   <ul *ngFor="let skill of skills">
     <li>
-      <ul>
-        <h3>{{ skill.name }}</h3>
-        <li>{{ skill.content }}</li>
+      <h3>{{ skill.name }}</h3>
+      <ul *ngFor="let data of skill.skills">
+        <li>
+          <img [src]="data?.svg" alt="{{ data.name }}" />
+          <p>{{ data.name }}</p>
+        </li>
       </ul>
     </li>
   </ul>

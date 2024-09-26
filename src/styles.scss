@@ -25,6 +25,7 @@ html {
   --button-text-color-second: #{$--secondary-color-text};
   --card-quality-background-color: #{$--secondary-background-color};
   --card-quality-text-color: #{$--secondary-color-text};
+  --card-skills-border-color: #{$--primary-color-border};
 }
 
 .light-theme {
@@ -38,6 +39,7 @@ html {
   --button-text-color-second: #{$--primary-color-text};
   --card-quality-background-color: #{$--primary-background-color};
   --card-quality-text-color: #{$--primary-color-text};
+  --card-skills-border-color: #{$--secondary-color-border};
 }
 
 body {
@@ -84,5 +86,11 @@ button {
   font-size: $--font-size-button;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

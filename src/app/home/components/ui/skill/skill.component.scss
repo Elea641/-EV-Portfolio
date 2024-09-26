@@ -24,21 +24,47 @@ section {
   }
 
   ul {
+    gap: 0.5rem;
+    border: 1px solid var(--card-skills-border-color);
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0;
     li {
+      @include flex-wrap;
+      justify-content: center;
+
+      h3 {
+        text-align: center;
+        margin: 1rem 0;
+        width: 100%;
+      }
+
       ul {
-        h3 {
-          text-align: center;
-          margin: 1rem 0;
-        }
+        border: none;
+
         li {
-          text-align: justify;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          width: 5rem;
+          height: 6rem;
+
+          p {
+            margin: 0;
+            text-align: center;
+          }
+
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+            justify-self: center;
+          }
         }
       }
     }
   }
 
   p {
-    margin-top: 1rem;
+    margin: 4rem 0;
     text-align: justify;
   }
 

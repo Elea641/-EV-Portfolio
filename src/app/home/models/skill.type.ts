@@ -1,5 +1,9 @@
 export type Skill = {
   id: number;
   name: string;
-  content: string;
+  skills: {
+    id: number;
+    name: string;
+    svg: string;
+  }[];
 };

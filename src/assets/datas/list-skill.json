@@ -2,16 +2,139 @@
   {
     "id": 1,
     "name": "Front-end",
-    "content": "JavaScript, TypeScript, Angular, Angular CLI, React.js, HTML, Feuilles de style en cascade (CSS), Sass, Angular Material, RxJS"
+    "skills": [
+      {
+        "id": 1,
+        "name": "JavaScript",
+        "svg": "../../../../../assets/pictures/logo-javascript.svg"
+      },
+      {
+        "id": 2,
+        "name": "TypeScript",
+        "svg": "../../../../../assets/pictures/logo-typescript.svg"
+      },
+      {
+        "id": 3,
+        "name": "Angular",
+        "svg": "../../../../../assets/pictures/logo-angular.svg"
+      },
+      {
+        "id": 4,
+        "name": "React.js",
+        "svg": "../../../../../assets/pictures/logo-react.svg"
+      },
+      {
+        "id": 5,
+        "name": "HTML",
+        "svg": "../../../../../assets/pictures/logo-html5.svg"
+      },
+      {
+        "id": 6,
+        "name": "CSS",
+        "svg": "../../../../../assets/pictures/logo-css3.svg"
+      },
+      {
+        "id": 7,
+        "name": "Sass",
+        "svg": "../../../../../assets/pictures/logo-sass.svg"
+      },
+      {
+        "id": 8,
+        "name": "Angular Material",
+        "svg": "../../../../../assets/pictures/logo-angular.svg"
+      },
+      {
+        "id": 9,
+        "name": "RxJS",
+        "svg": "../../../../../assets/pictures/logo-rxjs.svg"
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Back-end",
-    "content": "Java, Node.js, Express.js, Bases de données, Spring Boot, Spring Data, Hibernate, SQL, MySQL, JUnit, Mockito,"
+    "skills": [
+      {
+        "id": 1,
+        "name": "Java",
+        "svg": "../../../../../assets/pictures/logo-java.svg"
+      },
+      {
+        "id": 2,
+        "name": "Node.js",
+        "svg": "../../../../../assets/pictures/logo-nodejs.svg"
+      },
+      {
+        "id": 3,
+        "name": "Express.js",
+        "svg": "../../../../../assets/pictures/logo-expressjs-ar21.svg"
+      },
+      {
+        "id": 4,
+        "name": "Spring Boot",
+        "svg": "../../../../../assets/pictures/logo-springboot.svg"
+      },
+      {
+        "id": 5,
+        "name": "Spring Data JPA",
+        "svg": "../../../../../assets/pictures/logo-spring.svg"
+      },
+      {
+        "id": 6,
+        "name": "Hibernate",
+        "svg": "../../../../../assets/pictures/logo-hibernate.svg"
+      },
+      {
+        "id": 7,
+        "name": "Spring Security",
+        "svg": "../../../../../assets/pictures/logo-springsecurity.svg"
+      },
+      {
+        "id": 8,
+        "name": "SQL",
+        "svg": "../../../../../assets/pictures/logo-sql.svg"
+      },
+      {
+        "id": 9,
+        "name": "MySQL",
+        "svg": "../../../../../assets/pictures/logo-mysql.svg"
+      },
+      {
+        "id": 10,
+        "name": "JUnit",
+        "svg": "../../../../../assets/pictures/logo-junit5.svg"
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Générales",
-    "content": "Méthodes agiles, Git, GitHub, Docker, Intégration, Visual Studio Code, Réalisation de tests"
+    "skills": [
+      {
+        "id": 1,
+        "name": "Git",
+        "svg": "../../../../../assets/pictures/logo-git.svg"
+      },
+      {
+        "id": 2,
+        "name": "GitHub",
+        "svg": "../../../../../assets/pictures/logo-github.svg"
+      },
+      {
+        "id": 3,
+        "name": "Docker",
+        "svg": "../../../../../assets/pictures/logo-docker.svg"
+      },
+      {
+        "id": 4,
+        "name": "Visual Studio Code",
+        "svg": "../../../../../assets/pictures/logo-vsco.svg"
+      },
+      {
+        "id": 5,
+        "name": "Figma",
+        "svg": "../../../../../assets/pictures/logo-figma.svg"
+      }
+    ]
   }
 ]
