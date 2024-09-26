@@ -5,6 +5,7 @@ section {
   width: 5.5rem;
   height: 5.5rem;
   background-color: var(--card-quality-background-color);
+  border: 1px solid var(--card-quality-border-color);
   border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 1fr;

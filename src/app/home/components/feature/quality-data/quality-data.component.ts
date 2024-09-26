@@ -17,14 +17,14 @@ export class QualityDataComponent implements OnInit {
 
   themeImages: { light: ThemeImages; dark: ThemeImages } = {
     light: {
-      teach: 'assets/pictures/logo-teach-light.png',
-      team: 'assets/pictures/logo-team-light.png',
-      curious: 'assets/pictures/logo-curious-light.png',
-    },
-    dark: {
       teach: 'assets/pictures/logo-teach-dark.png',
       team: 'assets/pictures/logo-team-dark.png',
       curious: 'assets/pictures/logo-curious-dark.png',
+    },
+    dark: {
+      teach: 'assets/pictures/logo-teach-light.png',
+      team: 'assets/pictures/logo-team-light.png',
+      curious: 'assets/pictures/logo-curious-light.png',
     },
   };
 

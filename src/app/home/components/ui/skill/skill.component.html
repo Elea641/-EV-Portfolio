@@ -13,7 +13,10 @@
       <h3>{{ skill.name }}</h3>
       <ul *ngFor="let data of skill.skills">
         <li>
-          <img [src]="data?.svg" alt="{{ data.name }}" />
+          <img
+            [src]="data?.svg"
+            [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+            alt="{{ data.name }}" />
           <p>{{ data.name }}</p>
         </li>
       </ul>

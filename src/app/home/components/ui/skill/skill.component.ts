@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Skill } from 'src/app/home/models/skill.type';
+import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
 
 @Component({
   selector: 'app-skill',
@@ -9,6 +10,15 @@ import { Skill } from 'src/app/home/models/skill.type';
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.scss'],
 })
-export class SkillComponent {
+export class SkillComponent implements OnInit {
   @Input() skills!: Skill[];
+  isDarkTheme = false;
+
+  constructor(public themeUtilService: ThemeUtilService) {}
+
+  ngOnInit() {
+    this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
+      this.isDarkTheme = !isLight;
+    });
+  }
 }

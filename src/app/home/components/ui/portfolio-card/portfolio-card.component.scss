@@ -6,6 +6,7 @@ article {
   width: 100%;
   background-color: var(--card-portfolio-background-color);
   color: var(--card-portfolio-text-color);
+  border: 1px solid var(--card-portfolio-border-color);
   border-radius: 0.5rem;
 
   figure {
