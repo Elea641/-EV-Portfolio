@@ -2,14 +2,14 @@
 @import '../../../../../assets/styles/var';
 
 section {
-  width: 6rem;
-  height: 6rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background-color: var(--card-quality-background-color);
   border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 0.5rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
 
   img {
     width: 2rem;

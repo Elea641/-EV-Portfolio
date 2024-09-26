@@ -12,14 +12,14 @@ section {
   }
 
   header {
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
     @include flex-column-align-center;
 
     hr {
       margin-top: 1.8rem;
-      width: 4rem;
-      border-bottom: 3px solid red;
+      width: 5rem;
+      border-bottom: 3px solid $--primary-color-hr;
     }
   }
 
@@ -32,6 +32,6 @@ section {
   hr:last-child {
     margin: 2rem 0 0 0;
     width: 70vw;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid $--primary-color-hr;
   }
 }

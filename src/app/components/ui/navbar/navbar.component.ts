@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { Component, AfterViewInit, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
 import { ThemeImages } from 'src/app/home/models/themeImages.interface';
@@ -10,7 +10,7 @@ import { ThemeImages } from 'src/app/home/models/themeImages.interface';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent implements AfterViewInit {
+export class NavbarComponent implements AfterViewInit, OnInit {
   isNavActive = false;
   isScrolled = false;
   currentImages: ThemeImages;

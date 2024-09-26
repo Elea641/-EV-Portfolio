@@ -2,9 +2,11 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 section {
-  height: calc(35vh + 6rem);
+  height: calc(35vh + 4rem);
   width: 100vw;
   padding: 0 2rem;
+  background-color: $--background-color-cv;
+  color: #303030;
   @include flex-column-align-center;
   justify-content: space-evenly;
   @include media-tablet-screen {
@@ -19,11 +21,20 @@ section {
     }
   }
 
+  // button {
+  //   height: 3.4rem;
+  //   width: 10rem;
+  //   border-radius: 35rem;
+  //   font-size: 1rem;
+  //   font-weight: 600;
+  // }
+
   button {
-    height: 3.4rem;
     width: 10rem;
-    border-radius: 35rem;
-    font-size: 1rem;
-    font-weight: 600;
+    height: 3.2rem;
+    background-color: $--primary-background-color;
+    color: $--primary-color-text;
+    border: 1px solid $--secondary-color-border;
+    border-radius: 0.5rem;
   }
 }

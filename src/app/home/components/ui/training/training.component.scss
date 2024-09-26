@@ -11,8 +11,15 @@ section {
   }
 
   header {
-    margin-top: 6rem;
+    margin-top: 4rem;
     text-align: center;
+    @include flex-column-align-center;
+
+    hr {
+      margin-top: 1.8rem;
+      width: 5rem;
+      border-bottom: 3px solid $--primary-color-hr;
+    }
   }
 
   ul {
