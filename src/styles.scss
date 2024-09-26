@@ -23,6 +23,8 @@ html {
   --button-text-color: #{$--primary-color-button};
   --button-background-color-second: #{$--secondary-background-color};
   --button-text-color-second: #{$--secondary-color-text};
+  --card-quality-background-color: #{$--secondary-background-color};
+  --card-quality-text-color: #{$--secondary-color-text};
 }
 
 .light-theme {
@@ -34,6 +36,8 @@ html {
   --button-text-color: #{$--secondary-color-button};
   --button-background-color-second: #{$--primary-background-color};
   --button-text-color-second: #{$--primary-color-text};
+  --card-quality-background-color: #{$--primary-background-color};
+  --card-quality-text-color: #{$--primary-color-text};
 }
 
 body {

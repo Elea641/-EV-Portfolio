@@ -19,7 +19,6 @@ export class ThemeUtilService {
 
   toggleTheme() {
     this.isLightTheme = !this.isLightTheme;
-    console.log('Toggling theme:', this.isLightTheme); 
     const themeClass = this.isLightTheme ? 'light-theme' : '';
     document.body.className = themeClass;
     localStorage.setItem('theme', themeClass);

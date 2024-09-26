@@ -1,5 +1,7 @@
 <ul>
-  <li *ngFor="let img of imagesArray">
+  <li
+    *ngFor="let img of imagesArray; let last = last"
+    [ngClass]="{ 'last-image': last }">
     <app-quality-card [data]="img"></app-quality-card>
   </li>
 </ul>

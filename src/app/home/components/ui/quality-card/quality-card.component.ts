@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './quality-card.component.html',
-  styleUrls: ['./quality-card.component.scss']
+  styleUrls: ['./quality-card.component.scss'],
 })
 export class QualityCardComponent {
-  @Input() data!: string;
+  @Input() data!: { image: string; name: string };
 }

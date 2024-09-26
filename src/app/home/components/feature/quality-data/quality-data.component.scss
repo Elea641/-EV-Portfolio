@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/mixins.scss';
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  li {
+    margin: 1rem;
+  }
+
+  .last-image {
+    width: 5rem;
+    height: 5rem;
+    ::ng-deep img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}

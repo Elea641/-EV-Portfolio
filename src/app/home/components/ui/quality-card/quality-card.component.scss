@@ -1,6 +1,28 @@
+@import '../../../../../assets/styles/mixins.scss';
+@import '../../../../../assets/styles/var';
+
 section {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--card-quality-background-color);
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0.5rem;
+
   img {
-    width: 5rem;
-    height: 5rem;
+    width: 2rem;
+    height: 2rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  p {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    color: var(--card-quality-text-color);
+    font-size: 0.8rem;
   }
 }
