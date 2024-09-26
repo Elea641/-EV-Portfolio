@@ -8,7 +8,7 @@ describe('PortfolioModalComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [PortfolioModalComponent]
+      imports: [PortfolioModalComponent],
     });
     fixture = TestBed.createComponent(PortfolioModalComponent);
     component = fixture.componentInstance;
