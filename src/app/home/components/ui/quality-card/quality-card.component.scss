@@ -19,6 +19,13 @@ section {
     align-self: center;
   }
 
+  .svg-filter-dark {
+    filter: brightness(0) saturate(100%) invert(58%) sepia(66%) saturate(2474%) hue-rotate(236deg) brightness(91%) contrast(105%); }
+
+  .svg-filter-light {
+filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
+  }
+
   p {
     text-align: center;
     justify-self: center;

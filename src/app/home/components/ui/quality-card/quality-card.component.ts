@@ -9,5 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./quality-card.component.scss'],
 })
 export class QualityCardComponent {
-  @Input() data!: { image: string; name: string };
+  @Input() data!: { img: string; name: string };
+  @Input() isDarkTheme!: boolean;
 }

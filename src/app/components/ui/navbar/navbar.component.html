@@ -3,7 +3,10 @@
   <ul>
     <li>
       <button (click)="toggleTheme()">
-        <img [src]="currentImages.moon" alt="Changer de thème" />
+        <img
+          src="../../../../assets/pictures/logo-moon.svg"
+          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+          alt="Image permettant de changer de thème" />
       </button>
     </li>
     <li>
@@ -12,7 +15,10 @@
         target="_blank"
         rel="noopener noreferrer"
         (click)="closeMenu()">
-        <img [src]="currentImages.github" alt="Accéder à mon profil GitHub" />
+        <img
+          src="../../../../assets/pictures/logo-github.svg"
+          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+          alt="Accéder à mon profil GitHub" />
       </a>
     </li>
     <li>
@@ -22,7 +28,8 @@
         rel="noopener noreferrer"
         (click)="closeMenu()">
         <img
-          [src]="currentImages.linkedin"
+          src="../../../../assets/pictures/logo-linkedin.svg"
+          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
           alt="Accéder à mon profil LinkedIn" />
       </a>
     </li>
@@ -30,7 +37,8 @@
       <img
         id="burger"
         class="burger"
-        [src]="currentImages.burger"
+        src="../../../../assets/pictures/logo-burger-menu.svg"
+        [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
         alt="Icone pour ouvrir le menu" />
       <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
         <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>

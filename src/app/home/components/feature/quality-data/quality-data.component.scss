@@ -12,12 +12,9 @@ ul {
     margin: 0.8rem;
   }
 
-  .last-image {
-    width: 5.5rem;
-    height: 5.5rem;
-    ::ng-deep img {
-      width: 1.2rem;
-      height: 1.2rem;
-    }
+  img {
+    width: 1.2rem;
+    height: 1.2rem;
+    justify-self: center;
   }
 }

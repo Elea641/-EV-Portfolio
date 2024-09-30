@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* ELEMENTS COLORS */
-$--primary-background-color: #303030;
-$--secondary-background-color: #f5eaea;
-$--background-color-cv: #d6a4a4;
+$--primary-background-color: #020104;
+$--secondary-background-color: #fcfbfe;
+$--background-color-cv-light: #090217;
+$--background-color-cv-dark: #d068ed;
 
 /* TEXT COLORS */
-$--primary-color-text: #f5eaea;
-$--secondary-color-text: #303030;
+$--primary-color-text: #efe8fd;
+$--secondary-color-text: #090217;
 
 /* TEXT FONT */
 $--font-family-poppins: 'Poppins', Verdana, sans-serif;
@@ -23,19 +24,39 @@ $--font-size-li: 1rem;
 $--font-size-button: 1.2rem;
 
 /* BUTTONS COLORS */
-$--primary-color-button: #f5eaea;
-$--secondary-color-button: #303030;
+$--primary-color-button: #fcfbfe;
+$--secondary-color-button: #090217;
+$--primary-background-button: #fcfbfe;
+$--secondary-background-button: #090217;
+$--accent-background-button: #d068ed;
 
 /* BORDER COLORS */
-$--primary-color-border: #f5eaea;
-$--secondary-color-border: #303030;
+$--primary-color-border: #fcfbfe;
+$--secondary-color-border: #090217;
+$--navbar-border-color: #d068ed;
 
 /* INPUTS COLORS */
-$--primary-color-input: #303030;
+$--primary-color-input: #090217;
 
 /* HR COLORS */
-$--primary-color-hr: #d6a4a4;
+$--primary-color-hr: #d068ed;
+$--secondary-color-hr: #090217;
 
-/* SVG COLORS */
-$--primary-color-svg: #d6a4a4;
-$--secondary-color-svg: #f5eaea;
+// /* Tests COLORS */
+// $--primary-color-text-light: #0d0217;
+// $--secondary-color-text-dark: #f3e8fd;
+
+// $--primary-color-background-light: #fcfbfe;
+// $--secondary-color-background-dark: #020104;
+
+// $--primary-color-primary-light: #8327ce;
+// $--secondary-color-primary-dark: #8d31d8;
+
+// $--primary-color-secondary-light: #d5aef9;
+// $--secondary-color-secondary-dark: #2d0651;
+
+// $--primary-color-accent-light: #a127ce;
+// $--secondary-color-accent-dark: #ab31d8;
+
+// $--primary-color-card-light: #f6f0fb;
+// $--secondary-color-card-dark: #09030f;

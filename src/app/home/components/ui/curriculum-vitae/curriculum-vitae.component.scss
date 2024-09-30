@@ -5,8 +5,8 @@ section {
   height: calc(35vh + 4rem);
   width: 100vw;
   padding: 0 2rem;
-  background-color: $--background-color-cv;
-  color: #303030;
+  background-color: var(--cv-background-color);
+  color: var(--cv-text-color);
   @include flex-column-align-center;
   justify-content: space-evenly;
   @include media-tablet-screen {
@@ -21,20 +21,12 @@ section {
     }
   }
 
-  // button {
-  //   height: 3.4rem;
-  //   width: 10rem;
-  //   border-radius: 35rem;
-  //   font-size: 1rem;
-  //   font-weight: 600;
-  // }
-
   button {
     width: 10rem;
     height: 3.2rem;
-    background-color: $--primary-background-color;
-    color: $--primary-color-text;
-    border: 1px solid $--secondary-color-border;
+    background-color: var(--button-background-color-second);
+    border: 1px solid var(--cv-background-color-button);
+    color: var(--button-text-color-second);
     border-radius: 0.5rem;
   }
 }

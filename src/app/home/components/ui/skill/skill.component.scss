@@ -19,7 +19,6 @@ section {
     hr {
       margin-top: 1.8rem;
       width: 5rem;
-      border-bottom: 3px solid $--primary-color-hr;
     }
   }
 
@@ -60,13 +59,10 @@ section {
           }
 
           .svg-filter-dark {
-            filter: brightness(0) saturate(100%) invert(99%) sepia(35%)
-              saturate(2417%) hue-rotate(292deg) brightness(88%) contrast(90%);
-          }
+            filter: brightness(0) saturate(100%) invert(58%) sepia(66%) saturate(2474%) hue-rotate(236deg) brightness(91%) contrast(105%);  }
 
           .svg-filter-light {
-            filter: invert(15%) sepia(10%) saturate(0%) hue-rotate(0deg);
-          }
+            filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);          }
         }
       }
     }
@@ -80,6 +76,5 @@ section {
   hr:last-child {
     margin: 2rem 0 0 0;
     width: 70vw;
-    border-bottom: 3px solid $--primary-color-hr;
   }
 }

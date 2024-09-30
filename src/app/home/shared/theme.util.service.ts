@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { ThemeImages } from '../models/themeImages.interface';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -23,9 +22,5 @@ export class ThemeUtilService {
     document.body.className = themeClass;
     localStorage.setItem('theme', themeClass);
     this.themeSubject.next(this.isLightTheme);
-  }
-
-  updateImages(themeImages: { light: ThemeImages; dark: ThemeImages }) {
-    return this.isLightTheme ? themeImages.light : themeImages.dark;
   }
 }

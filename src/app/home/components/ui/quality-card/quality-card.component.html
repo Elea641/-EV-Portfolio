@@ -1,4 +1,7 @@
 <section class="quality-card">
-  <img [src]="data.image" alt="Image représentant une qualité mise en avant" />
+  <img
+    [src]="data.img"
+    [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+    alt="Image représentant une qualité mise en avant" />
   <p>{{ data.name }}</p>
 </section>
