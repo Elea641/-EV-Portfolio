@@ -1,4 +1,4 @@
-<article>
+<article [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'">
   <figure>
     <a [href]="data.github_url" target="_blank" rel="noopener noreferrer">
       <img

@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Project } from 'src/app/home/models/project.type';
 import { PortfolioModalComponent } from '../portfolio-modal/portfolio-modal.component';
+import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
 
 @Component({
   selector: 'app-portfolio-card',
@@ -13,6 +14,15 @@ import { PortfolioModalComponent } from '../portfolio-modal/portfolio-modal.comp
 export class PortfolioCardComponent {
   @Input() data!: Project;
   isModalOpen = false;
+  isDarkTheme = false;
+
+  constructor(public themeUtilService: ThemeUtilService) {}
+
+  ngOnInit() {
+    this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
+      this.isDarkTheme = !isLight;
+    });
+  }
 
   openModal() {
     this.isModalOpen = true;

@@ -35,18 +35,30 @@ article {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('../../../../../assets/pictures/logo-plus.png');
-        background-size: 3rem;
+        background-image: url('../../../../../assets/pictures/logo-plus.svg');
+        background-size: 8rem;
         background-repeat: no-repeat;
         background-position: center;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition:
+          opacity 0.3s ease,
+          filter 0.3s ease;
       }
 
       &:hover::after {
         opacity: 0.9;
       }
     }
+  }
+
+  &.svg-filter-dark figure a::after {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%)
+      hue-rotate(314deg) brightness(102%) contrast(89%);
+  }
+
+  &.svg-filter-light figure a::after {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%)
+      hue-rotate(230deg) brightness(100%) contrast(110%);
   }
 
   section {
