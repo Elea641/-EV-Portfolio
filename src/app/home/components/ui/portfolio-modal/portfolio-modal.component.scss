@@ -11,6 +11,9 @@
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 
   article {
     margin: 2rem 0;
@@ -58,6 +61,11 @@
   }
 }
 
+.modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal-content {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -67,7 +75,7 @@
 }
 
 .close-button {
-  color: var(--button-text-color);
+  color: var(--card-portfolio-modal-button);
   position: absolute;
   top: 9rem;
   right: 2rem;

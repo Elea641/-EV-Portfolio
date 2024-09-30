@@ -1,1 +1,18 @@
-<p>carousel works!</p>
+<!-- eslint-disable @angular-eslint/template/elements-content -->
+<div class="carousel-container">
+  <img
+    src="../../../../../assets/pictures/photo-carousel.jpg"
+    alt="background"
+    class="carousel-background" />
+  <div class="carousel-content">
+    <p class="quote-text">"{{ quotes[currentSlide].text }}"</p>
+    <p class="quote-author">- {{ quotes[currentSlide].author }}</p>
+  </div>
+  <div class="carousel-indicators">
+    <button
+      *ngFor="let quote of quotes; let i = index"
+      class="dot"
+      [ngClass]="{ active: i === currentSlide }"
+      (click)="setSlide(i)"></button>
+  </div>
+</div>

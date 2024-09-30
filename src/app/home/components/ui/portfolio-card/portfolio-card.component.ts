@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Project } from 'src/app/home/models/project.type';
 import { PortfolioModalComponent } from '../portfolio-modal/portfolio-modal.component';
@@ -11,7 +11,7 @@ import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
   templateUrl: './portfolio-card.component.html',
   styleUrls: ['./portfolio-card.component.scss'],
 })
-export class PortfolioCardComponent {
+export class PortfolioCardComponent implements OnInit {
   @Input() data!: Project;
   isModalOpen = false;
   isDarkTheme = false;
@@ -26,9 +26,8 @@ export class PortfolioCardComponent {
 
   openModal() {
     this.isModalOpen = true;
-  }
-
-  closeModal() {
-    this.isModalOpen = false;
+    setTimeout(() => {
+      document.querySelector('.modal')?.classList.add('modal-open');
+    }, 0);
   }
 }

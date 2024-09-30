@@ -13,6 +13,6 @@ export class PortfolioModalComponent {
   @Input() project: Project | null = null;
 
   closeModal() {
-    this.project = null;
+    document.querySelector('.modal')?.classList.remove('modal-open');
   }
 }

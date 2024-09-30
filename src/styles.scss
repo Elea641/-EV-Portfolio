@@ -33,12 +33,15 @@ html {
   --card-portfolio-border-color: #{$--primary-color-border};
   --card-portfolio-button-border-color: #{$--primary-color-text};
   --card-portfolio-button-text-color: #{$--primary-color-button};
+  --card-portfolio-modal-button: #{$--accent-color-text};
   --input-textara-border-color: #{$--primary-color-border};
   --input-textara-text-color: #{$--primary-color-text};
   --cv-text-color: #{$--secondary-color-text};
   --cv-background-color: #{$--background-color-cv-dark};
   --cv-background-color-button: #{$--secondary-color-button};
   --hr-color: #{$--primary-color-hr};
+  --footer-background: #{$--primary-background-color};
+  --footer-color: #{$--primary-color-text};
 }
 
 .light-theme {
@@ -60,12 +63,15 @@ html {
   --card-portfolio-border-color: #{$--secondary-color-border};
   --card-portfolio-button-border-color: #{$--secondary-color-text};
   --card-portfolio-button-text-color: #{$--secondary-color-button};
+  --card-portfolio-modal-button: #{$--secondary-color-text};
   --input-textara-border-color: #{$--secondary-color-border};
   --input-textara-text-color: #{$--secondary-color-text};
   --cv-text-color: #{$--primary-color-text};
   --cv-background-color: #{$--background-color-cv-light};
   --cv-background-color-button: #{$--primary-background-button};
   --hr-color: #{$--secondary-color-hr};
+  --footer-background: #{$--background-color-footer-light};
+  --footer-color: #{$--primary-color-text};
 }
 
 body {
@@ -110,6 +116,7 @@ button {
   background-color: transparent;
   border: none;
   font-size: $--font-size-button;
+  cursor: pointer;
 }
 
 hr {

@@ -1,0 +1,66 @@
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
+
+.carousel-container {
+  margin-top: 4rem;
+  position: relative;
+  width: 100vw;
+  height: 20rem;
+  overflow: hidden;
+  @include flex-justify-align-center;
+
+  .carousel-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0.2rem);
+    z-index: 1;
+  }
+
+  .carousel-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: $--primary-color-text;
+    width: 100%;
+    font-size: 5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+
+    .quote-text {
+      font-style: italic;
+    }
+
+    .quote-author {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.6s ease;
+
+      &.active {
+        background-color: $--primary-color-text;
+      }
+    }
+  }
+}

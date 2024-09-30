@@ -7,9 +7,6 @@ section {
   padding: 0 2rem;
   @include flex-column-align-center;
   justify-content: space-between;
-  @include media-tablet-screen {
-    width: calc(100vw - 1.2rem);
-  }
 
   header {
     margin-top: 4rem;
@@ -26,10 +23,5 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  hr:last-child {
-    margin: 2rem 0 0 0;
-    width: 70vw;
   }
 }

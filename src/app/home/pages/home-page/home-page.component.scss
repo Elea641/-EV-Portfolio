@@ -4,7 +4,4 @@
 main {
   position: relative;
   width: 100vw;
-  @include media-tablet-screen {
-    width: calc(100vw - 1.2rem);
-  }
 }

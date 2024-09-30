@@ -9,9 +9,6 @@ section {
   color: var(--cv-text-color);
   @include flex-column-align-center;
   justify-content: space-evenly;
-  @include media-tablet-screen {
-    width: calc(100vw - 1.2rem);
-  }
 
   header {
     text-align: center;

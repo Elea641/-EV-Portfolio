@@ -8,10 +8,6 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 
-  @include media-tablet-screen {
-    width: calc(100vw - 1.2rem);
-  }
-
   header {
     margin-top: 4rem;
     text-align: center;
@@ -37,8 +33,9 @@ section {
   }
 
   a {
-    display: flex;
-    justify-content: center;
+    justify-self: center;
+    width: 10rem;
+    height: 3.2rem;
   }
 
   button {

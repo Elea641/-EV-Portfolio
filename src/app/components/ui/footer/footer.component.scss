@@ -4,14 +4,13 @@
 footer {
   height: 10rem;
   width: 100vw;
+  background-color: var(--footer-background);
   @include flex-justify-align-center;
-  @include media-tablet-screen {
-    width: calc(100vw - 1.2rem);
-  }
-
+  
   a {
     p {
       text-align: center;
+      color: var(--footer-color);
     }
   }
 }

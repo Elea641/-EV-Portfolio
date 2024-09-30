@@ -20,7 +20,8 @@ section {
   }
 
   .svg-filter-dark {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%)
+      hue-rotate(314deg) brightness(102%) contrast(89%);
   }
 
   .svg-filter-light {
