@@ -8,7 +8,7 @@ import {
   Validators,
 } from '@angular/forms';
 import emailjs from 'emailjs-com';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-contact',
