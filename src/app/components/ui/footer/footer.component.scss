@@ -3,14 +3,16 @@
 
 footer {
   height: 10rem;
-  width: 100vw;
+  width: 100%;
   background-color: var(--footer-background);
   @include flex-justify-align-center;
 
   a {
+    width: 90%;
     p {
       text-align: center;
       color: var(--footer-color);
+      width: 90%;
     }
   }
 }

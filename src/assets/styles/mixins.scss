@@ -38,6 +38,12 @@
   align-items: center;
 }
 
+@mixin flex-justify-align-space-between-stretch {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 /* Media Screen*/
 @mixin media-mobile-screen {
   @media screen and (max-width: 767px) {

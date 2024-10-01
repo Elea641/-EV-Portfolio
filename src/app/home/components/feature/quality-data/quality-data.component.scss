@@ -1,20 +1,12 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100vw;
+  @include flex-justify-align-space-between-stretch;
+
   padding: 0 2rem;
   margin-top: 2rem;
 
   li {
-    margin: 0.8rem;
-  }
-
-  img {
-    width: 1.2rem;
-    height: 1.2rem;
-    justify-self: center;
+    margin: 0.5rem;
   }
 }
