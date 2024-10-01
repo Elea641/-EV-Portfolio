@@ -6,7 +6,8 @@
     <h3>{{ data.trainingCenter }}</h3>
     <p>{{ data.name }}</p>
     <p>{{ data.date }}</p>
-    <p [innerHTML]="data.content"></p>
-    <p>{{ data.technos }}</p>
+    <button (click)="openModal()">Voir détails</button>
   </section>
 </article>
+
+<app-training-modal *ngIf="isModalOpen" [training]="data"></app-training-modal>

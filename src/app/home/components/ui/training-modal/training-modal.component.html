@@ -1,0 +1,12 @@
+<div *ngIf="training" class="modal">
+  <article class="modal-content">
+    <button class="close-button" (click)="closeModal()">&times;</button>
+    <section>
+      <h3>{{ training.trainingCenter }}</h3>
+      <p>{{ training.name }}</p>
+      <p>{{ training.date }}</p>
+      <p [innerHTML]="training.content"></p>
+      <p>{{ training.technos }}</p>
+    </section>
+  </article>
+</div>
