@@ -8,8 +8,7 @@ import {
   Validators,
 } from '@angular/forms';
 import emailjs from 'emailjs-com';
-import { environmentDev } from 'src/environments/environment';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -25,30 +24,20 @@ export class ContactComponent {
     message: new FormControl('', [Validators.required]),
   });
 
-  serviceId = environment.production
-    ? environment.EMAIL_SERVICE_ID
-    : environmentDev.DEV_EMAIL_SERVICE_ID;
-  templateId = environment.production
-    ? environment.EMAIL_TEMPLATE_ID
-    : environmentDev.DEV_EMAIL_TEMPLATE_ID;
-  userId = environment.production
-    ? environment.EMAIL_USER_ID
-    : environmentDev.DEV_EMAIL_USER_ID;
-
   async onSubmit() {
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
 
       try {
         await emailjs.send(
-          this.serviceId,
-          this.templateId,
+          environment.EMAIL_SERVICE_ID,
+          environment.EMAIL_TEMPLATE_ID,
           {
             from_name: formData.name,
             from_email: formData.email,
             message: formData.message,
           },
-          this.userId
+          environment.EMAIL_USER_ID
         );
         alert('Message envoyé avec succès!');
         this.contactForm.reset();
