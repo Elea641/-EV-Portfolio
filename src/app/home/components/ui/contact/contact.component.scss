@@ -21,6 +21,15 @@ section {
     @include flex-column-align-center;
     margin-top: 3rem;
 
+    .error {
+      margin: 0 0 0.5rem 0;
+      width: 100%;
+      font-size: 0.9rem;
+      text-align: left;
+      font-weight: 600;
+      font-family: $--font-family-roboto;
+    }
+
     label,
     input,
     textarea,
@@ -64,6 +73,11 @@ section {
       border-radius: 0.5rem;
       font-size: 1rem;
       font-weight: 600;
+    }
+
+    button:disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
     }
   }
 }

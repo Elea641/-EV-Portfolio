@@ -13,18 +13,48 @@
       type="text"
       formControlName="name"
       placeholder="Nom et prénom *" />
+
     <label for="email">Email *</label>
     <input
       id="email"
       type="email"
       formControlName="email"
       placeholder="Email *" />
+
     <label for="message">Message *</label>
     <textarea
       id="message"
       formControlName="message"
-      placeholder="Saisissez votre message *"></textarea>
+      placeholder="Saisissez votre message *">
+    </textarea>
+
     <p>* Indique un champ obligatoire</p>
+
+    <ng-container
+      *ngIf="
+        contactForm.get('name')?.invalid && contactForm.get('name')?.touched
+      ">
+      <p class="error">Le nom et prénom sont requis.</p>
+    </ng-container>
+    <ng-container
+      *ngIf="
+        contactForm.get('email')?.invalid && contactForm.get('email')?.touched
+      ">
+      <p *ngIf="contactForm.get('email')?.errors?.['required']" class="error">
+        L'email est requis.
+      </p>
+      <p *ngIf="contactForm.get('email')?.errors?.['email']" class="error">
+        L'email n'est pas valide.
+      </p>
+    </ng-container>
+    <ng-container
+      *ngIf="
+        contactForm.get('message')?.invalid &&
+        contactForm.get('message')?.touched
+      ">
+      <p class="error">Le message est requis.</p>
+    </ng-container>
+
     <button type="submit" [disabled]="!contactForm.valid">ENVOYER</button>
   </form>
 </section>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TrainingCardComponent } from '../training-card/training-card.component';
 import { Training } from 'src/app/home/models/training.type';
