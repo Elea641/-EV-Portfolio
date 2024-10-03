@@ -1,6 +1,9 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 export const environment = {
   production: false,
-  EMAIL_SERVICE_ID: 'service_v1h3ekk',
-  EMAIL_TEMPLATE_ID: 'template_gs4x49o',
-  EMAIL_USER_ID: 'Rzeq3K0MvRz40XWzA',
+  EMAIL_SERVICE_ID: process.env['EMAIL_SERVICE_ID'],
+  EMAIL_TEMPLATE_ID: process.env['EMAIL_TEMPLATE_ID'],
+  EMAIL_USER_ID: process.env['EMAIL_USER_ID'],
 };
