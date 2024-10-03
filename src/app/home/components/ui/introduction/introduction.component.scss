@@ -10,14 +10,14 @@ section {
 
   header {
     margin-top: 4rem;
-    width: 80vw;
-    text-align: center;
+    width: 60vw;
     grid-column: span 2;
     align-self: center;
+    justify-self: center;
 
     h1 {
       font-size: 1.4rem;
-      width: 80vw;
+      text-align: center;
     }
   }
 
@@ -36,7 +36,8 @@ section {
     font-size: 1rem;
     text-align: center;
     grid-column: span 2;
-    width: 80vw;
+    justify-self: center;
+    width: 60vw;
   }
 
   a {
