@@ -14,12 +14,16 @@ export class CarouselComponent implements OnInit, OnDestroy {
 
   quotes = [
     {
-      text: 'The only limit to our realization of tomorrow is our doubts of today.',
-      author: 'Franklin D. Roosevelt',
+      text: "Si c'est cassé, répare-le. Si ce n'est pas cassé, rends-le meilleur.",
+      author: 'Steve Jobs',
     },
     {
-      text: 'Success is not final, failure is not fatal: It is the courage to continue that counts.',
-      author: 'Winston Churchill',
+      text: "Il n'y a pas de bug, seulement des fonctionnalités imprévues.",
+      author: 'Inconnu',
+    },
+    {
+      text: "Le code parfait n'existe pas, mais cela ne doit pas nous empêcher de le chercher.",
+      author: 'Robert C. Martin (Uncle Bob)',
     },
   ];
 
@@ -36,7 +40,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
   startAutoSlide() {
     this.intervalId = setInterval(() => {
       this.nextSlide();
-    }, 10000); // Change de slide toutes les 10 secondes
+    }, 10000);
   }
 
   nextSlide() {
