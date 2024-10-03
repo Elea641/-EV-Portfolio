@@ -64,7 +64,7 @@
 }
 
 @mixin media-large-screen {
-  @media screen and (min-width: 1024px) and (max-width: 2000px) {
+  @media screen and (min-width: 1024px) {
     @content;
   }
 }

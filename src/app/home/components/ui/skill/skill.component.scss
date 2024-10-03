@@ -18,6 +18,18 @@ section {
     }
   }
 
+  p {
+    @include media-tablet-screen {
+      font-size: 1.2rem;
+      width: 85%;
+    }
+
+    @include media-large-screen {
+      font-size: 1.2rem;
+      width: 65%;
+    }
+  }
+
   ul {
     gap: 0.5rem;
     border: 1px solid var(--card-skills-border-color);
@@ -25,6 +37,10 @@ section {
     margin: 0.5rem;
     padding: 0.5rem 0;
     width: 80vw;
+
+    @include media-large-screen {
+      width: 45vw;
+    }
 
     li {
       @include flex-wrap;

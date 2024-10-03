@@ -26,6 +26,10 @@
     position: relative;
     top: 2rem;
 
+    @include media-large-screen {
+      width: 45vw;
+    }
+
     figure {
       margin-right: 1rem;
       width: 3rem;

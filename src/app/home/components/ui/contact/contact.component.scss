@@ -3,8 +3,18 @@
 
 section {
   min-height: 80vh;
+  width: 80vw;
+  margin: auto;
   padding: 0 2rem;
   @include flex-column-align-center;
+
+  @include media-tablet-screen {
+    width: 70vw;
+  }
+
+  @include media-large-screen {
+    width: 45vw;
+  }
 
   header {
     margin-top: 4rem;
@@ -20,6 +30,7 @@ section {
   form {
     @include flex-column-align-center;
     margin-top: 3rem;
+    width: 100%;
 
     .error {
       margin: 0 0 0.5rem 0;
@@ -34,11 +45,12 @@ section {
     input,
     textarea,
     p {
-      width: 85vw;
+      width: 100%;
     }
 
     label {
       text-align: left;
+      width: 100%;
     }
 
     input {
@@ -58,10 +70,12 @@ section {
     textarea {
       border-radius: 0.5rem;
       border: 1px solid var(--input-textara-border-color);
+      width: 100%;
     }
 
     p {
       font-size: 0.8rem;
+      width: 100%;
     }
 
     button {

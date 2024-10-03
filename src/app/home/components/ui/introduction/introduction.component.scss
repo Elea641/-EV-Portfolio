@@ -16,8 +16,16 @@ section {
     justify-self: center;
 
     h1 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       text-align: center;
+
+      @include media-tablet-screen {
+        font-size: 2rem;
+      }
+
+      @include media-large-screen {
+        font-size: 2.6rem;
+      }
     }
   }
 
@@ -30,6 +38,16 @@ section {
     grid-column: span 2;
     align-self: center;
     justify-self: center;
+
+    @include media-tablet-screen {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include media-large-screen {
+      width: 16rem;
+      height: 16rem;
+    }
   }
 
   p {
@@ -38,12 +56,26 @@ section {
     grid-column: span 2;
     justify-self: center;
     width: 60vw;
+
+    @include media-tablet-screen {
+      font-size: 1.4rem;
+      width: 85vw;
+    }
+
+    @include media-large-screen {
+      font-size: 1.4rem;
+      width: 45vw;
+    }
   }
 
   a {
     justify-self: center;
     height: 3.2rem;
     width: 8rem;
+
+    @include media-large-screen {
+      width: 14rem;
+    }
   }
 
   button {
@@ -53,11 +85,34 @@ section {
     border: 1px solid var(--button-text-color);
     border-radius: 0.5rem;
     font-size: 1rem;
+
+    @include media-large-screen {
+      width: 14rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  a:first-of-type button {
+    @include media-tablet-screen {
+      margin-left: 5rem;
+    }
+
+    @include media-large-screen {
+      margin-left: 7rem;
+    }
   }
 
   a:last-of-type button {
     background-color: var(--button-background-color-second);
     color: var(--button-text-color-second);
     border: none;
+
+    @include media-tablet-screen {
+      margin-left: -5rem;
+    }
+
+    @include media-large-screen {
+      margin-left: -7rem;
+    }
   }
 }

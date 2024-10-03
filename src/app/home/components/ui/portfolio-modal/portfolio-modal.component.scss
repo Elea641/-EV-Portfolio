@@ -26,6 +26,10 @@
     position: relative;
     top: 2rem;
 
+    @include media-large-screen {
+      width: 45vw;
+    }
+
     section {
       display: grid;
       grid-template-columns: auto 1fr;

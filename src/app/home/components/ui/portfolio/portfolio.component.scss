@@ -7,6 +7,10 @@ section {
   @include flex-column-align-center;
   justify-content: space-between;
 
+  @include media-large-screen {
+    justify-content: left;
+  }
+
   header {
     margin-top: 4rem;
     text-align: center;
@@ -21,5 +25,10 @@ section {
   ul > li {
     @include flex-wrap;
     justify-content: center;
+    gap: 1rem;
+
+    @include media-large-screen {
+      margin-top: 5rem;
+    }
   }
 }

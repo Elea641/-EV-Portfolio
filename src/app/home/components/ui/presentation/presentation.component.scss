@@ -14,6 +14,16 @@ section {
   p {
     margin: 2rem 0;
     text-align: justify;
+
+    @include media-tablet-screen {
+      font-size: 1.2rem;
+      width: 85%;
+    }
+
+    @include media-large-screen {
+      font-size: 1.2rem;
+      width: 65%;
+    }
   }
 
   img {
