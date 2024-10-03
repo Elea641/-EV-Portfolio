@@ -13,7 +13,7 @@ export const environment = {
 };
 `;
 
-const targetPath = path.join(__dirname, './src/environments/environment.ts');
+const targetPath = path.join(__dirname, './src/environments/environment.prod.ts');
 
 fs.writeFile(targetPath, envFileContent, function (err) {
   if (err) {
