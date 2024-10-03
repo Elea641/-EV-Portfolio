@@ -18,11 +18,13 @@
     visibility 0.5s ease-in-out;
 
   article {
-    margin: 2rem 0;
-    width: 95vw;
-    height: 70vh;
-    display: flex;
+    width: 85vw;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 20px;
     z-index: 1;
+    position: relative;
+    top: 2rem;
 
     figure {
       margin-right: 1rem;
@@ -77,8 +79,8 @@
 .close-button {
   color: var(--card-portfolio-modal-button);
   position: absolute;
-  top: 9rem;
-  right: 2rem;
+  top: 0.5rem;
+  right: 1rem;
   font-size: 3em;
   cursor: pointer;
 }
