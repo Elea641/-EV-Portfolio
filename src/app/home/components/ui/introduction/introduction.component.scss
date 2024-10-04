@@ -118,6 +118,14 @@ section {
 }
 
 hr:last-child {
-  margin: auto;
+  margin: 2rem auto 0 auto;
   width: 75vw;
+
+  @include media-tablet-screen {
+    width: 65vw;
+  }
+
+  @include media-large-screen {
+    width: 55vw;
+  }
 }

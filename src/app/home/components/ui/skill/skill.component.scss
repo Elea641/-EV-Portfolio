@@ -2,20 +2,9 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 section {
-  width: 100%;
   padding: 0 2rem;
   @include flex-wrap;
   justify-content: center;
-
-  @include media-tablet-screen {
-    width: 85vw;
-    margin: auto;
-  }
-
-  @include media-large-screen {
-    width: 85vw;
-    margin: auto;
-  }
 
   header {
     margin-top: 4rem;
@@ -36,12 +25,12 @@ section {
 
     @include media-tablet-screen {
       font-size: 1.2rem;
-      width: 100%;
+      width: 65vw;
     }
 
     @include media-large-screen {
       font-size: 1.2rem;
-      width: 100%;
+      width: 65%;
     }
   }
 
@@ -58,6 +47,7 @@ section {
 
     @include media-large-screen {
       width: 35vw;
+      margin: 1rem;
     }
 
     li {
@@ -80,7 +70,7 @@ section {
         }
 
         @include media-large-screen {
-          width: 8rem;
+          width: 7rem;
         }
 
         li {
@@ -128,4 +118,12 @@ hr:last-child {
   margin: auto;
   width: 75vw;
   margin-top: 4rem;
+
+  @include media-tablet-screen {
+    width: 65vw;
+  }
+
+  @include media-large-screen {
+    width: 55vw;
+  }
 }
