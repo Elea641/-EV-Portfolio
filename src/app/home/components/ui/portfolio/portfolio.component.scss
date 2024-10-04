@@ -2,10 +2,8 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 section {
-  min-height: 100vh;
   padding: 0 2rem;
   @include flex-column-align-center;
-  justify-content: space-between;
 
   @include media-large-screen {
     justify-content: left;
@@ -30,5 +28,9 @@ section {
     @include media-large-screen {
       margin-top: 5rem;
     }
+  }
+
+  li:first-of-type {
+    margin-top: 4rem;
   }
 }

@@ -2,7 +2,6 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 section {
-  min-height: 100vh;
   padding: 0 2rem;
   @include flex-column-align-center;
 
