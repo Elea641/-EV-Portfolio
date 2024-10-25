@@ -1,12 +1,20 @@
 <article>
   <figure>
-    <img [src]="data.url" alt="Miniature de la formation affichée" loading="lazy"/>
+    <img
+      [src]="data.url"
+      alt="Miniature de la formation affichée"
+      loading="lazy" />
   </figure>
   <section>
     <h3>{{ data.trainingCenter }}</h3>
     <p>{{ data.name }}</p>
     <p>{{ data.date }}</p>
-    <button (click)="openModal()" type="button" aria-label="Voir le détail de la formation">Voir détails</button>
+    <button
+      (click)="openModal()"
+      type="button"
+      aria-label="Voir le détail de la formation">
+      Voir détails
+    </button>
   </section>
 </article>
 

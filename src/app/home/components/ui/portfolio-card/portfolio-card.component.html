@@ -3,15 +3,20 @@
     <a [href]="data.github_url" target="_blank" rel="noopener noreferrer">
       <img
         [src]="'assets/pictures/WCS.png'"
-        [alt]="'Miniature du projet ' + data.name" 
-        loading="lazy"/>
+        [alt]="'Miniature du projet ' + data.name"
+        loading="lazy" />
     </a>
   </figure>
   <section>
     <h2>{{ data.name | uppercase }}</h2>
     <p>{{ data.type }}</p>
     <p>{{ data.date }}</p>
-    <button (click)="openModal()" type="button" aria-label="Accéder aux détails du projet">Voir plus</button>
+    <button
+      (click)="openModal()"
+      type="button"
+      aria-label="Accéder aux détails du projet">
+      Voir plus
+    </button>
   </section>
 </article>
 

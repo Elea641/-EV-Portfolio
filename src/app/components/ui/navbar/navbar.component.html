@@ -2,13 +2,15 @@
   <a href="#home" (click)="closeMenu()"><h2>Elea Voliotis</h2></a>
   <ul>
     <li>
-      <button (click)="toggleTheme()"       type="button"
-      aria-label="Changer la couleur du thème">
+      <button
+        (click)="toggleTheme()"
+        type="button"
+        aria-label="Changer la couleur du thème">
         <img
           src="../../../../assets/pictures/logo-moon.svg"
           [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
-          alt="Image permettant de changer de thème" 
-          loading="lazy"/>
+          alt="Image permettant de changer de thème"
+          loading="lazy" />
       </button>
     </li>
     <li>
@@ -20,8 +22,8 @@
         <img
           src="../../../../assets/pictures/logo-github.svg"
           [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
-          alt="Accéder à mon profil GitHub" 
-          loading="lazy"/>
+          alt="Accéder à mon profil GitHub"
+          loading="lazy" />
       </a>
     </li>
     <li>
@@ -33,8 +35,8 @@
         <img
           src="../../../../assets/pictures/logo-linkedin.svg"
           [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
-          alt="Accéder à mon profil LinkedIn" 
-          loading="lazy"/>
+          alt="Accéder à mon profil LinkedIn"
+          loading="lazy" />
       </a>
     </li>
     <li>
@@ -43,8 +45,8 @@
         class="burger"
         src="../../../../assets/pictures/logo-burger-menu.svg"
         [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
-        alt="Icone pour ouvrir le menu" 
-        loading="lazy"/>
+        alt="Icone pour ouvrir le menu"
+        loading="lazy" />
       <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
         <li><a href="#home" (click)="closeMenu()">ACCUEIL</a></li>
         <li><a href="#about" (click)="closeMenu()">A PROPOS</a></li>
