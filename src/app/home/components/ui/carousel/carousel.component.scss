@@ -5,7 +5,7 @@
   margin-top: 4rem;
   position: relative;
   z-index: 0;
-  height: 20rem;
+  height: 15rem;
   overflow: hidden;
   @include flex-justify-align-center;
 
@@ -13,8 +13,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: blur(0.2rem);
     z-index: 1;
   }
 
@@ -25,18 +23,22 @@
     color: $--primary-color-text;
     width: 100%;
     font-size: 5rem;
+    height: 15rem;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.692);
+    backdrop-filter: blur(2px);
+    @include flex-column-align-center;
+
 
     .quote-text {
+      padding-top: 3rem;
       font-style: italic;
     }
 
     .quote-author {
       margin-top: 0.5rem;
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -47,17 +49,18 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-bottom: 2rem;
 
     .dot {
       height: 12px;
       width: 12px;
-      margin: 0 5px;
+      margin: 0 0.5rem;
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 50%;
       display: inline-block;
       cursor: pointer;
       transition: background-color 0.6s ease;
-
+      
       &.active {
         background-color: $--primary-color-text;
       }
