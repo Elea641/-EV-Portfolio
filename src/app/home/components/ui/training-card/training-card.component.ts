@@ -31,6 +31,5 @@ export class TrainingCardComponent implements OnInit {
       document.querySelector('.modal')?.classList.add('modal-open');
       document.body.classList.add('no-scroll');
     }, 0);
-
   }
 }

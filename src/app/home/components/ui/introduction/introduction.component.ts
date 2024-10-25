@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,4 +8,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './introduction.component.html',
   styleUrls: ['./introduction.component.scss'],
 })
-export class IntroductionComponent {}
+export class IntroductionComponent { }

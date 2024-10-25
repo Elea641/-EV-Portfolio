@@ -17,6 +17,5 @@ export class TrainingModalComponent {
     document.querySelector('.modal')?.classList.remove('modal-open');
     this.isModalOpen = false;
     document.body.classList.remove('no-scroll');
-  
   }
 }
