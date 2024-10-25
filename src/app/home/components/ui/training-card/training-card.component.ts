@@ -29,6 +29,8 @@ export class TrainingCardComponent implements OnInit {
     this.isModalOpen = true;
     setTimeout(() => {
       document.querySelector('.modal')?.classList.add('modal-open');
+      document.body.classList.add('no-scroll');
     }, 0);
+
   }
 }

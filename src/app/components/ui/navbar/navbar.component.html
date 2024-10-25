@@ -7,7 +7,11 @@
         type="button"
         aria-label="Changer la couleur du thème">
         <img
-        [src]="isDarkTheme ? '../../../../assets/pictures/logo-moon.svg' : '../../../../assets/pictures/logo-sun.svg'"
+          [src]="
+            isDarkTheme
+              ? '../../../../assets/pictures/logo-moon.svg'
+              : '../../../../assets/pictures/logo-sun.svg'
+          "
           [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
           alt="Image permettant de changer de thème"
           loading="lazy" />

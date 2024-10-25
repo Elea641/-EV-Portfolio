@@ -23,7 +23,7 @@ html {
   --button-border-color: #{$--accent-border-color};
   --button-text-color: #{$--primary-color-border};
   --button-background-color-second: #{$--accent-background-button};
-  --button-text-color-second: #{$--secondary-color-text};
+  --button-text-color-second: #{$--primary-background-color};
   --card-quality-background-color: #{$--primary-background-color};
   --card-quality-text-color: #{$--primary-color-text};
   --card-quality-border-color: #{$--accent-border-color};
@@ -36,12 +36,12 @@ html {
   --card-portfolio-modal-button: #{$--accent-color-text};
   --input-textara-border-color: #{$--primary-color-border};
   --input-textara-text-color: #{$--primary-color-text};
-  --cv-text-color: #{$--secondary-color-text};
+  --cv-text-color: #{$--primary-background-color};
   --cv-background-color: #{$--background-color-cv-dark};
-  --cv-background-color-button: #{$--secondary-color-button};
+  --cv-background-color-button: #{$--primary-background-color};
   --hr-color: #{$--primary-color-hr};
   --footer-background: #{$--primary-background-color};
-  --footer-color: #{$--primary-color-text};
+  --footer-color: #{$--accent-color-text};
   --training-color: #{$--accent-color-text};
 }
 

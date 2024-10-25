@@ -11,8 +11,12 @@ import { Training } from 'src/app/home/models/training.type';
 })
 export class TrainingModalComponent {
   @Input() training: Training | null = null;
+  @Input() isModalOpen!: boolean;
 
   closeModal() {
     document.querySelector('.modal')?.classList.remove('modal-open');
+    this.isModalOpen = false;
+    document.body.classList.remove('no-scroll');
+  
   }
 }

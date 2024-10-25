@@ -2,33 +2,28 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 article {
-  margin: 1.5rem 0 0 0;
-  width: 100%;
-  background-color: var(--card-portfolio-background-color);
+  width: 20rem;
+  //background-color: #414141;
+ //border: 1px solid var(--card-skills-border-color);
   color: var(--card-portfolio-text-color);
-  border: 1px solid var(--card-portfolio-border-color);
-  border-radius: 0.5rem;
-
-  @include media-tablet-screen {
-    margin: 1rem 0;
-  }
-
-  @include media-large-screen {
-    margin: 1rem 0;
-  }
+  padding: 0.2rem;
+  border-radius: 1rem;
 
   figure {
     position: relative;
-    width: 16rem;
     margin: auto;
 
     a {
       display: inline-block;
       position: relative;
+      width: 100%;
+      margin-top: 1rem;
+      @include flex-justify-center;
 
       img {
-        width: 16rem;
-        height: 10rem;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 1rem;
         display: block;
         object-fit: cover;
       }
@@ -54,7 +49,7 @@ article {
       }
 
       &:hover::after {
-        opacity: 0.9;
+        opacity: 1;
       }
     }
   }
@@ -70,21 +65,18 @@ article {
   }
 
   section {
-    padding: 0 1rem;
-    @include flex-column-align-center;
-
-    h2,
-    p {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    h2{
+      font-size: 1.2rem;
       width: 100%;
+      padding-left: 0.2rem;
     }
 
     button {
-      margin: 1rem 0;
-      width: 10rem;
-      height: 3.2rem;
-      color: var(--card-portfolio-button-text-color);
-      border: 1px solid var(--card-portfolio-button-border-color);
-      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      padding-left: 0.2rem;
+      color: var(--training-color);
     }
   }
 }
