@@ -2,6 +2,7 @@
   <img
     [src]="data.img"
     [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
-    alt="Image représentant une qualité mise en avant" />
+    alt="Image représentant une qualité mise en avant" 
+    loading="lazy"/>
   <p>{{ data.name }}</p>
 </section>

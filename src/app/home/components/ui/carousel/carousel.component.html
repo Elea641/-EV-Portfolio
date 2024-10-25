@@ -2,8 +2,9 @@
 <div class="carousel-container">
   <img
     src="../../../../../assets/pictures/photo-carousel.jpg"
-    alt="background"
-    class="carousel-background" />
+    alt="image représentant l'image de fond"
+    class="carousel-background" 
+    loading="lazy"/>
   <div class="carousel-content">
     <p class="quote-text">"{{ quotes[currentSlide].text }}"</p>
     <p class="quote-author">- {{ quotes[currentSlide].author }}</p>
@@ -13,6 +14,8 @@
       *ngFor="let quote of quotes; let i = index"
       class="dot"
       [ngClass]="{ active: i === currentSlide }"
-      (click)="setSlide(i)"></button>
+      (click)="setSlide(i)"       type="button"
+      aria-label="Faire slider les images"></button
+>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <div *ngIf="training" class="modal">
   <article class="modal-content">
-    <button class="close-button" (click)="closeModal()">&times;</button>
+    <button class="close-button" (click)="closeModal()" type="button" aria-label="Fermer">&times;</button>
     <section>
       <h3>{{ training.trainingCenter }}</h3>
       <p>{{ training.name }}</p>
