@@ -79,19 +79,8 @@ section {
   }
 
   button {
-    width: 8rem;
-    height: 3.2rem;
     color: var(--button-text-color);
     border: 1px solid var(--button-border-color);
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    padding: 0.5rem;
-    font-weight: bold;
-
-    @include media-large-screen {
-      width: 14rem;
-      font-size: 1.3rem;
-    }
   }
 
   a:first-of-type button {

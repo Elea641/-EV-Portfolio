@@ -1,4 +1,5 @@
 @import './assets/styles/var';
+@import './assets/styles/mixins';
 
 *,
 ::after,
@@ -145,12 +146,25 @@ label {
   font-size: $--font-size-p;
 }
 
+
 button {
   background-color: transparent;
   border: none;
   font-size: $--font-size-button;
   cursor: pointer;
+  width: 8rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+
+  @include media-large-screen {
+    width: 14rem;
+    font-size: 1.3rem;
+  }
 }
+
 
 hr {
   border-bottom: 3px solid var(--hr-color);
