@@ -12,11 +12,13 @@ import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
 export class NavbarComponent implements AfterViewInit, OnInit {
   isNavActive = false;
   isScrolled = false;
-  isDarkTheme = false;
+  isDarkTheme!: boolean;
 
-  constructor(public themeUtilService: ThemeUtilService) {}
+  constructor(public themeUtilService: ThemeUtilService) { }
 
   ngOnInit() {
+    this.isDarkTheme = localStorage.getItem("theme") === "dark-theme" ? true : false;
+
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
       this.isDarkTheme = !isLight;
     });

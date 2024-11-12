@@ -11,7 +11,7 @@ import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
   styleUrls: ['./quality-data.component.scss'],
 })
 export class QualityDataComponent implements OnInit {
-  isDarkTheme = false;
+  isDarkTheme = true;
   qualityDatas = [
     { name: 'Pédagogue', img: '../../../../assets/pictures/logo-teach.svg' },
     {
@@ -22,10 +22,12 @@ export class QualityDataComponent implements OnInit {
   ];
 
   constructor(public themeUtilService: ThemeUtilService) {
-    this.themeUtilService.toggleTheme();
   }
 
   ngOnInit() {
+    this.isDarkTheme = localStorage.getItem("theme") === "dark-theme" ? true : false;
+
+
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
       this.isDarkTheme = !isLight;
     });
