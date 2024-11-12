@@ -3,8 +3,6 @@
 
 article {
   width: 20rem;
-  //background-color: #414141;
-  //border: 1px solid var(--card-skills-border-color);
   color: var(--card-portfolio-text-color);
   padding: 0.2rem;
   border-radius: 1rem;
@@ -65,17 +63,17 @@ article {
   }
 
   section {
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.8rem 1.5rem;
+    @include flex-justify-align-space-between;
+
     h2 {
       font-size: 1.2rem;
-      width: 100%;
-      padding-left: 0.2rem;
     }
 
-    button {
+    a {
       font-size: 1rem;
       font-weight: bold;
-      padding-left: 0.2rem;
+      width: auto;
       color: var(--training-color);
     }
   }

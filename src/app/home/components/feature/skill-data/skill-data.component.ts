@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { Skill } from '../../../models/skill.type';
-import { HomeService } from '../../../shared/home.service';
 import { SkillComponent } from '../../ui/skill/skill.component';
+import { DataService } from 'src/app/shared/data.service';
 
 @Component({
   selector: 'app-skill-data',
@@ -13,9 +13,9 @@ import { SkillComponent } from '../../ui/skill/skill.component';
   styleUrls: ['./skill-data.component.scss'],
 })
 export class SkillDataComponent {
-  skills$: Observable<Skill[]> = this.homeService.getAll(
+  skills$: Observable<Skill[]> = this.dataService.getAll(
     'assets/datas/list-skill.json'
   );
 
-  constructor(private homeService: HomeService<Skill>) {}
+  constructor(private dataService: DataService<Skill>) {}
 }

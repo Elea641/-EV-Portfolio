@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Project } from 'src/app/home/models/project.type';
 import { PortfolioModalComponent } from '../portfolio-modal/portfolio-modal.component';
 import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-card',
   standalone: true,
-  imports: [CommonModule, PortfolioModalComponent],
+  imports: [CommonModule, PortfolioModalComponent, RouterLink],
   templateUrl: './portfolio-card.component.html',
   styleUrls: ['./portfolio-card.component.scss'],
 })

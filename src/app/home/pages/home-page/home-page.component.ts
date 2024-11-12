@@ -6,11 +6,11 @@ import { TrainingComponent } from '../../components/ui/training/training.compone
 import { ContactComponent } from '../../components/ui/contact/contact.component';
 import { CurriculumVitaeComponent } from '../../components/ui/curriculum-vitae/curriculum-vitae.component';
 import { PortfolioComponent } from '../../components/ui/portfolio/portfolio.component';
-import { ProjectDataComponent } from '../../components/feature/project-data/project-data.component';
 import { TrainingDataComponent } from '../../components/feature/training-data/training-data.component';
 import { SkillDataComponent } from '../../components/feature/skill-data/skill-data.component';
 import { StatusComponent } from '../../components/ui/status/status.component';
 import { CarouselComponent } from '../../components/ui/carousel/carousel.component';
+import { ProjectDataComponent } from '../../components/feature/project-data/project-data.component';
 
 @Component({
   selector: 'app-home-page',

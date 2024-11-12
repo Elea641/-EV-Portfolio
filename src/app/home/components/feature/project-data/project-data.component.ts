@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeService } from 'src/app/home/shared/home.service';
 import { Observable } from 'rxjs';
 import { Project } from 'src/app/home/models/project.type';
 import { PortfolioComponent } from '../../ui/portfolio/portfolio.component';
+import { DataService } from 'src/app/shared/data.service';
 
 @Component({
   selector: 'app-project-data',
@@ -13,9 +13,9 @@ import { PortfolioComponent } from '../../ui/portfolio/portfolio.component';
   styleUrls: ['./project-data.component.scss'],
 })
 export class ProjectDataComponent {
-  projects$: Observable<Project[]> = this.homeService.getAll(
+  projects$: Observable<Project[]> = this.dataService.getAll(
     'assets/datas/list-projects.json'
   );
 
-  constructor(private homeService: HomeService<Project>) {}
+  constructor(private dataService: DataService<Project>) {}
 }

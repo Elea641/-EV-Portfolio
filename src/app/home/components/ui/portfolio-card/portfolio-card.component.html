@@ -9,12 +9,12 @@
   </figure>
   <section>
     <h2>{{ data.name | uppercase }}</h2>
-    <button
-      (click)="openModal()"
+    <a
+      [routerLink]="['/projects', data.name.replace(' ', '-')]"
       type="button"
       aria-label="Accéder aux détails du projet">
-      Voir détails
-    </button>
+      En savoir plus
+    </a>
   </section>
 </article>
 
