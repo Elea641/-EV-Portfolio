@@ -19,7 +19,7 @@ export class ProjetDetailsDataComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private dataService: DataService<Project>
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     const projectName = this.route.snapshot.paramMap.get('name');
