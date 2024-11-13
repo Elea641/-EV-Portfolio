@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/home/models/project.type';
-import { DataService } from 'src/app/shared/data.service';
 import { Observable } from 'rxjs';
 import { ProjectDetailsCardComponent } from '../../ui/project-details-card/project-details-card.component';
+import { DataService } from 'src/app/shared/data.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-project-details-data',
@@ -14,22 +14,15 @@ import { ProjectDetailsCardComponent } from '../../ui/project-details-card/proje
   styleUrls: ['./project-details-data.component.scss'],
 })
 export class ProjetDetailsDataComponent implements OnInit {
-  project$!: Observable<Project>;
+  project$!: Observable<Project | null>;
 
-  constructor(
-    private route: ActivatedRoute,
-    private dataService: DataService<Project>
-  ) {}
+  constructor(private dataService: DataService<Project>, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const projectName = this.route.snapshot.paramMap.get('name');
-    console.log(projectName);
+    const projectName = this.route.snapshot.paramMap.get('name')?.replace(/-/g, ' ');
 
-    if (projectName) {
-      this.project$ = this.dataService.getByName(
-        'assets/datas/list-projects.json',
-        projectName.replace('-', ' ')
-      );
-    }
+    if (projectName)
+      this.project$ = this.dataService.getByName('assets/datas/list-projects.json', projectName);
   }
 }
+

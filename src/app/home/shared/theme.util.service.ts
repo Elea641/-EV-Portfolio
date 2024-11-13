@@ -23,7 +23,7 @@ export class ThemeUtilService {
         this.isLoadingSubject.next(false);
         observer.next(true);
         observer.complete();
-      }, 5000);
+      }, 2800);
     });
   }
 

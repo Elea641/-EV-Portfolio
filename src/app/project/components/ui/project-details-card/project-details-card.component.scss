@@ -1,0 +1,55 @@
+@import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
+
+article {
+    padding: 3rem 1rem;
+    z-index: 1;
+    position: relative;
+    top: 2rem;
+
+    @include media-large-screen {
+        width: 45vw;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        h3 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        p {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        p:nth-of-type(2) {
+            margin-bottom: 1rem;
+        }
+
+        p:last-of-type {
+            margin-top: 1rem;
+        }
+
+        p:last-of-type::before {
+            content: 'Compétences : ';
+            font-weight: bold;
+        }
+    }
+}
+
+// }

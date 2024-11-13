@@ -1,22 +1,16 @@
 <article [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'">
   <figure>
     <a [href]="data.github_url" target="_blank" rel="noopener noreferrer">
-      <img
-        [src]="data.url"
-        [alt]="'Miniature du projet ' + data.name"
-        loading="lazy" />
+      <img [src]="data.url" [alt]="'Miniature du projet ' + data.name" loading="lazy" />
     </a>
   </figure>
   <section>
     <h2>{{ data.name | uppercase }}</h2>
-    <a
-      [routerLink]="['/projects', data.name.replace(' ', '-')]"
-      type="button"
+    <a [routerLink]="['/projects', data.name.replace(' ', '-')]" type="button"
       aria-label="Accéder aux détails du projet">
       En savoir plus
     </a>
   </section>
 </article>
 
-<app-portfolio-modal *ngIf="isModalOpen" [project]="data">
-</app-portfolio-modal>
+<app-portfolio-modal *ngIf="isModalOpen" [project]="data" />
