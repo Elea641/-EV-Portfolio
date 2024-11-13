@@ -9,6 +9,4 @@ import { ProjetDetailsDataComponent } from '../../components/feature/projet-deta
   templateUrl: './project-page.component.html',
   styleUrls: ['./project-page.component.scss'],
 })
-export class ProjectPageComponent {
-
-}
+export class ProjectPageComponent {}

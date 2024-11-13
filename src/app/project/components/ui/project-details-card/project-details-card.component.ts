@@ -11,8 +11,4 @@ import { Project } from 'src/app/home/models/project.type';
 })
 export class ProjectDetailsCardComponent {
   @Input() project!: Project;
-
-
-
-
 }

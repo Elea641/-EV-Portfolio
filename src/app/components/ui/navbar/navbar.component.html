@@ -4,55 +4,93 @@
   </a>
   <ul>
     <li>
-      <button (click)="toggleTheme()" type="button" aria-label="Changer la couleur du thème">
-        <img [src]="
+      <button
+        (click)="toggleTheme()"
+        type="button"
+        aria-label="Changer la couleur du thème">
+        <img
+          [src]="
             isDarkTheme
               ? '../../../../assets/pictures/logo-moon.svg'
               : '../../../../assets/pictures/logo-sun.svg'
-          " [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'" alt="Image permettant de changer de thème"
+          "
+          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+          alt="Image permettant de changer de thème"
           loading="lazy" />
       </button>
     </li>
     <li>
-      <a href="https://github.com/Elea641" target="_blank" rel="noopener noreferrer" (click)="closeMenu()">
-        <img src="../../../../assets/pictures/logo-github.svg"
-          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'" alt="Accéder à mon profil GitHub"
-          loading="lazy" />
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/eleavoliotis/" target="_blank" rel="noopener noreferrer"
+      <a
+        href="https://github.com/Elea641"
+        target="_blank"
+        rel="noopener noreferrer"
         (click)="closeMenu()">
-        <img src="../../../../assets/pictures/logo-linkedin.svg"
-          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'" alt="Accéder à mon profil LinkedIn"
+        <img
+          src="../../../../assets/pictures/logo-github.svg"
+          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+          alt="Accéder à mon profil GitHub"
           loading="lazy" />
       </a>
     </li>
     <li>
-      <img id="burger" class="burger" src="../../../../assets/pictures/logo-burger-menu.svg"
-        [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'" alt="Icone pour ouvrir le menu"
+      <a
+        href="https://www.linkedin.com/in/eleavoliotis/"
+        target="_blank"
+        rel="noopener noreferrer"
+        (click)="closeMenu()">
+        <img
+          src="../../../../assets/pictures/logo-linkedin.svg"
+          [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+          alt="Accéder à mon profil LinkedIn"
+          loading="lazy" />
+      </a>
+    </li>
+    <li>
+      <img
+        id="burger"
+        class="burger"
+        src="../../../../assets/pictures/logo-burger-menu.svg"
+        [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+        alt="Icone pour ouvrir le menu"
         loading="lazy" />
       <ul id="nav-links" [ngClass]="{ 'nav-active': isNavActive }">
         <li>
-          <a [routerLink]="['']" fragment="home" (click)="closeMenu()">ACCUEIL</a>
+          <a [routerLink]="['']" fragment="home" (click)="closeMenu()"
+            >ACCUEIL</a
+          >
         </li>
         <li>
-          <a [routerLink]="['']" fragment="about" (click)="closeMenu()">A PROPOS</a>
+          <a [routerLink]="['']" fragment="about" (click)="closeMenu()"
+            >A PROPOS</a
+          >
         </li>
         <li>
-          <a [routerLink]="['']" fragment="skill" (click)="closeMenu()">COMPÉTENCES</a>
+          <a [routerLink]="['']" fragment="skill" (click)="closeMenu()"
+            >COMPÉTENCES</a
+          >
         </li>
         <li>
-          <a [routerLink]="['']" fragment="portfolio" (click)="closeMenu()">PORTFOLIO</a>
+          <a [routerLink]="['']" fragment="portfolio" (click)="closeMenu()"
+            >PORTFOLIO</a
+          >
         </li>
         <li>
-          <a [routerLink]="['']" fragment="training" (click)="closeMenu()">FORMATIONS</a>
+          <a [routerLink]="['']" fragment="training" (click)="closeMenu()"
+            >FORMATIONS</a
+          >
         </li>
         <li>
-          <a [routerLink]="['']" fragment="curriculumVitae" (click)="closeMenu()">CURRICULUM VITAE</a>
+          <a
+            [routerLink]="['']"
+            fragment="curriculumVitae"
+            (click)="closeMenu()"
+            >CURRICULUM VITAE</a
+          >
         </li>
         <li>
-          <a [routerLink]="['']" fragment="contact" (click)="closeMenu()">CONTACT</a>
+          <a [routerLink]="['']" fragment="contact" (click)="closeMenu()"
+            >CONTACT</a
+          >
         </li>
       </ul>
     </li>

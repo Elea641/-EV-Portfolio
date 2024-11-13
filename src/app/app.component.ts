@@ -14,7 +14,7 @@ import { LoaderComponent } from './components/ui/loader/loader.component';
     NavbarComponent,
     FooterComponent,
     LoaderComponent,
-    RouterOutlet
+    RouterOutlet,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -23,9 +23,7 @@ export class AppComponent implements OnInit {
   title = 'EVPortfolio';
   isLoading = false;
 
-  constructor(
-    private themeService: ThemeUtilService
-  ) { }
+  constructor(private themeService: ThemeUtilService) {}
 
   ngOnInit(): void {
     this.themeService.isLoading$.subscribe(loading => {

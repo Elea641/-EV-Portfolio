@@ -1,9 +1,6 @@
 import { Component, AfterViewInit, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  ActivatedRoute,
-  RouterModule,
-} from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
 
 @Component({
@@ -21,7 +18,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
   constructor(
     public themeUtilService: ThemeUtilService,
     private route: ActivatedRoute
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.isDarkTheme = localStorage.getItem('theme') === '' ? true : false;
@@ -34,7 +31,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
       if (fragment) {
         const element = document.getElementById(fragment);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });  // Faites défiler l'élément dans la vue
+          element.scrollIntoView({ behavior: 'smooth' }); // Faites défiler l'élément dans la vue
         }
       }
     });
