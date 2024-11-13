@@ -10,7 +10,6 @@ section {
 
   header {
     margin-top: 4rem;
-    width: 60vw;
     grid-column: span 2;
     align-self: center;
     justify-self: center;
@@ -18,13 +17,16 @@ section {
     h1 {
       font-size: 1.5rem;
       text-align: center;
+      width: 100%;
 
       @include media-tablet-screen {
         font-size: 2rem;
+        width: 85vw;
       }
 
       @include media-large-screen {
         font-size: 2.6rem;
+        width: 55vw;
       }
     }
   }

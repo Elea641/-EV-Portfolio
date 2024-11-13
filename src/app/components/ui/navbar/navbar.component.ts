@@ -2,12 +2,9 @@ import { Component, AfterViewInit, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   ActivatedRoute,
-  NavigationEnd,
-  Router,
   RouterModule,
 } from '@angular/router';
 import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
-import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -23,9 +20,8 @@ export class NavbarComponent implements AfterViewInit, OnInit {
 
   constructor(
     public themeUtilService: ThemeUtilService,
-    private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.isDarkTheme = localStorage.getItem('theme') === '' ? true : false;
@@ -34,15 +30,12 @@ export class NavbarComponent implements AfterViewInit, OnInit {
       this.isDarkTheme = !isLight;
     });
 
-    this.router.events.subscribe(() => {
-      const fragment = this.route.snapshot.fragment;
+    this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        setTimeout(() => {
-          const element = document.getElementById(fragment);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 0);
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });  // Faites défiler l'élément dans la vue
+        }
       }
     });
   }
@@ -52,12 +45,6 @@ export class NavbarComponent implements AfterViewInit, OnInit {
     burger?.addEventListener('click', () => {
       this.isNavActive = !this.isNavActive;
     });
-
-    this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.scrollToFragment();
-      });
   }
 
   closeMenu() {
@@ -82,17 +69,5 @@ export class NavbarComponent implements AfterViewInit, OnInit {
 
   toggleTheme() {
     this.themeUtilService.toggleTheme();
-  }
-
-  private scrollToFragment(): void {
-    const fragment = this.route.snapshot.fragment;
-    if (fragment) {
-      const element = document.getElementById(fragment);
-      if (element) {
-        setTimeout(() => {
-          window.scrollTo({ top: element.offsetTop - 50, behavior: 'smooth' });
-        }, 200);
-      }
-    }
   }
 }
