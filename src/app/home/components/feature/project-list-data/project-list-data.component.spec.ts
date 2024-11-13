@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectDataComponent } from './project-data.component';
+import { ProjectDataComponent } from './project-list-data.component';
 
 describe('ProjectDataComponent', () => {
   let component: ProjectDataComponent;

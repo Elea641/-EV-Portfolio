@@ -6,9 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class DataService<T> {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getAll(url: string): Observable<T[]> {
     return this.http.get<T[]>(url);
   }
+
+  getByName(url: string, name: string): Observable<T> {
+    return this.http.get<T>(`${url}?name=${name}`);
+  }
+
 }

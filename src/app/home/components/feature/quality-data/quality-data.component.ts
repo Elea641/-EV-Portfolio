@@ -21,11 +21,11 @@ export class QualityDataComponent implements OnInit {
     { name: 'Curieuse', img: '../../../../assets/pictures/logo-question.svg' },
   ];
 
-  constructor(public themeUtilService: ThemeUtilService) {}
+  constructor(public themeUtilService: ThemeUtilService) { }
 
   ngOnInit() {
     this.isDarkTheme =
-      localStorage.getItem('theme') === 'dark-theme' ? true : false;
+      localStorage.getItem('theme') === '' ? true : false;
 
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
       this.isDarkTheme = !isLight;

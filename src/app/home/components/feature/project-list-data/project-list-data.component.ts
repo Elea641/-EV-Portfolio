@@ -6,16 +6,16 @@ import { PortfolioComponent } from '../../ui/portfolio/portfolio.component';
 import { DataService } from 'src/app/shared/data.service';
 
 @Component({
-  selector: 'app-project-data',
+  selector: 'app-project-list-data',
   standalone: true,
   imports: [CommonModule, PortfolioComponent],
-  templateUrl: './project-data.component.html',
-  styleUrls: ['./project-data.component.scss'],
+  templateUrl: './project-list-data.component.html',
+  styleUrls: ['./project-list-data.component.scss'],
 })
-export class ProjectDataComponent {
+export class ProjectListDataComponent {
   projects$: Observable<Project[]> = this.dataService.getAll(
     'assets/datas/list-projects.json'
   );
 
-  constructor(private dataService: DataService<Project>) {}
+  constructor(private dataService: DataService<Project>) { }
 }

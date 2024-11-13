@@ -10,7 +10,7 @@ import { TrainingDataComponent } from '../../components/feature/training-data/tr
 import { SkillDataComponent } from '../../components/feature/skill-data/skill-data.component';
 import { StatusComponent } from '../../components/ui/status/status.component';
 import { CarouselComponent } from '../../components/ui/carousel/carousel.component';
-import { ProjectDataComponent } from '../../components/feature/project-data/project-data.component';
+import { ProjectListDataComponent } from '../../components/feature/project-list-data/project-list-data.component';
 
 @Component({
   selector: 'app-home-page',
@@ -24,7 +24,7 @@ import { ProjectDataComponent } from '../../components/feature/project-data/proj
     ContactComponent,
     CurriculumVitaeComponent,
     PortfolioComponent,
-    ProjectDataComponent,
+    ProjectListDataComponent,
     TrainingDataComponent,
     SkillDataComponent,
     CarouselComponent,
@@ -32,4 +32,4 @@ import { ProjectDataComponent } from '../../components/feature/project-data/proj
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
-export class HomePageComponent {}
+export class HomePageComponent { }
