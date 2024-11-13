@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,11 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project-details-card.component.html',
-  styleUrls: ['./project-details-card.component.scss']
+  styleUrls: ['./project-details-card.component.scss'],
 })
-export class ProjectDetailsCardComponent {
-
-
+export class ProjectDetailsCardComponent implements OnInit {
   ngOnInit(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }

@@ -14,11 +14,10 @@ export class SkillComponent implements OnInit {
   @Input() skills!: Skill[];
   isDarkTheme = true;
 
-  constructor(public themeUtilService: ThemeUtilService) { }
+  constructor(public themeUtilService: ThemeUtilService) {}
 
   ngOnInit() {
-    this.isDarkTheme =
-      localStorage.getItem('theme') === '' ? true : false;
+    this.isDarkTheme = localStorage.getItem('theme') === '' ? true : false;
 
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
       this.isDarkTheme = !isLight;

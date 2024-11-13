@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/ui/navbar/navbar.component';
@@ -16,12 +16,12 @@ import { LoaderComponent } from './components/ui/loader/loader.component';
     NavbarComponent,
     HomePageComponent,
     FooterComponent,
-    LoaderComponent
+    LoaderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'EVPortfolio';
   isLoading = false;
 

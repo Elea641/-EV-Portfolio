@@ -17,5 +17,5 @@ export class ProjectListDataComponent {
     'assets/datas/list-projects.json'
   );
 
-  constructor(private dataService: DataService<Project>) { }
+  constructor(private dataService: DataService<Project>) {}
 }

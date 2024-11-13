@@ -1,6 +1,11 @@
 import { Component, AfterViewInit, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
+import {
+  ActivatedRoute,
+  NavigationEnd,
+  Router,
+  RouterModule,
+} from '@angular/router';
 import { ThemeUtilService } from 'src/app/home/shared/theme.util.service';
 import { filter } from 'rxjs';
 
@@ -16,7 +21,11 @@ export class NavbarComponent implements AfterViewInit, OnInit {
   isScrolled = false;
   isDarkTheme!: boolean;
 
-  constructor(public themeUtilService: ThemeUtilService, private router: Router, private route: ActivatedRoute) { }
+  constructor(
+    public themeUtilService: ThemeUtilService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
     this.isDarkTheme = localStorage.getItem('theme') === '' ? true : false;
@@ -44,11 +53,11 @@ export class NavbarComponent implements AfterViewInit, OnInit {
       this.isNavActive = !this.isNavActive;
     });
 
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.scrollToFragment();
-    });
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.scrollToFragment();
+      });
   }
 
   closeMenu() {

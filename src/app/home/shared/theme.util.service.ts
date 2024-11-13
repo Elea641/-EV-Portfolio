@@ -8,7 +8,8 @@ export class ThemeUtilService {
   isLightTheme!: boolean;
   private themeSubject = new Subject<boolean>();
   isLightThemeChanged$ = this.themeSubject.asObservable();
-  private isLoadingSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  private isLoadingSubject: BehaviorSubject<boolean> =
+    new BehaviorSubject<boolean>(false);
   isLoading$: Observable<boolean> = this.isLoadingSubject.asObservable();
 
   constructor() {
