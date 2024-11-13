@@ -10,10 +10,9 @@ import { Project } from 'src/app/home/models/project.type';
   styleUrls: ['./project-details-card.component.scss'],
 })
 export class ProjectDetailsCardComponent implements OnInit {
-  @Input() project!: Project
+  @Input() project!: Project;
 
   ngOnInit(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
-

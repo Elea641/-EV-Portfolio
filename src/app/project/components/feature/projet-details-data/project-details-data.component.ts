@@ -16,13 +16,20 @@ import { ActivatedRoute } from '@angular/router';
 export class ProjetDetailsDataComponent implements OnInit {
   project$!: Observable<Project | null>;
 
-  constructor(private dataService: DataService<Project>, private route: ActivatedRoute) { }
+  constructor(
+    private dataService: DataService<Project>,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    const projectName = this.route.snapshot.paramMap.get('name')?.replace(/-/g, ' ');
+    const projectName = this.route.snapshot.paramMap
+      .get('name')
+      ?.replace(/-/g, ' ');
 
     if (projectName)
-      this.project$ = this.dataService.getByName('assets/datas/list-projects.json', projectName);
+      this.project$ = this.dataService.getByName(
+        'assets/datas/list-projects.json',
+        projectName
+      );
   }
 }
-

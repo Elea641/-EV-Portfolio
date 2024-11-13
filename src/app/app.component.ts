@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   title = 'EVPortfolio';
   isLoading = false;
 
-  constructor(private themeService: ThemeUtilService) { }
+  constructor(private themeService: ThemeUtilService) {}
 
   ngOnInit(): void {
     this.themeService.isLoading$.subscribe(loading => {

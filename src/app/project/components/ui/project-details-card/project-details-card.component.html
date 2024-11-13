@@ -1,11 +1,14 @@
 <article *ngIf="project">
-    <section>
-        <img src="assets/pictures/WCS.png" alt="Image correspondant au projet affiché" loading="lazy" />
-        <h2>{{ project.name | uppercase }}</h2>
-        <h3>{{ project.trainingCenter }}</h3>
-        <p>{{ project.type }}</p>
-        <p>{{ project.date }}</p>
-        <p [innerHTML]="project.content"></p>
-        <p>{{ project.technos }}</p>
-    </section>
+  <section>
+    <img
+      src="assets/pictures/WCS.png"
+      alt="Image correspondant au projet affiché"
+      loading="lazy" />
+    <h2>{{ project.name | uppercase }}</h2>
+    <h3>{{ project.trainingCenter }}</h3>
+    <p>{{ project.type }}</p>
+    <p>{{ project.date }}</p>
+    <p [innerHTML]="project.content"></p>
+    <p>{{ project.technos }}</p>
+  </section>
 </article>
