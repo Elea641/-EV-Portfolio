@@ -5,8 +5,8 @@
   </header>
   <ng-container>
     <ul>
-      <li *ngFor="let training of trainings; let i = index">
-        <app-training-card [data]="training"></app-training-card>
+      <li *ngFor="let training of trainings">
+        <app-training-card [data]="training" />
       </li>
     </ul>
   </ng-container>

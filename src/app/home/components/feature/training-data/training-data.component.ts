@@ -17,5 +17,5 @@ export class TrainingDataComponent {
     'assets/datas/list-training.json'
   );
 
-  constructor(private dataService: DataService<Training>) {}
+  constructor(private dataService: DataService<Training>) { }
 }

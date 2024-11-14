@@ -17,7 +17,7 @@ export class TrainingCardComponent implements OnInit {
   isModalOpen = false;
   isDarkTheme = false;
 
-  constructor(public themeUtilService: ThemeUtilService) {}
+  constructor(public themeUtilService: ThemeUtilService) { }
 
   ngOnInit() {
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
@@ -31,5 +31,9 @@ export class TrainingCardComponent implements OnInit {
       document.querySelector('.modal')?.classList.add('modal-open');
       document.body.classList.add('no-scroll');
     }, 0);
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
   }
 }

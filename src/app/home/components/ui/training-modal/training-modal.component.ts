@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Training } from 'src/app/home/models/training.type';
 
@@ -11,11 +11,11 @@ import { Training } from 'src/app/home/models/training.type';
 })
 export class TrainingModalComponent {
   @Input() training: Training | null = null;
-  @Input() isModalOpen!: boolean;
+  @Output() closeModalEvent = new EventEmitter<void>();
 
   closeModal() {
     document.querySelector('.modal')?.classList.remove('modal-open');
-    this.isModalOpen = false;
+    this.closeModalEvent.emit();
     document.body.classList.remove('no-scroll');
   }
 }
