@@ -45,6 +45,9 @@ html {
   --footer-background: #{$--primary-background-color};
   --footer-color: #{$--accent-color-text};
   --training-color: #{$--accent-color-text};
+  --webkit-scrollbar-background-color-primary: #{$--background-color-webkit-scrollbar-dark-primary};
+  --webkit-scrollbar-background-color-secondary: #{$--background-color-webkit-scrollbar-dark-secondary};
+  --webkit-scrollbar-color: #{$--border-webkit-scrollbar-dark};
 }
 
 .light-theme {
@@ -77,6 +80,9 @@ html {
   --footer-background: #{$--background-color-footer-light};
   --footer-color: #{$--primary-color-text};
   --training-color: #{$--secondary-color-text};
+  --webkit-scrollbar-background-color-primary: #{$--background-color-webkit-scrollbar-light-primary};
+  --webkit-scrollbar-background-color-secondary: #{$--background-color-webkit-scrollbar-light-secondary};
+  --webkit-scrollbar-color: #{$--border-webkit-scrollbar-light};
 }
 
 body {
@@ -137,4 +143,52 @@ button {
 
 hr {
   border-bottom: 3px solid var(--hr-color);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+/* WEBKIT-SCROLLBAR */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--webkit-scrollbar-background-color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--webkit-scrollbar-background-color-secondary);
+  /* Utilise la variable */
+  border-radius: 10px;
+  border: 2px solid var(--webkit-scrollbar-color);
+  /* Utilise la variable */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--webkit-scrollbar-background-color-secondary);
+}
+
+/* WEBKIT-SCROLLBAR FIREFOX */
+scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+scrollbar-thumb:hover {
+  background: #555;
 }

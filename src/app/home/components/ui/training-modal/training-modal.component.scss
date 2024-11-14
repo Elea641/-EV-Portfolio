@@ -13,9 +13,11 @@
   z-index: 1;
   opacity: 0;
   visibility: hidden;
+  transform: scale(0.95);
   transition:
     opacity 0.5s ease-in-out,
-    visibility 0.5s ease-in-out;
+    visibility 0.5s ease-in-out,
+    transform 0.2s ease;
 
   article {
     width: 85vw;
@@ -84,6 +86,7 @@
 .modal-open {
   opacity: 1;
   visibility: visible;
+  transform: scale(1);
 }
 
 .modal-content {
