@@ -17,7 +17,7 @@ export class TrainingCardComponent implements OnInit {
   isModalOpen = false;
   isDarkTheme = false;
 
-  constructor(public themeUtilService: ThemeUtilService) { }
+  constructor(public themeUtilService: ThemeUtilService) {}
 
   ngOnInit() {
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
