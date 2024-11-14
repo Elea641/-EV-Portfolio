@@ -18,7 +18,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
   constructor(
     public themeUtilService: ThemeUtilService,
     private route: ActivatedRoute
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.isDarkTheme = localStorage.getItem('theme') === '' ? true : false;
@@ -34,8 +34,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
       this.isNavActive = !this.isNavActive;
     });
 
-
-    this.route.fragment.subscribe((fragment) => {
+    this.route.fragment.subscribe(fragment => {
       if (fragment) {
         setTimeout(() => {
           const element = document.getElementById(fragment);
