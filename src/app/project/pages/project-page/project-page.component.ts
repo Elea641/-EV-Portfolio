@@ -10,12 +10,12 @@ import { ProjetDetailsDataComponent } from '../../components/feature/projet-deta
   styleUrls: ['./project-page.component.scss'],
 })
 export class ProjectPageComponent implements AfterViewInit {
-  scrollToTop = false;
+  isScrollToTop = false;
 
   ngAfterViewInit(): void {
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'auto' });
-      this.scrollToTop = true;
+      this.isScrollToTop = true;
     }, 0);
   }
 }
