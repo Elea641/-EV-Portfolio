@@ -18,7 +18,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
   constructor(
     public themeUtilService: ThemeUtilService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.isDarkTheme = localStorage.getItem('theme') === '' ? true : false;
@@ -26,21 +26,24 @@ export class NavbarComponent implements AfterViewInit, OnInit {
     this.themeUtilService.isLightThemeChanged$.subscribe(isLight => {
       this.isDarkTheme = !isLight;
     });
-
-    this.route.fragment.subscribe(fragment => {
-      if (fragment) {
-        const element = document.getElementById(fragment);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' }); // Faites défiler l'élément dans la vue
-        }
-      }
-    });
   }
 
   ngAfterViewInit() {
     const burger = document.getElementById('burger');
     burger?.addEventListener('click', () => {
       this.isNavActive = !this.isNavActive;
+    });
+
+
+    this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        setTimeout(() => {
+          const element = document.getElementById(fragment);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 200);
+      }
     });
   }
 

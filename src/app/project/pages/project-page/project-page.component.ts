@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjetDetailsDataComponent } from '../../components/feature/projet-details-data/project-details-data.component';
 
@@ -9,4 +9,8 @@ import { ProjetDetailsDataComponent } from '../../components/feature/projet-deta
   templateUrl: './project-page.component.html',
   styleUrls: ['./project-page.component.scss'],
 })
-export class ProjectPageComponent {}
+export class ProjectPageComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
