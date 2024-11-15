@@ -1,1 +1,10 @@
-<p>carousel-project works!</p>
+<div class="carousel-container">
+    <img [src]="imageArray[currentSlide]" alt="Image du projet" class="carousel-background" loading="lazy"
+        (click)="toggleZoom()" (keydown)="toggleZoom()" tabindex="0" />
+
+    <div class="carousel-indicators">
+        <button *ngFor="let image of imageArray; let i = index" class="dot" [ngClass]="{ active: i === currentSlide }"
+            (click)="setSlide(i)" type="button" aria-label="Changer l'image du projet" (keydown)="setSlide(i)"
+            tabindex="0"></button>
+    </div>
+</div>

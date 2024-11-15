@@ -8,4 +8,5 @@ export type Project = {
   technos: string;
   github_url: string;
   content: string;
+  images: string;
 };

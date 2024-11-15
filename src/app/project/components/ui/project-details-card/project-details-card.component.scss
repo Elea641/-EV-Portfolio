@@ -2,13 +2,16 @@
 @import '../../../../../assets/styles/mixins.scss';
 
 article {
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
   z-index: 1;
   position: relative;
-  top: 2rem;
+  top: 3.5rem;
+  border-radius: 1rem;
+  background-color: #303030;
+  width: 90vw;
 
   @include media-large-screen {
-    width: 45vw;
+    width: 55vw;
   }
 
   section {
@@ -51,5 +54,3 @@ article {
     }
   }
 }
-
-// }
