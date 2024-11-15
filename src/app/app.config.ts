@@ -15,8 +15,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(
       routes,
-      withComponentInputBinding(),
-      withInMemoryScrolling({ scrollPositionRestoration: 'top' })
+      withComponentInputBinding()
     ),
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimations(),
