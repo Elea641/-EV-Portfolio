@@ -1,4 +1,5 @@
 @import '../../../../../assets/styles/var';
+@import '../../../../../assets/styles/mixins.scss';
 
 .parallax-section {
   position: relative;
@@ -7,30 +8,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.parallax-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../../../../../assets/pictures/paralax.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
+  .parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../../../assets/pictures/paralax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
 
-.parallax-text {
-  position: relative;
-  font-size: 1.6rem;
-  text-align: center;
-  z-index: 1;
-  padding: 1rem;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.4);
-  color: $--primary-color-text;
-  backdrop-filter: blur(10px);
+  .parallax-text {
+    position: relative;
+    font-size: 1.6rem;
+    text-align: center;
+    z-index: 1;
+    padding: 1rem;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4);
+    color: $--primary-color-text;
+    backdrop-filter: blur(10px);
+  }
+
+  @include media-mobile-screen {
+    .parallax-background {
+      background-attachment: scroll;
+    }
+  }
 }
