@@ -46,7 +46,9 @@ export class CarouselProjectComponent implements OnInit, OnDestroy {
 
   // Méthodes pour obtenir l'image précédente et suivante
   getPrevSlide() {
-    return (this.currentSlide - 1 + this.imageArray.length) % this.imageArray.length;
+    return (
+      (this.currentSlide - 1 + this.imageArray.length) % this.imageArray.length
+    );
   }
 
   getNextSlide() {

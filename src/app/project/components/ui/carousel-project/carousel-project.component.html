@@ -1,21 +1,40 @@
 <div class="carousel-container">
   <!-- Image précédente -->
-  <img [src]="imageArray[getPrevSlide()]" alt="Image précédente du projet" class="carousel-background prev"
-    loading="lazy" tabindex="0" />
+  <img
+    [src]="imageArray[getPrevSlide()]"
+    alt="Image précédente du projet"
+    class="carousel-background prev"
+    loading="lazy"
+    tabindex="0" />
 
   <!-- Image active -->
-  <img [src]="imageArray[currentSlide]" alt="Image du projet" class="carousel-background active" loading="lazy"
-    (click)="toggleZoom()" (keydown)="toggleZoom()" tabindex="0" />
+  <img
+    [src]="imageArray[currentSlide]"
+    alt="Image du projet"
+    class="carousel-background active"
+    loading="lazy"
+    (click)="toggleZoom()"
+    (keydown)="toggleZoom()"
+    tabindex="0" />
 
   <!-- Image suivante -->
-  <img [src]="imageArray[getNextSlide()]" alt="Image suivante du projet" class="carousel-background next" loading="lazy"
+  <img
+    [src]="imageArray[getNextSlide()]"
+    alt="Image suivante du projet"
+    class="carousel-background next"
+    loading="lazy"
     tabindex="0" />
 
   <!-- Indicateurs du carousel -->
-
 </div>
 <div class="carousel-indicators">
-  <button *ngFor="let image of imageArray; let i = index" class="dot" [ngClass]="{ active: i === currentSlide }"
-    (click)="setSlide(i)" type="button" aria-label="Changer l'image du projet" (keydown)="setSlide(i)"
+  <button
+    *ngFor="let image of imageArray; let i = index"
+    class="dot"
+    [ngClass]="{ active: i === currentSlide }"
+    (click)="setSlide(i)"
+    type="button"
+    aria-label="Changer l'image du projet"
+    (keydown)="setSlide(i)"
     tabindex="0"></button>
 </div>
