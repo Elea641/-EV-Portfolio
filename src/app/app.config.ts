@@ -2,7 +2,6 @@ import { ApplicationConfig, LOCALE_ID } from '@angular/core';
 import {
   provideRouter,
   withComponentInputBinding,
-  withInMemoryScrolling,
 } from '@angular/router';
 import { routes } from './app.routes';
 import {
@@ -13,10 +12,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(
-      routes,
-      withComponentInputBinding()
-    ),
+    provideRouter(routes, withComponentInputBinding()),
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimations(),
     { provide: LOCALE_ID, useValue: 'fr-FR' },

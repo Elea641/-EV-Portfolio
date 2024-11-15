@@ -43,4 +43,13 @@ export class CarouselProjectComponent implements OnInit, OnDestroy {
   toggleZoom() {
     this.isZoomed = !this.isZoomed;
   }
+
+  // Méthodes pour obtenir l'image précédente et suivante
+  getPrevSlide() {
+    return (this.currentSlide - 1 + this.imageArray.length) % this.imageArray.length;
+  }
+
+  getNextSlide() {
+    return (this.currentSlide + 1) % this.imageArray.length;
+  }
 }
