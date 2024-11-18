@@ -39,12 +39,27 @@ export class ContactComponent {
           },
           environment.EMAIL_USER_ID
         );
-        alert('Message envoyé avec succès!');
+        this.showToast('Message envoyé avec succès!', 'success');
         this.contactForm.reset();
       } catch (error) {
         console.error("Erreur lors de l'envoi du message:", error);
-        alert('Une erreur est survenue, veuillez réessayer.');
+        this.showToast('Une erreur est survenue, veuillez réessayer.', 'error');
       }
     }
+  }
+
+  private showToast(message: string, type: 'success' | 'error' = 'success') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('span');
+    toast.className = `toast ${type}`;
+    toast.textContent = message;
+
+    container.appendChild(toast);
+
+    setTimeout(() => {
+      toast.remove();
+    }, 4000);
   }
 }

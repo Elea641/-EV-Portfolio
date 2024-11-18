@@ -104,7 +104,8 @@ p,
 a,
 label,
 ul,
-li {
+li,
+span {
   font-family: $--font-family-roboto;
   line-height: 1.5;
 }
@@ -128,16 +129,23 @@ button {
   border: none;
   font-size: $--font-size-button;
   cursor: pointer;
-  width: 8rem;
+  min-width: 8rem;
   height: 3.2rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   padding: 0.5rem;
   font-weight: bold;
+  transition: all 0.3s ease;
 
   @include media-large-screen {
     width: 10rem;
     font-size: 1rem;
+  }
+
+  &:hover {
+    color: white;
+    box-shadow: 0 1px 4px var(--navbar-border-color);
+    transform: scale(1.05);
   }
 }
 
@@ -190,4 +198,28 @@ scrollbar-thumb {
 
 scrollbar-thumb:hover {
   background: #555;
+}
+
+.toast.success {
+  background-color: #006603;
+  display: block;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px var(--navbar-border-color);
+}
+
+.toast.error {
+  background-color: #940A00;
+  display: block;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px var(--navbar-border-color);
 }

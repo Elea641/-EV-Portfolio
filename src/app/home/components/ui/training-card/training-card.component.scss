@@ -3,7 +3,7 @@
 
 article {
   margin: 3rem 0;
-  width: 20rem;
+  min-width: 20rem;
   display: flex;
   z-index: 0;
 
@@ -24,6 +24,7 @@ article {
   }
 
   section {
+
     p {
       text-align: left;
     }

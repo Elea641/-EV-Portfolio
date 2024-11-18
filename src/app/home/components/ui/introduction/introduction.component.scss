@@ -73,10 +73,32 @@ section {
   a {
     justify-self: center;
     height: 3.2rem;
-    width: 8rem;
+    min-width: 8rem;
+  }
+
+  a:first-of-type {
+    justify-self: flex-end;
+    margin-right: 1rem;
+
+    @include media-tablet-screen {
+      margin-right: 4rem;
+    }
 
     @include media-large-screen {
-      width: 14rem;
+      margin-right: 8rem;
+    }
+  }
+
+  a:last-of-type {
+    justify-self: flex-start;
+    margin-left: 1rem;
+
+    @include media-tablet-screen {
+      margin-left: 4rem;
+    }
+
+    @include media-large-screen {
+      margin-left: 8rem;
     }
   }
 
@@ -85,28 +107,11 @@ section {
     border: 1px solid var(--button-border-color);
   }
 
-  a:first-of-type button {
-    @include media-tablet-screen {
-      margin-left: 5rem;
-    }
-
-    @include media-large-screen {
-      margin-left: 7rem;
-    }
-  }
-
   a:last-of-type button {
     background-color: var(--button-background-color-second);
     color: var(--button-text-color-second);
     border: none;
 
-    @include media-tablet-screen {
-      margin-left: -5rem;
-    }
-
-    @include media-large-screen {
-      margin-left: -7rem;
-    }
   }
 }
 
