@@ -104,11 +104,22 @@ section {
 
   button {
     color: var(--button-text-color);
+    min-width: 8rem;
+
+  }
+
+  a:first-of-type button {
+    color: var(--button-text-color);
     border: 1px solid var(--button-border-color);
+    background-color: var(--background-color);
+  }
+
+  a:first-of-type button:hover {
+    border: 1px solid var(--navbar-background-color-hover);
+    filter: brightness(1.1);
   }
 
   a:last-of-type button {
-    background-color: var(--button-background-color-second);
     color: var(--button-text-color-second);
     border: none;
   }

@@ -18,8 +18,10 @@ html {
 :root {
   --background-color: #{$--primary-background-color};
   --text-color: #{$--primary-color-text};
+  --text-color-hover: #{$--primary-color-text-hover};
   --text-color-accent: #{$--accent-color-text};
   --navbar-background-color: #{$--primary-background-color};
+  --navbar-background-color-hover: #{$--accent-background-button-hover};
   --navbar-border-color: #{$--accent-border-color};
   --navbar-h2-border-color: #{$--accent-border-color};
   --button-border-color: #{$--accent-border-color};
@@ -53,8 +55,10 @@ html {
 .light-theme {
   --background-color: #{$--secondary-background-color};
   --text-color: #{$--secondary-color-text};
+  --text-color-hover: #{$--secondary-color-text-hover};
   --text-color-accent: #{$--secondary-color-text};
   --navbar-background-color: #{$--secondary-background-color};
+  --navbar-background-color-hover: #{$--secondary-background-button-hover};
   --navbar-border-color: #{$--secondary-color-text};
   --navbar-h2-border-color: #{$--secondary-color-border};
   --button-border-color: #{$--secondary-color-border};
@@ -129,13 +133,12 @@ button {
   border: none;
   font-size: $--font-size-button;
   cursor: pointer;
-  min-width: 8rem;
+  width: auto;
   height: 3.2rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   padding: 0.5rem;
   font-weight: bold;
-  transition: all 0.3s ease;
 
   @include media-large-screen {
     width: 10rem;
@@ -143,9 +146,9 @@ button {
   }
 
   &:hover {
-    color: white;
-    box-shadow: 0 1px 4px var(--navbar-border-color);
+    background-color: var(--navbar-background-color-hover);
     transform: scale(1.05);
+    transition: all 0.3s ease;
   }
 }
 
@@ -220,4 +223,8 @@ scrollbar-thumb:hover {
   color: #fff;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.background-color-button {
+  background-color: var(--button-background-color-second);
 }

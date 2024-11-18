@@ -80,7 +80,7 @@ section {
 
     button {
       margin: 3rem 0 2rem 0;
-      background-color: var(--button-background-color-second);
+      min-width: 8rem;
       color: var(--button-text-color-second);
     }
 

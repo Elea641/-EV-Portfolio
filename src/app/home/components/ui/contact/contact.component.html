@@ -3,41 +3,25 @@
     <h2>Contact</h2>
     <hr />
   </header>
-  <form
-    [formGroup]="contactForm"
-    (ngSubmit)="onSubmit()"
-    class="container-register">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="container-register">
     <label for="name">Nom et prénom *</label>
-    <input
-      id="name"
-      type="text"
-      formControlName="name"
-      placeholder="Nom et prénom *" />
+    <input id="name" type="text" formControlName="name" placeholder="Nom et prénom *" />
 
     <label for="email">Email *</label>
-    <input
-      id="email"
-      type="email"
-      formControlName="email"
-      placeholder="Email *" />
+    <input id="email" type="email" formControlName="email" placeholder="Email *" />
 
     <label for="message">Message *</label>
-    <textarea
-      id="message"
-      formControlName="message"
-      placeholder="Saisissez votre message *">
+    <textarea id="message" formControlName="message" placeholder="Saisissez votre message *">
     </textarea>
 
     <p>* Indique un champ obligatoire</p>
 
-    <ng-container
-      *ngIf="
+    <ng-container *ngIf="
         contactForm.get('name')?.invalid && contactForm.get('name')?.touched
       ">
       <p class="error">Le nom et prénom sont requis.</p>
     </ng-container>
-    <ng-container
-      *ngIf="
+    <ng-container *ngIf="
         contactForm.get('email')?.invalid && contactForm.get('email')?.touched
       ">
       <p *ngIf="contactForm.get('email')?.errors?.['required']" class="error">
@@ -47,17 +31,14 @@
         L'email n'est pas valide.
       </p>
     </ng-container>
-    <ng-container
-      *ngIf="
+    <ng-container *ngIf="
         contactForm.get('message')?.invalid &&
         contactForm.get('message')?.touched
       ">
       <p class="error">Le message est requis.</p>
     </ng-container>
 
-    <button
-      type="submit"
-      [disabled]="!contactForm.valid"
+    <button type="submit" class="background-color-button" [disabled]="!contactForm.valid"
       aria-label="Envoyer mon message">
       ENVOYER
     </button>

@@ -35,6 +35,13 @@ article {
       padding: 0;
       text-align: left;
       box-shadow: none;
+      background-color: transparent;
+    }
+
+    button:hover {
+      transform: none;
+      transition: none;
+      color: var(--navbar-background-color-hover);
     }
   }
 }
