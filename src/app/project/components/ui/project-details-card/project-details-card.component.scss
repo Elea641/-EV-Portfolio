@@ -9,6 +9,7 @@ article {
   border-radius: 1rem;
   background-color: #303030;
   width: 90vw;
+  margin: 2rem 0 3rem 0;
 
   @include media-large-screen {
     width: 55vw;
