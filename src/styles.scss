@@ -17,6 +17,7 @@ html {
 
 :root {
   --background-color: #{$--primary-background-color};
+  --background-color-page-project: #{#303030};
   --text-color: #{$--primary-color-text};
   --text-color-hover: #{$--primary-color-text-hover};
   --text-color-accent: #{$--accent-color-text};
@@ -54,6 +55,7 @@ html {
 
 .light-theme {
   --background-color: #{$--secondary-background-color};
+  --background-color-page-project: #{#ececec};
   --text-color: #{$--secondary-color-text};
   --text-color-hover: #{$--secondary-color-text-hover};
   --text-color-accent: #{$--secondary-color-text};

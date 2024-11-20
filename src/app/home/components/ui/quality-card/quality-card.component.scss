@@ -35,13 +35,11 @@ section {
   }
 
   .svg-filter-dark {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%)
-      hue-rotate(314deg) brightness(102%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
   }
 
   .svg-filter-light {
-    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%)
-      hue-rotate(230deg) brightness(100%) contrast(110%);
+    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
   }
 
   p {
@@ -49,7 +47,6 @@ section {
     justify-self: center;
     align-self: flex-start;
     color: var(--card-quality-text-color);
-    font-size: 0.8rem;
 
     @include media-large-screen {
       font-size: 1rem;

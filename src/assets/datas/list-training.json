@@ -1,7 +1,7 @@
 [
   {
     "id": 3,
-    "name": "Concepteur Développeur d'Applications",
+    "name": "Concepteur Développeur d'Applications Angular / Spring Boot",
     "trainingCenter": "Wild Code School",
     "url": "assets/pictures/WCS.png",
     "date": "sept. 2023 - sept. 2024",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Développeur Web et Web Mobile",
+    "name": "Développeur Web et Web Mobile React / Express",
     "trainingCenter": "Wild Code School",
     "url": "assets/pictures/WCS.png",
     "date": "févr. 2023 - juil. 2023",
@@ -19,7 +19,7 @@
   },
   {
     "id": 1,
-    "name": "Développeur Web et Web Mobile",
+    "name": "Développeur Web et Web Mobile Angular / Spring Boot",
     "trainingCenter": "Wild Code School",
     "url": "assets/pictures/WCS.png",
     "date": "sept. 2022 - déc. 2022",

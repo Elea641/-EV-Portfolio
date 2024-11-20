@@ -20,31 +20,26 @@
       },
       {
         "id": 4,
-        "name": "React.js",
-        "svg": "../../../../../assets/pictures/logo-react.svg"
-      },
-      {
-        "id": 5,
         "name": "HTML",
         "svg": "../../../../../assets/pictures/logo-html5.svg"
       },
       {
-        "id": 6,
+        "id": 5,
         "name": "CSS",
         "svg": "../../../../../assets/pictures/logo-css3.svg"
       },
       {
-        "id": 7,
+        "id": 6,
         "name": "Sass",
         "svg": "../../../../../assets/pictures/logo-sass.svg"
       },
       {
-        "id": 8,
+        "id": 7,
         "name": "Angular Material",
         "svg": "../../../../../assets/pictures/logo-angular.svg"
       },
       {
-        "id": 9,
+        "id": 8,
         "name": "RxJS",
         "svg": "../../../../../assets/pictures/logo-rxjs.svg"
       }
@@ -61,46 +56,36 @@
       },
       {
         "id": 2,
-        "name": "Node.js",
-        "svg": "../../../../../assets/pictures/logo-nodejs.svg"
-      },
-      {
-        "id": 3,
-        "name": "Express.js",
-        "svg": "../../../../../assets/pictures/logo-expressjs-ar21.svg"
-      },
-      {
-        "id": 4,
         "name": "Spring Boot",
         "svg": "../../../../../assets/pictures/logo-springboot.svg"
       },
       {
-        "id": 5,
+        "id": 3,
         "name": "Spring Data JPA",
         "svg": "../../../../../assets/pictures/logo-spring.svg"
       },
       {
-        "id": 6,
+        "id": 4,
         "name": "Hibernate",
         "svg": "../../../../../assets/pictures/logo-hibernate.svg"
       },
       {
-        "id": 7,
+        "id": 5,
         "name": "Spring Security",
         "svg": "../../../../../assets/pictures/logo-springsecurity.svg"
       },
       {
-        "id": 8,
+        "id": 6,
         "name": "SQL",
         "svg": "../../../../../assets/pictures/logo-sql.svg"
       },
       {
-        "id": 9,
+        "id": 7,
         "name": "MySQL",
         "svg": "../../../../../assets/pictures/logo-mysql.svg"
       },
       {
-        "id": 10,
+        "id": 8,
         "name": "JUnit",
         "svg": "../../../../../assets/pictures/logo-junit5.svg"
       }
@@ -127,13 +112,8 @@
       },
       {
         "id": 4,
-        "name": "Visual Studio Code",
+        "name": "VS Code",
         "svg": "../../../../../assets/pictures/logo-vsco.svg"
-      },
-      {
-        "id": 5,
-        "name": "Figma",
-        "svg": "../../../../../assets/pictures/logo-figma.svg"
       }
     ]
   }

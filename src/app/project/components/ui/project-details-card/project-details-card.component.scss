@@ -7,9 +7,9 @@ article {
   position: relative;
   top: 3.5rem;
   border-radius: 1rem;
-  background-color: #303030;
+  background-color: var(--background-color-page-project);
   width: 90vw;
-  margin: 2rem 0 3rem 0;
+  margin: 1.5rem 0 3rem 0;
 
   @include media-large-screen {
     width: 55vw;
