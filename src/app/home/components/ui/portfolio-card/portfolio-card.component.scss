@@ -25,7 +25,6 @@ article {
         display: block;
         object-fit: cover;
         transition: filter 0.3s ease;
-
       }
     }
 
@@ -55,11 +54,13 @@ article {
   }
 
   &.svg-filter-dark figure a::after {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%)
+      hue-rotate(314deg) brightness(102%) contrast(89%);
   }
 
   &.svg-filter-light figure a::after {
-    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
+    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%)
+      hue-rotate(230deg) brightness(100%) contrast(110%);
   }
 
   section {
