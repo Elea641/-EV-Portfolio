@@ -5,7 +5,7 @@
   margin-top: 4rem;
   position: relative;
   z-index: 0;
-  height: 18rem;
+  height: 22rem;
   overflow: hidden;
   @include flex-justify-align-center;
 
@@ -27,7 +27,7 @@
     color: $--primary-color-text;
     width: 100%;
     font-size: 5rem;
-    height: 18rem;
+    height: 22rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);

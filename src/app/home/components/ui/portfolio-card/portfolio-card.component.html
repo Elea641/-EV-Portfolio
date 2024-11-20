@@ -1,21 +1,14 @@
-<article [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'">
+<article [ngClass]="isDarkTheme 
+                    ? (data.theme === 'dark' ? 'svg-filter-dark-theme-dark' : 'svg-filter-dark-theme-light') 
+                    : (data.theme === 'light' ? 'svg-filter-light-theme-dark' : 'svg-filter-light-theme-light')">
   <figure>
-    <a
-      [href]="data.github_url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="image-container">
-      <img
-        [src]="data.url"
-        [alt]="'Miniature du projet ' + data.name"
-        loading="lazy" />
+    <a [href]="data.github_url" target="_blank" rel="noopener noreferrer" class="image-container">
+      <img [src]="data.url" [alt]="'Miniature du projet ' + data.name" loading="lazy" />
     </a>
   </figure>
   <section>
     <h2>{{ data.name | uppercase }}</h2>
-    <a
-      [routerLink]="['/projects', data.name.replace(' ', '-')]"
-      type="button"
+    <a [routerLink]="['/projects', data.name.replace(' ', '-')]" type="button"
       aria-label="Accéder aux détails du projet">
       En savoir plus
     </a>

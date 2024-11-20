@@ -53,14 +53,20 @@ article {
     }
   }
 
-  &.svg-filter-dark figure a::after {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%)
-      hue-rotate(314deg) brightness(102%) contrast(89%);
+  &.svg-filter-dark-theme-dark figure a::after {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
   }
 
-  &.svg-filter-light figure a::after {
-    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%)
-      hue-rotate(230deg) brightness(100%) contrast(110%);
+  &.svg-filter-dark-theme-light figure a::after {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(2%) saturate(40%) hue-rotate(314deg) brightness(99%) contrast(98%);
+  }
+
+  &.svg-filter-light-theme-dark figure a::after {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
+  }
+
+  &.svg-filter-light-theme-light figure a::after {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(1%) saturate(3731%) hue-rotate(204deg) brightness(111%) contrast(99%);
   }
 
   section {

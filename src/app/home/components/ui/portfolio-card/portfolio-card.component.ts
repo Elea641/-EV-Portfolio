@@ -15,9 +15,11 @@ export class PortfolioCardComponent implements OnInit {
   @Input() data!: Project;
   isDarkTheme = false;
 
-  constructor(public themeUtilService: ThemeUtilService) {}
+  constructor(public themeUtilService: ThemeUtilService) { }
 
   ngOnInit() {
+    console.log(this.data);
+
     const themeChoice = localStorage.getItem('theme');
     if (!themeChoice || themeChoice === '') {
       this.isDarkTheme = true;
