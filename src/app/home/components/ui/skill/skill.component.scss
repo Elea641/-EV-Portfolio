@@ -106,8 +106,8 @@ section {
           }
 
           img {
-            width: 2.8rem;
-            height: 2.8rem;
+            width: 2rem;
+            height: 2rem;
             justify-self: center;
             align-self: center;
             margin: 0 0 1rem 0;
@@ -119,13 +119,11 @@ section {
           }
 
           .svg-filter-dark {
-            filter: brightness(0) saturate(100%) invert(68%) sepia(13%)
-              saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
+            filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
           }
 
           .svg-filter-light {
-            filter: brightness(0) saturate(100%) invert(6%) sepia(13%)
-              saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
+            filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
           }
         }
       }
