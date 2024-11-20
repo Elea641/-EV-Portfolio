@@ -3,10 +3,8 @@
 
 section {
   width: 5rem;
-  height: 5rem;
+  height: 6rem;
   background-color: var(--card-quality-background-color);
-  border: 1px solid var(--card-quality-border-color);
-  border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -25,8 +23,8 @@ section {
   }
 
   img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
     justify-self: center;
     align-self: center;
 
@@ -37,24 +35,22 @@ section {
   }
 
   .svg-filter-dark {
-    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%)
-      hue-rotate(314deg) brightness(102%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
   }
 
   .svg-filter-light {
-    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%)
-      hue-rotate(230deg) brightness(100%) contrast(110%);
+    filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
   }
 
   p {
     text-align: center;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
     color: var(--card-quality-text-color);
     font-size: 0.8rem;
 
     @include media-large-screen {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }

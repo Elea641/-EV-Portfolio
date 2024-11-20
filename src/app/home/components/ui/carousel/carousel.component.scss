@@ -30,18 +30,18 @@
     height: 18rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     @include flex-column-align-center;
 
     .quote-text {
       padding-top: 5rem;
-      font-style: italic;
+      font-weight: bold;
+      font-size: 1.6rem;
     }
 
     .quote-author {
       margin-top: 0.5rem;
-      font-weight: bold;
-      font-size: 1.6rem;
+      font-style: italic;
     }
   }
 

@@ -9,4 +9,5 @@ export type Project = {
   github_url: string;
   content: string;
   images: string;
+  theme: string;
 };
