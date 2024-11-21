@@ -39,6 +39,8 @@ html {
   --card-portfolio-button-border-color: #{$--accent-border-color};
   --card-portfolio-button-text-color: #{$--primary-color-button};
   --card-portfolio-modal-button: #{$--accent-color-text};
+  --carousel-portfolio-dot-active: #{$--primary-color-text};
+  --carousel-portfolio-dot-passive: #{#ffffff80};
   --input-textara-border-color: #{$--primary-color-border};
   --input-textara-text-color: #{$--primary-color-text};
   --cv-text-color: #{$--primary-background-color};
@@ -77,6 +79,8 @@ html {
   --card-portfolio-button-border-color: #{$--secondary-color-text};
   --card-portfolio-button-text-color: #{$--secondary-color-button};
   --card-portfolio-modal-button: #{$--secondary-color-text};
+  --carousel-portfolio-dot-active: #{#090217};
+  --carousel-portfolio-dot-passive: #{#b69beb};
   --input-textara-border-color: #{$--secondary-color-border};
   --input-textara-text-color: #{$--secondary-color-text};
   --cv-text-color: #{$--primary-color-text};
@@ -136,7 +140,7 @@ button {
   font-size: $--font-size-button;
   cursor: pointer;
   width: auto;
-  height: 3.2rem;
+  height: 3.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
   padding: 0.5rem;

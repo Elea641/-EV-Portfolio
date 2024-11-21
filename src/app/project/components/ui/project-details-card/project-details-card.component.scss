@@ -31,6 +31,32 @@ article {
       grid-column-end: 2;
     }
 
+    a {
+      @include flex-align-center;
+      justify-content: flex-end;
+
+      .svg-filter-dark {
+        filter: brightness(0) saturate(100%) invert(68%) sepia(13%) saturate(627%) hue-rotate(314deg) brightness(102%) contrast(89%);
+      }
+
+      .svg-filter-light {
+        filter: brightness(0) saturate(100%) invert(6%) sepia(13%) saturate(5445%) hue-rotate(230deg) brightness(100%) contrast(110%);
+      }
+
+      .svg-filter-dark:hover {
+        filter: brightness(0) saturate(100%) invert(95%) sepia(22%) saturate(1365%) hue-rotate(292deg) brightness(97%) contrast(91%);
+      }
+
+      .svg-filter-light:hover {
+        filter: brightness(0) saturate(100%) invert(5%) sepia(33%) saturate(7454%) hue-rotate(256deg) brightness(91%) contrast(106%);
+      }
+    }
+
+    h2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
     h3 {
       grid-column-start: 2;
       grid-column-end: 3;

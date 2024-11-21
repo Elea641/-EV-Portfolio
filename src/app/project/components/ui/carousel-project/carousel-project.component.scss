@@ -5,7 +5,7 @@
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 35rem;
+  height: 30rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -39,26 +39,24 @@
 }
 
 .carousel-indicators {
-  position: absolute;
-  bottom: 1rem;
   z-index: 2;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 3rem 0 2rem 0;
+  margin: 0 0 2rem 0;
 
   .dot {
     height: 12px;
     width: 12px;
     margin: 0 0.5rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--carousel-portfolio-dot-passive);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.6s ease;
 
     &.active {
-      background-color: $--primary-color-text;
+      background-color: var(--carousel-portfolio-dot-active);
     }
   }
 }
