@@ -11,10 +11,6 @@
   text-decoration: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --background-color: #{$--primary-background-color};
   --background-color-page-project: #{#303030};
