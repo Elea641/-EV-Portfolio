@@ -18,7 +18,7 @@ export class NavbarComponent implements AfterViewInit, OnInit {
   constructor(
     public themeUtilService: ThemeUtilService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit() {
     const themeChoice = localStorage.getItem('theme');
