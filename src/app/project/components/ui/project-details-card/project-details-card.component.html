@@ -1,9 +1,16 @@
 <article *ngIf="project">
   <section>
-    <img src="assets/pictures/WCS.png" alt="Image correspondant au projet affiché" loading="lazy" />
-    <a [routerLink]="['']" fragment="portfolio"><img [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
+    <img
+      src="assets/pictures/WCS.png"
+      alt="Image correspondant au projet affiché"
+      loading="lazy" />
+    <a [routerLink]="['']" fragment="portfolio"
+      ><img
+        [ngClass]="isDarkTheme ? 'svg-filter-dark' : 'svg-filter-light'"
         src="assets/pictures/logo-back.svg
-      " alt="" /></a>
+      "
+        alt=""
+    /></a>
     <h2>{{ project.name | uppercase }}</h2>
     <h3>{{ project.trainingCenter }}</h3>
     <p>{{ project.type }}</p>
