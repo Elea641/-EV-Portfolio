@@ -1,8 +1,23 @@
 [
   {
     "id": 1,
+    "name": "MyLifeHub",
+    "trainingCenter": "",
+    "logo": "assets/pictures/logo-business.svg",
+    "url": "assets/pictures/WIP.jpg",
+    "date": "janvier. 2025 - aujourd'hui",
+    "type": "Application WEB",
+    "technos": "JavaScript · API REST · Méthodes agiles · Feuilles de style en cascade (CSS) · RxJS · TypeScript · JUnit · Java · Mockito · Hibernate · Docker · Sass · Réalisation de tests · Sens de l’organisation · Programmation orientée objet (POO) · Framework Spring · Visual Studio Code · Git · PostgreSQL · HTML · GitHub · Spring Data · Bases de données · Développement web · Applications web · Angular · Spring Boot · Intégration continue",
+    "github_url": "https://github.com/Elea641/Winit-Frontend",
+    "content": "Description du Projet : <br><br> Le projet MyLifeHub est une application web dédiée à la gestion personnelle centralisant les informations du quotidien (calendrier, tâches, finances, etc.) pour améliorer l’organisation et la productivité.",
+    "images": "",
+    "theme": "light"
+  },
+  {
+    "id": 2,
     "name": "Winit",
     "trainingCenter": "Wild Code School",
+    "logo": "assets/pictures/WCS.png",
     "url": "assets/pictures/homepageWinit.PNG",
     "date": "sept. 2023 - juil. 2024",
     "type": "Application WEB",
@@ -13,9 +28,10 @@
     "theme": "dark"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Ligne bleue",
     "trainingCenter": "Wild Code School",
+    "logo": "assets/pictures/WCS.png",
     "url": "assets/pictures/homepageLigneBleue.PNG",
     "date": "mai 2023 - juil. 2023",
     "type": "Application WEB",
@@ -26,9 +42,10 @@
     "theme": "light"
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "SNKC",
     "trainingCenter": "Wild Code School",
+    "logo": "assets/pictures/WCS.png",
     "url": "assets/pictures/homepageSNKC.PNG",
     "date": "sept. 2022 - déc. 2022",
     "type": "Application WEB",

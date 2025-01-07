@@ -2,6 +2,7 @@ export type Project = {
   id: number;
   name: string;
   trainingCenter: string;
+  logo: string;
   url: string;
   date: string;
   type: string;

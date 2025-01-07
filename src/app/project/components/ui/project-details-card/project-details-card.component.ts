@@ -16,9 +16,11 @@ export class ProjectDetailsCardComponent implements OnInit {
   @Input() project!: Project;
   isDarkTheme = false;
 
-  constructor(public themeUtilService: ThemeUtilService) {}
+  constructor(public themeUtilService: ThemeUtilService) { }
 
   ngOnInit() {
+    console.log(this.project);
+
     const themeChoice = localStorage.getItem('theme');
     if (!themeChoice || themeChoice === '') {
       this.isDarkTheme = true;
