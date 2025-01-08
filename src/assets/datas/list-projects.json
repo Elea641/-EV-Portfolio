@@ -8,13 +8,27 @@
     "date": "janvier. 2025 - aujourd'hui",
     "type": "Application WEB",
     "technos": "JavaScript · API REST · Méthodes agiles · Feuilles de style en cascade (CSS) · RxJS · TypeScript · JUnit · Java · Mockito · Hibernate · Docker · Sass · Réalisation de tests · Sens de l’organisation · Programmation orientée objet (POO) · Framework Spring · Visual Studio Code · Git · PostgreSQL · HTML · GitHub · Spring Data · Bases de données · Développement web · Applications web · Angular · Spring Boot · Intégration continue",
-    "github_url": "https://github.com/Elea641/Winit-Frontend",
+    "github_url": "https://github.com/Elea641/LifeHub-Front",
     "content": "Description du Projet : <br><br> Le projet MyLifeHub est une application web dédiée à la gestion personnelle centralisant les informations du quotidien (calendrier, tâches, finances, etc.) pour améliorer l’organisation et la productivité.",
     "images": "",
     "theme": "light"
   },
   {
     "id": 2,
+    "name": "EVPortfolio",
+    "trainingCenter": "",
+    "logo": "assets/pictures/logo-business.svg",
+    "url": "assets/pictures/EVPortofolio1.PNG",
+    "date": "dec. 2024 - dec. 2024",
+    "type": "Application WEB",
+    "technos": "JavaScript · Méthodes agiles · Feuilles de style en cascade (CSS) · RxJS · TypeScript · Docker · Sass · Sens de l’organisation · Programmation orientée objet (POO) · Visual Studio Code · Git · HTML · GitHub · Développement web · Applications web · Angular · Intégration continue",
+    "github_url": "https://github.com/Elea641/EVPortfolio",
+    "content": "Description du Projet : <br><br> EVPortfolio est une application web que j'ai créée pour mettre en avant mon parcours, mes compétences et mes projets. Cette plateforme interactive offre une navigation fluide et intuitive, permettant aux visiteurs de découvrir mes réalisations, ma méthodologie de travail et mes outils favoris. <br><br> Objectifs : <br><br> Présenter mon expertise en développement web à travers une interface moderne et réactive. Illustrer mes capacités techniques et mon approche de la gestion de projets en autonomie. <br><br> Développement Frontend : Création d'interfaces utilisateur dynamiques avec Angular. Intégration de systèmes de thèmes (clair/sombre) gérés via le localStorage. Utilisation de RxJS pour optimiser la gestion des données asynchrones.",
+    "images": "assets/pictures/EVPortofolio1.PNG, assets/pictures/EVPortofolio2.PNG, assets/pictures/EVPortofolio3.PNG, assets/pictures/EVPortofolio4.PNG, assets/pictures/EVPortofolio5.PNG",
+    "theme": "dark"
+  },
+  {
+    "id": 3,
     "name": "Winit",
     "trainingCenter": "Wild Code School",
     "logo": "assets/pictures/WCS.png",
@@ -28,7 +42,7 @@
     "theme": "dark"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Ligne bleue",
     "trainingCenter": "Wild Code School",
     "logo": "assets/pictures/WCS.png",
@@ -42,7 +56,7 @@
     "theme": "light"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "SNKC",
     "trainingCenter": "Wild Code School",
     "logo": "assets/pictures/WCS.png",
